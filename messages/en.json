@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "siteName": "Origin Jumpworks",
+    "description": "Unofficial fan project about Star Citizen's Origin Jumpworks: the fleet, its history, and where to acquire it in game."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "newTab": "(new tab)"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "fleet": "The fleet",
+    "compare": "Compare",
+    "credits": "Credits",
+    "design": "Design system",
+    "menu": "Menu",
+    "closeMenu": "Close"
+  },
+  "prefs": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "motion": "Reduce motion",
+    "motionOn": "On",
+    "motionOff": "Off"
+  },
+  "footer": {
+    "tagline": "A fine-line tribute to the most elegant manufacturer in the persistent universe.",
+    "disclaimer": "Unofficial fan project, not affiliated with Cloud Imperium Games. Star Citizen®, Origin Jumpworks and related visuals are the property of Cloud Imperium Rights LLC.",
+    "madeByCommunity": "Made by the Community",
+    "explore": "Explore",
+    "data": "Data",
+    "dataLine": "Patch {version} · captured on {date}",
+    "project": "Project",
+    "sourceCode": "Source code on GitHub",
+    "author": "Made by {name}",
+    "allCredits": "All credits and licences"
+  },
+  "home": {
+    "eyebrow": "Fan project · Star Citizen",
+    "title": "Origin Jumpworks",
+    "lead": "The site is under construction. The long descent arrives in step 5; in the meantime, the design system is available.",
+    "cta": "See the design system"
+  },
+  "placeholder": {
+    "eyebrow": "Coming soon",
+    "lead": "This page arrives in step 7 of the project.",
+    "back": "Back to home"
+  },
+  "credits": {
+    "title": "Credits",
+    "lead": "This site exists thanks to the community's work. Here is where its texts, data and images come from.",
+    "disclaimerTitle": "Disclaimer",
+    "sourcesTitle": "Data sources",
+    "sourcesLead": "Data captured on {date}, patch {version}. It is not updated in real time.",
+    "textsTitle": "Texts",
+    "textsLead": "Descriptions and information taken from starcitizen.tools are licensed under Creative Commons BY-SA 4.0. Source page for each ship:",
+    "imagesTitle": "Images",
+    "imagesLead": "Studio views are the work of wiki contributors (CC BY-SA 4.0); other visuals belong to Cloud Imperium Games. Details per ship:",
+    "imageCount": "{count, plural, one {# image} other {# images}}",
+    "author": "Author",
+    "license": "Licence",
+    "source": "Source",
+    "role": {
+      "hero": "Main view",
+      "side": "Side view",
+      "gallery": "Gallery {n}"
+    },
+    "softwareTitle": "Fonts and software",
+    "codeTitle": "Code",
+    "codeLead": "The site's code is released under the MIT licence.",
+    "viewSource": "View the repository",
+    "sourceLicense": {
+      "api": "Game data © Cloud Imperium Games",
+      "wiki": "Texts CC BY-SA 4.0 — images: see each credit",
+      "uex": "In-game prices reported by the community"
+    }
+  },
+  "notFound": {
+    "title": "Lost in the void",
+    "lead": "This page does not exist, or no longer does.",
+    "back": "Back to home"
+  },
+  "design": {
+    "metaTitle": "Design system",
+    "metaDescription": "Tokens, typography and components of the Origin Jumpworks site.",
+    "eyebrow": "Origin Jumpworks — Design system",
+    "title": "Line first",
+    "lead": "One-pixel lines, plenty of space, slow motion. Every element starts as an outline, then the material appears.",
+    "systemTheme": "Theme: system",
+    "themeLight": "Light — Gallery",
+    "themeDark": "Dark — New Austin night",
+    "colors": {
+      "title": "Colours",
+      "intro": "Two themes, the same restraint. Every text colour exceeds 4.5:1; the glow and lines are reserved for decoration. These ratios are checked by an automated test.",
+      "caption": "Text colour contrast, {theme} theme",
+      "text": "Text",
+      "onBg": "on bg",
+      "onSurface": "on surface",
+      "decorative": "Decorative only:"
+    },
+    "type": {
+      "title": "Typography",
+      "intro": "Geometric, light-weight headings with wide tracking. Body text in Inter for legibility, technical codes in JetBrains Mono.",
+      "sampleMd": "Founded in 2747, based in New Austin since 2913",
+      "sampleLead": "Origin Jumpworks designs ships the way one designs a luxury object: clean lines, noble materials, and elegance as a primary function.",
+      "sampleBody": "Body text stays at regular weight, with 1.6 line height and lines capped at 65 characters, for comfortable reading in both themes.",
+      "choice": "Heading typeface choice",
+      "outfit": "Selected: rounder, softer",
+      "jost": "Initial choice: more geometric",
+      "interTight": "More neutral, more technical"
+    },
+    "components": {
+      "title": "Components",
+      "intro": "45° cut corners, one-pixel outlines, no bounce. Outlines are drawn with clipped layers so the focus ring is never cut off.",
+      "discover": "Discover the fleet",
+      "compare": "Compare",
+      "disabled": "Unavailable",
+      "linkSentence": "An internal link to the <internal>home page</internal> and an external link to <external>starcitizen.tools</external>.",
+      "frame": "Frame",
+      "frameText": "One-pixel outline, cut corners, optional corner marks.",
+      "ruleLabel": "01 — Manifesto",
+      "monogram": "Monogram"
+    },
+    "example": {
+      "title": "In context",
+      "intro": "Image from the data harvest (AVIF then WebP, blurred preview while loading) and a spec sheet with static values.",
+      "alt": "{name}, isometric studio view",
+      "length": "Length",
+      "crew": "Crew",
+      "cargo": "Cargo",
+      "maxSpeed": "Max speed",
+      "credit": "Image: {author}, {license}."
+    },
+    "motion": {
+      "title": "Motion",
+      "intro": "Slow, eased, never jerky. Only one thing moves strongly at a time. Everything is disabled when the visitor asks for less motion.",
+      "fast": "Fast",
+      "base": "Base",
+      "slow": "Slow",
+      "easing": "Easing",
+      "curve": "Curve",
+      "bounce": "Bounce",
+      "never": "never"
+    }
+  }
+}

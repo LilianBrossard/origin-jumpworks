@@ -53,6 +53,8 @@
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
+    /* L'en-tête fixe ne doit pas masquer la cible d'une ancre */
+    scroll-padding-top: 5rem;
     text-rendering: optimizeLegibility;
   }
 

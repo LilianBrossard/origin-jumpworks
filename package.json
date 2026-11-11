@@ -12,10 +12,12 @@
     "format:check": "prettier --check .",
     "check": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test",
     "harvest": "tsx scripts/harvest/index.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "postbuild": "node scripts/fix-export.mjs"
   },
   "dependencies": {
     "next": "16.4.6",
+    "next-intl": "^4.15.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "server-only": "^0.0.1",

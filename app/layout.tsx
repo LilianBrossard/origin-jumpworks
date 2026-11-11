@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { fontVariables } from "@/lib/fonts";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Origin Jumpworks", template: "%s · Origin Jumpworks" },
-  description:
-    "Projet de fan non officiel consacré au constructeur Origin Jumpworks (Star Citizen).",
+  metadataBase: new URL(SITE_URL),
 };
 
-// Langues et sélecteurs de thème arrivent à l'étape 4.
+/**
+ * Mise en page racine « transparente » : les balises <html> et <body> sont posées
+ * par `app/[locale]/layout.tsx` (pour avoir le bon `lang`), par la page de redirection
+ * `app/page.tsx` et par `app/not-found.tsx`.
+ */
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return (
-    <html lang="fr" className={`${fontVariables} h-full`}>
-      <body className="flex min-h-full flex-col">{children}</body>
-    </html>
-  );
+  return children;
 }

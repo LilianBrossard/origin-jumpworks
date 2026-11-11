@@ -24,13 +24,22 @@ pnpm dev          # serveur de développement sur http://localhost:3000
 | Commande                       | Rôle                                        |
 | ------------------------------ | ------------------------------------------- |
 | `pnpm dev`                     | Serveur de développement                    |
-| `pnpm build`                   | Génère le site statique dans `out/`         |
+| `pnpm build`                   | Génère le site statique dans `out/` (\*)    |
 | `pnpm preview`                 | Sert le dossier `out/` en local             |
 | `pnpm lint`                    | ESLint                                      |
 | `pnpm typecheck`               | Vérification TypeScript                     |
 | `pnpm format` / `format:check` | Prettier                                    |
 | `pnpm check`                   | Lint, types et format en une seule commande |
 | `pnpm harvest`                 | Collecte les données de la flotte (manuel)  |
+| `pnpm test`                    | Tests (contrastes, traductions)             |
+
+(\*) Le build est suivi de [`scripts/fix-export.mjs`](scripts/fix-export.mjs), qui corrige le nommage des fichiers de préchargement de Next 16.4 en export statique.
+
+## Langues et préférences
+
+- Pages sous `/fr/` et `/en/` ; la page `/` choisit la langue dans le navigateur (préférence mémorisée, sinon langue du navigateur).
+- Traductions : [messages/fr.json](messages/fr.json) et [messages/en.json](messages/en.json). Un test vérifie que les deux fichiers ont les mêmes clés.
+- Thème (système, clair, sombre) et « Réduire les animations » : mémorisés dans `localStorage` et appliqués avant l'affichage, sans flash.
 
 ## Données
 

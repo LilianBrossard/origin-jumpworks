@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "siteName": "Origin Jumpworks",
+    "description": "Projet de fan non officiel consacré au constructeur Origin Jumpworks de Star Citizen : la flotte, son histoire, et où l'acquérir en jeu."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "newTab": "(nouvel onglet)"
+  },
+  "nav": {
+    "label": "Navigation principale",
+    "home": "Accueil",
+    "fleet": "La flotte",
+    "compare": "Comparer",
+    "credits": "Crédits",
+    "design": "Système de design",
+    "menu": "Menu",
+    "closeMenu": "Fermer"
+  },
+  "prefs": {
+    "title": "Réglages",
+    "language": "Langue",
+    "theme": "Thème",
+    "themeSystem": "Système",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "motion": "Réduire les animations",
+    "motionOn": "Activé",
+    "motionOff": "Désactivé"
+  },
+  "footer": {
+    "tagline": "Une évocation, en traits fins, du constructeur le plus élégant de l'univers persistant.",
+    "disclaimer": "Projet de fan non officiel, sans lien avec Cloud Imperium Games. Star Citizen®, Origin Jumpworks et les visuels associés sont la propriété de Cloud Imperium Rights LLC.",
+    "madeByCommunity": "Made by the Community",
+    "explore": "Explorer",
+    "data": "Données",
+    "dataLine": "Patch {version} · relevé le {date}",
+    "project": "Projet",
+    "sourceCode": "Code source sur GitHub",
+    "author": "Réalisé par {name}",
+    "allCredits": "Tous les crédits et licences"
+  },
+  "home": {
+    "eyebrow": "Projet de fan · Star Citizen",
+    "title": "Origin Jumpworks",
+    "lead": "Le site est en cours de construction. La longue descente arrive à l'étape 5 ; en attendant, le système de design est consultable.",
+    "cta": "Voir le système de design"
+  },
+  "placeholder": {
+    "eyebrow": "En préparation",
+    "lead": "Cette page arrive à l'étape 7 du projet.",
+    "back": "Retour à l'accueil"
+  },
+  "credits": {
+    "title": "Crédits",
+    "lead": "Ce site existe grâce au travail de la communauté. Voici d'où viennent ses textes, ses données et ses images.",
+    "disclaimerTitle": "Avertissement",
+    "sourcesTitle": "Sources des données",
+    "sourcesLead": "Données relevées le {date}, patch {version}. Elles ne sont pas mises à jour en temps réel.",
+    "textsTitle": "Textes",
+    "textsLead": "Les descriptions et informations reprises de starcitizen.tools sont sous licence Creative Commons BY-SA 4.0. Page source de chaque vaisseau :",
+    "imagesTitle": "Images",
+    "imagesLead": "Les vues studio sont l'œuvre de contributeurs du wiki (CC BY-SA 4.0) ; les autres visuels appartiennent à Cloud Imperium Games. Détail par vaisseau :",
+    "imageCount": "{count, plural, one {# image} other {# images}}",
+    "author": "Auteur",
+    "license": "Licence",
+    "source": "Source",
+    "role": {
+      "hero": "Vue principale",
+      "side": "Vue de profil",
+      "gallery": "Galerie {n}"
+    },
+    "softwareTitle": "Polices et logiciels",
+    "codeTitle": "Code",
+    "codeLead": "Le code du site est publié sous licence MIT.",
+    "viewSource": "Voir le dépôt",
+    "sourceLicense": {
+      "api": "Données de jeu © Cloud Imperium Games",
+      "wiki": "Textes CC BY-SA 4.0 — images : voir chaque crédit",
+      "uex": "Prix en jeu relevés par la communauté"
+    }
+  },
+  "notFound": {
+    "title": "Perdu dans le vide",
+    "lead": "Cette page n'existe pas, ou plus.",
+    "back": "Retour à l'accueil"
+  },
+  "design": {
+    "metaTitle": "Système de design",
+    "metaDescription": "Tokens, typographie et composants du site Origin Jumpworks.",
+    "eyebrow": "Origin Jumpworks — Système de design",
+    "title": "Le trait d'abord",
+    "lead": "Des lignes d'un pixel, beaucoup de vide, un mouvement lent. Chaque élément commence par son contour, puis la matière apparaît.",
+    "systemTheme": "Thème : système",
+    "themeLight": "Clair — Galerie",
+    "themeDark": "Sombre — Nuit sur New Austin",
+    "colors": {
+      "title": "Couleurs",
+      "intro": "Deux thèmes, une même retenue. Les couleurs de texte dépassent toutes 4.5:1 ; le halo et les traits sont réservés au décor. Ces ratios sont vérifiés par un test automatique.",
+      "caption": "Contraste des couleurs de texte, thème {theme}",
+      "text": "Texte",
+      "onBg": "sur bg",
+      "onSurface": "sur surface",
+      "decorative": "Décoratives uniquement :"
+    },
+    "type": {
+      "title": "Typographie",
+      "intro": "Titres géométriques en graisse fine, lettres espacées. Texte courant en Inter pour la lisibilité, codes techniques en JetBrains Mono.",
+      "sampleMd": "Fondée en 2747, installée à New Austin depuis 2913",
+      "sampleLead": "Origin Jumpworks conçoit des vaisseaux comme on dessine un objet de luxe : des lignes épurées, des matériaux nobles, et l'élégance comme fonction première.",
+      "sampleBody": "Le texte courant reste en graisse normale, avec un interlignage de 1.6 et une longueur de ligne limitée à 65 caractères, pour une lecture confortable dans les deux thèmes.",
+      "choice": "Choix de la police de titre",
+      "outfit": "Retenue : plus ronde, plus douce",
+      "jost": "Choix initial : plus géométrique",
+      "interTight": "Plus neutre, plus technique"
+    },
+    "components": {
+      "title": "Composants",
+      "intro": "Coins coupés à 45°, contours d'un pixel, aucun rebond. Le contour est tracé par des calques découpés pour ne jamais rogner l'anneau de focus.",
+      "discover": "Découvrir la flotte",
+      "compare": "Comparer",
+      "disabled": "Indisponible",
+      "linkSentence": "Un lien interne vers la <internal>page d'accueil</internal> et un lien externe vers <external>starcitizen.tools</external>.",
+      "frame": "Cadre",
+      "frameText": "Contour d'un pixel, coins coupés, marques d'angle optionnelles.",
+      "ruleLabel": "01 — Manifeste",
+      "monogram": "Monogramme"
+    },
+    "example": {
+      "title": "Mise en situation",
+      "intro": "Image issue de la collecte (AVIF puis WebP, aperçu flou pendant le chargement) et fiche technique en valeurs fixes.",
+      "alt": "{name}, vue isométrique en studio",
+      "length": "Longueur",
+      "crew": "Équipage",
+      "cargo": "Cargo",
+      "maxSpeed": "Vitesse max.",
+      "credit": "Image : {author}, {license}."
+    },
+    "motion": {
+      "title": "Mouvement",
+      "intro": "Lent, amorti, jamais saccadé. Une seule chose bouge fortement à la fois. Tout est désactivé si le visiteur demande moins d'animations.",
+      "fast": "Rapide",
+      "base": "Base",
+      "slow": "Lent",
+      "easing": "Amorti",
+      "curve": "Courbe",
+      "bounce": "Rebond",
+      "never": "jamais"
+    }
+  }
+}

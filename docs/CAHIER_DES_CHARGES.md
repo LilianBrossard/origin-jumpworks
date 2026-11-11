@@ -34,7 +34,7 @@ Le site doit afficher **clairement** qu'il est un projet de fan.
 
 - **Bandeau dans le pied de page, présent sur toutes les pages** :
   « Projet de fan non officiel, sans lien avec Cloud Imperium Games. Star Citizen®, Origin Jumpworks et les visuels associés sont la propriété de Cloud Imperium Rights LLC. »
-- Le **logo « Made by the Community »** (fan kit officiel de CIG), conformément à ses conditions.
+- Le **logo « Made by the Community »** (fan kit officiel de CIG), conformément à ses conditions. _Pour l'instant, un badge texte en tient lieu : le fichier officiel est à récupérer manuellement dans le fan kit._
 - Une **page `/credits`**, accessible depuis le pied de page, qui liste :
   - les textes issus de [starcitizen.tools](https://starcitizen.tools), sous licence **CC BY-SA 4.0**, avec un lien vers chaque page source ;
   - les données de prix issues d'[UEX Corp](https://uexcorp.space), avec la date du relevé ;
@@ -238,7 +238,7 @@ Valeurs de référence : [`styles/tokens.css`](../styles/tokens.css). **Tout tex
 /[locale]/404                 Page « Perdu dans le vide »
 ```
 
-`locale` ∈ { `fr`, `en` }. La langue est détectée au premier accès, le choix est mémorisé, et les balises `hreflang` sont présentes.
+`locale` ∈ { `fr`, `en` }. La langue est détectée au premier accès, le choix est mémorisé, et les balises `hreflang` sont présentes. En export statique (pas de middleware), c'est la page `/` qui choisit la langue dans le navigateur : préférence mémorisée, sinon langue du navigateur, sinon français.
 
 ### 7.2 Accueil : la descente
 

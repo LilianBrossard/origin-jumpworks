@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   // Site 100 % statique : `next build` produit le dossier `out/`.
   output: "export",
   trailingSlash: true,
-  // Les images sont déjà optimisées (AVIF/WebP) par `scripts/harvest.ts`.
+  // Les images sont déjà optimisées (AVIF/WebP) par `scripts/harvest`.
   images: { unoptimized: true },
   turbopack: {
     rules: {
@@ -16,4 +17,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+export default withNextIntl(nextConfig);

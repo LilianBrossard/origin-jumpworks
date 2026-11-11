@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import type { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/cn";
 
@@ -9,6 +10,7 @@ type TextLinkProps = ComponentPropsWithoutRef<typeof Link> & {
 
 /** Lien de texte : un trait champagne se dessine de gauche à droite sur le filet au survol. */
 export function TextLink({ external, className, children, ...rest }: TextLinkProps) {
+  const t = useTranslations("a11y");
   return (
     <Link
       className={cn("link-line text-ink hover:text-accent", className)}
@@ -16,7 +18,7 @@ export function TextLink({ external, className, children, ...rest }: TextLinkPro
       {...rest}
     >
       {children}
-      {external && <span className="sr-only"> (nouvel onglet)</span>}
+      {external && <span className="sr-only"> {t("newTab")}</span>}
     </Link>
   );
 }
