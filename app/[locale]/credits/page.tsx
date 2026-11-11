@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { ReactNode } from "react";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { CommunityLogo } from "@/components/ui/CommunityLogo";
 import { Rule } from "@/components/ui/Rule";
 import { TextLink } from "@/components/ui/TextLink";
 import { Heading } from "@/components/ui/Typography";
 import type { Locale } from "@/i18n/routing";
 import { getMeta, getShips } from "@/lib/data";
 import type { ImageAsset } from "@/lib/data/schema";
-import { REPO_URL } from "@/lib/site";
+import { AUTHOR, CIG_LEGAL_NOTICE, REPO_URL } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -78,10 +79,24 @@ export default async function CreditsPage({ params }: PageProps<"/[locale]/credi
       <PageHeader title={t("title")} lead={t("lead")} />
 
       <Block index="01" title={t("disclaimerTitle")}>
-        <p className="max-w-[65ch]">{tFooter("disclaimer")}</p>
-        <p className="inline-block border border-line-strong px-3 py-1.5 font-mono text-[0.6875rem] tracking-[0.12em] text-ink-muted uppercase">
-          {tFooter("madeByCommunity")}
-        </p>
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
+          <CommunityLogo alt={tFooter("madeByCommunity")} className="h-24 w-24" />
+          <div className="space-y-4">
+            <p className="max-w-[65ch]">{tFooter("disclaimer")}</p>
+            <p lang="en" className="max-w-[65ch] text-sm text-ink-muted">
+              {CIG_LEGAL_NOTICE}
+            </p>
+            <p className="text-sm text-ink-muted">
+              {t.rich("fankit", {
+                link: (chunks) => (
+                  <TextLink href="https://robertsspaceindustries.com/fankit" external>
+                    {chunks}
+                  </TextLink>
+                ),
+              })}
+            </p>
+          </div>
+        </div>
       </Block>
 
       <Block index="02" title={t("sourcesTitle")}>
@@ -189,6 +204,16 @@ export default async function CreditsPage({ params }: PageProps<"/[locale]/credi
 
       <Block index="06" title={t("codeTitle")}>
         <p className="text-ink-muted">{t("codeLead")}</p>
+        <p className="text-ink-muted">
+          {tFooter.rich("author", {
+            name: AUTHOR.name,
+            link: (chunks) => (
+              <TextLink href={AUTHOR.url} external>
+                {chunks}
+              </TextLink>
+            ),
+          })}
+        </p>
         <p>
           <TextLink href={REPO_URL} external>
             {t("viewSource")}

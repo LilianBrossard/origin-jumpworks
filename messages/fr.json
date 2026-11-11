@@ -30,14 +30,14 @@
   },
   "footer": {
     "tagline": "Une évocation, en traits fins, du constructeur le plus élégant de l'univers persistant.",
-    "disclaimer": "Projet de fan non officiel, sans lien avec Cloud Imperium Games. Star Citizen®, Origin Jumpworks et les visuels associés sont la propriété de Cloud Imperium Rights LLC.",
+    "disclaimer": "Site de fan non officiel de Star Citizen, réalisé par un passionné, sans lien avec Cloud Imperium Games.",
     "madeByCommunity": "Made by the Community",
     "explore": "Explorer",
     "data": "Données",
     "dataLine": "Patch {version} · relevé le {date}",
     "project": "Projet",
     "sourceCode": "Code source sur GitHub",
-    "author": "Réalisé par {name}",
+    "author": "Réalisé par <link>{name}</link>",
     "allCredits": "Tous les crédits et licences"
   },
   "home": {
@@ -78,7 +78,8 @@
       "api": "Données de jeu © Cloud Imperium Games",
       "wiki": "Textes CC BY-SA 4.0 — images : voir chaque crédit",
       "uex": "Prix en jeu relevés par la communauté"
-    }
+    },
+    "fankit": "Le logo « Made by the Community » provient du <link>fan kit officiel de Star Citizen</link>, utilisé conformément à son accord : usage non commercial, sans modification des éléments fournis."
   },
   "notFound": {
     "title": "Perdu dans le vide",

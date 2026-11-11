@@ -30,19 +30,22 @@
 
 ## 2. Cadre légal et crédits
 
-Le site doit afficher **clairement** qu'il est un projet de fan.
+Le site doit afficher **clairement** qu'il est un projet de fan. Les règles viennent du [fan kit officiel](https://robertsspaceindustries.com/fankit) (accord du 19/11/2025 et guide de style).
 
-- **Bandeau dans le pied de page, présent sur toutes les pages** :
-  « Projet de fan non officiel, sans lien avec Cloud Imperium Games. Star Citizen®, Origin Jumpworks et les visuels associés sont la propriété de Cloud Imperium Rights LLC. »
-- Le **logo « Made by the Community »** (fan kit officiel de CIG), conformément à ses conditions. _Pour l'instant, un badge texte en tient lieu : le fichier officiel est à récupérer manuellement dans le fan kit._
+- **Pied de page, sur toutes les pages (accueil compris)** :
+  - le **logo « Made by the Community »** du fan kit : version noire sur le thème clair, blanche sur le thème sombre, jamais recoloré ni déformé, opacité ≥ 50 % ;
+  - une phrase « site de fan non officiel » dans la langue de la page ;
+  - la **mention légale exigée par l'accord (article 2g), en anglais et mot pour mot**, en 14 px (≥ 10 pt) : « This site is not endorsed by or affiliated with the Cloud Imperium or Roberts Space Industries group of companies. All game content and materials are copyright Cloud Imperium Rights LLC and Cloud Imperium Rights Ltd.. Star Citizen®, Squadron 42®, Roberts Space Industries®, and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC. All rights reserved. »
+- **Usage strictement non commercial** (accord, article 2i).
+- **Déclarer l'URL du site à CIG** une fois en ligne (accord, article 2k) : courriel à legal_notices@cloudimperiumgames.com (étape 10).
 - Une **page `/credits`**, accessible depuis le pied de page, qui liste :
   - les textes issus de [starcitizen.tools](https://starcitizen.tools), sous licence **CC BY-SA 4.0**, avec un lien vers chaque page source ;
   - les données de prix issues d'[UEX Corp](https://uexcorp.space), avec la date du relevé ;
-  - les images : propriété de CIG, reprises du wiki, avec la page fichier en source ;
+  - les images : auteur et licence de chacune (vues studio en CC BY-SA, visuels officiels propriété de CIG) ;
   - les polices et bibliothèques open source utilisées ;
-  - l'auteur du projet, avec un lien vers le portfolio et GitHub.
-- Le logo officiel d'Origin n'est **pas reproduit tel quel**. On utilise un monogramme « O » réinterprété en traits fins.
-- Les textes repris ou adaptés du wiki restent sous **CC BY-SA 4.0**. Le reste du contenu original et le code sont publiés sous une licence choisie à part (MIT pour le code).
+  - l'auteur du projet, avec un lien vers son [portfolio](https://lilian-brossard.vercel.app/) et le dépôt GitHub.
+- Le logo officiel d'Origin n'est **pas reproduit** : on utilise un monogramme « O » réinterprété en traits fins. _(Le fan kit fournit pourtant les logos Origin officiels : option à rediscuter si besoin.)_
+- Les textes repris ou adaptés du wiki restent sous **CC BY-SA 4.0**. Le code est publié sous licence MIT.
 
 ---
 

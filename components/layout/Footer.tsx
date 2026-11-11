@@ -1,9 +1,10 @@
 import { getLocale, getTranslations } from "next-intl/server";
+import { CommunityLogo } from "@/components/ui/CommunityLogo";
 import { Monogram } from "@/components/ui/Monogram";
 import { TextLink } from "@/components/ui/TextLink";
 import { Link } from "@/i18n/navigation";
 import { getMeta } from "@/lib/data";
-import { AUTHOR, REPO_URL } from "@/lib/site";
+import { AUTHOR, CIG_LEGAL_NOTICE, REPO_URL } from "@/lib/site";
 import { LanguageSwitch, MotionToggle, ThemeSwitch } from "./Preferences";
 
 export async function Footer() {
@@ -74,7 +75,16 @@ export async function Footer() {
                 {t("sourceCode")}
               </TextLink>
             </li>
-            <li className="text-sm text-ink-muted">{t("author", { name: AUTHOR.name })}</li>
+            <li className="text-sm text-ink-muted">
+              {t.rich("author", {
+                name: AUTHOR.name,
+                link: (chunks) => (
+                  <TextLink href={AUTHOR.url} external className="text-sm">
+                    {chunks}
+                  </TextLink>
+                ),
+              })}
+            </li>
           </ul>
         </div>
       </div>
@@ -89,13 +99,14 @@ export async function Footer() {
         </div>
       </div>
 
-      {/* Avertissement : toujours visible */}
+      {/* Mentions du fan kit CIG : logo officiel + mention légale exacte (≥ 10 pt), sur toutes les pages */}
       <div className="border-t border-line">
-        <div className="container-page flex flex-col gap-4 py-8 md:flex-row md:items-center md:justify-between">
-          <p className="max-w-3xl text-xs leading-relaxed text-ink-muted">{t("disclaimer")}</p>
-          <p className="shrink-0 border border-line-strong px-3 py-1.5 font-mono text-[0.6875rem] tracking-[0.12em] text-ink-muted uppercase">
-            {t("madeByCommunity")}
-          </p>
+        <div className="container-page flex flex-col gap-6 py-8 sm:flex-row sm:items-center">
+          <CommunityLogo alt={t("madeByCommunity")} className="h-20 w-20" />
+          <div className="max-w-4xl space-y-2 text-sm leading-relaxed text-ink-muted">
+            <p>{t("disclaimer")}</p>
+            <p lang="en">{CIG_LEGAL_NOTICE}</p>
+          </div>
         </div>
       </div>
     </footer>

@@ -2,9 +2,11 @@
 
 Site vitrine **non officiel**, réalisé par un fan, consacré au constructeur Origin Jumpworks de l'univers _Star Citizen_. Projet de portfolio.
 
-> Star Citizen®, Origin Jumpworks et les visuels associés sont la propriété de Cloud Imperium Rights LLC. Ce projet n'a aucun lien avec Cloud Imperium Games.
+> This site is not endorsed by or affiliated with the Cloud Imperium or Roberts Space Industries group of companies. All game content and materials are copyright Cloud Imperium Rights LLC and Cloud Imperium Rights Ltd.. Star Citizen®, Squadron 42®, Roberts Space Industries®, and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC. All rights reserved.
 
 Le cahier des charges complet est dans [docs/CAHIER_DES_CHARGES.md](docs/CAHIER_DES_CHARGES.md).
+
+Réalisé par [Lilian Brossard](https://lilian-brossard.vercel.app/).
 
 ## Stack
 

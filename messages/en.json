@@ -30,14 +30,14 @@
   },
   "footer": {
     "tagline": "A fine-line tribute to the most elegant manufacturer in the persistent universe.",
-    "disclaimer": "Unofficial fan project, not affiliated with Cloud Imperium Games. Star Citizen®, Origin Jumpworks and related visuals are the property of Cloud Imperium Rights LLC.",
+    "disclaimer": "This is an unofficial Star Citizen Fan Site, made by a fan, not affiliated with Cloud Imperium Games.",
     "madeByCommunity": "Made by the Community",
     "explore": "Explore",
     "data": "Data",
     "dataLine": "Patch {version} · captured on {date}",
     "project": "Project",
     "sourceCode": "Source code on GitHub",
-    "author": "Made by {name}",
+    "author": "Made by <link>{name}</link>",
     "allCredits": "All credits and licences"
   },
   "home": {
@@ -78,7 +78,8 @@
       "api": "Game data © Cloud Imperium Games",
       "wiki": "Texts CC BY-SA 4.0 — images: see each credit",
       "uex": "In-game prices reported by the community"
-    }
+    },
+    "fankit": "The “Made by the Community” logo comes from the <link>official Star Citizen fan kit</link>, used in accordance with its agreement: non-commercial use, with provided assets left unaltered."
   },
   "notFound": {
     "title": "Lost in the void",
