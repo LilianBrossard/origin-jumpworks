@@ -16,7 +16,7 @@ export function Manifesto() {
       <h2 id="manifeste-titre" className="sr-only">
         {t("label")}
       </h2>
-      <Rule label={t("label")} ticks className="mb-16 md:mb-24" />
+      <Rule label={t("label")} ticks thread="left" className="mb-16 md:mb-24" />
       <div className="grid gap-12 md:grid-cols-12">
         <Reveal as="blockquote" className="md:col-span-9">
           <p className="font-display text-display-lg font-extralight text-balance text-ink">

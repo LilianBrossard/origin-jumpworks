@@ -133,6 +133,7 @@ export function Header() {
       <div
         id="menu-mobile"
         hidden={!open}
+        data-lenis-prevent=""
         className="h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain border-t border-line lg:hidden"
       >
         <nav aria-label={t("label")} className="container-page py-8">

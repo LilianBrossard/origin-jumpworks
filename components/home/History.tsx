@@ -9,7 +9,7 @@ export function History() {
   const t = useTranslations("home.history");
   return (
     <section aria-labelledby="histoire-titre" className="container-page py-24 md:py-40">
-      <SectionHeading id="histoire-titre" label={t("label")} title={t("title")} />
+      <SectionHeading id="histoire-titre" label={t("label")} title={t("title")} thread="right" />
       <ol className="relative md:ml-[calc(100%/12*2)]">
         {/* Le fil de la frise */}
         <span aria-hidden className="absolute top-2 bottom-2 left-[5px] w-px bg-line" />

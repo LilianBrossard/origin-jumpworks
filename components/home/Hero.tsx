@@ -15,7 +15,7 @@ export function Hero({ ship }: { ship: Ship }) {
     >
       <div className="container-page space-y-10 md:space-y-14">
         <div className="space-y-6">
-          <Eyebrow>{t("eyebrow")}</Eyebrow>
+          <Eyebrow data-thread="start">{t("eyebrow")}</Eyebrow>
           <Heading as="h1" id="accueil-titre" size="xl" className="leading-[0.95]">
             {t("title")}
           </Heading>

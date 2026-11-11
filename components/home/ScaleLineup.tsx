@@ -23,7 +23,13 @@ export function ScaleLineup({ ships }: { ships: Ship[] }) {
   return (
     <section aria-labelledby="echelle-titre" className="py-24 md:py-40">
       <div className="container-page">
-        <SectionHeading id="echelle-titre" label={t("label")} title={t("title")} lead={t("lead")} />
+        <SectionHeading
+          id="echelle-titre"
+          label={t("label")}
+          title={t("title")}
+          lead={t("lead")}
+          thread="left"
+        />
       </div>
 
       <Reveal>

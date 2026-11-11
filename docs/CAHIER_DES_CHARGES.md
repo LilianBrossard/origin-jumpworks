@@ -138,25 +138,25 @@ Ship {
 
 ## 4. Stack technique
 
-| Domaine                    | Choix                                                                                | Pourquoi                                                                         |
-| -------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| Framework                  | **Next.js (App Router) en export statique**                                          | Stack déjà maîtrisée. Pas de serveur : génération à l'avance de toutes les pages |
-| Langage                    | **TypeScript strict**                                                                |                                                                                  |
-| Gestionnaire de paquets    | **pnpm**                                                                             |                                                                                  |
-| Styles                     | **Tailwind CSS v4** et des variables CSS (tokens)                                    | Tokens de DA partagés entre le CSS et la 3D                                      |
-| 3D                         | **three.js + React Three Fiber + drei**                                              | Le fil d'or, le fond étoilé, les nuées                                           |
-| Effets                     | shaders GLSL sur mesure, `@react-three/postprocessing` (léger)                       |                                                                                  |
-| Animations liées au scroll | **GSAP + ScrollTrigger**                                                             | Pilote à la fois le DOM et la 3D                                                 |
-| Défilement fluide          | **Lenis**                                                                            | Désactivé si l'utilisateur limite les animations                                 |
-| Transitions de page        | **View Transitions API**, avec un repli simple                                       | Le saut quantique (M3)                                                           |
-| Langues                    | **next-intl** (`/fr`, `/en`)                                                         | Langue détectée au premier accès, puis mémorisée                                 |
-| Thème                      | **next-themes**                                                                      | Valeur par défaut = **celle du système**, sombre en repli                        |
-| Validation                 | **Zod**                                                                              | Données et script de collecte                                                    |
-| Qualité                    | ESLint, Prettier, `tsc --noEmit`                                                     |                                                                                  |
-| Tests                      | Vitest (outils et schémas), Playwright (parcours clés), **axe-core** (accessibilité) |                                                                                  |
-| Performance                | Lighthouse CI                                                                        | Budgets définis en section 9                                                     |
-| CI                         | GitHub Actions : lint, types, tests, build                                           |                                                                                  |
-| Hébergement                | **Vercel** (ou Cloudflare Pages)                                                     |                                                                                  |
+| Domaine                    | Choix                                                                                                                | Pourquoi                                                                         |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Framework                  | **Next.js (App Router) en export statique**                                                                          | Stack déjà maîtrisée. Pas de serveur : génération à l'avance de toutes les pages |
+| Langage                    | **TypeScript strict**                                                                                                |                                                                                  |
+| Gestionnaire de paquets    | **pnpm**                                                                                                             |                                                                                  |
+| Styles                     | **Tailwind CSS v4** et des variables CSS (tokens)                                                                    | Tokens de DA partagés entre le CSS et la 3D                                      |
+| 3D                         | **three.js + React Three Fiber + drei**                                                                              | Le fil d'or, le fond étoilé, les nuées                                           |
+| Effets                     | shaders GLSL sur mesure, `@react-three/postprocessing` (léger)                                                       |                                                                                  |
+| Animations liées au scroll | Lecture directe du défilement dans la boucle 3D ; **GSAP + ScrollTrigger** seulement si un besoin apparaît (étape 8) | Évite une dépendance tant qu'elle n'est pas utile                                |
+| Défilement fluide          | **Lenis**                                                                                                            | Désactivé si l'utilisateur limite les animations                                 |
+| Transitions de page        | **View Transitions API**, avec un repli simple                                                                       | Le saut quantique (M3)                                                           |
+| Langues                    | **next-intl** (`/fr`, `/en`)                                                                                         | Langue détectée au premier accès, puis mémorisée                                 |
+| Thème                      | **next-themes**                                                                                                      | Valeur par défaut = **celle du système**, sombre en repli                        |
+| Validation                 | **Zod**                                                                                                              | Données et script de collecte                                                    |
+| Qualité                    | ESLint, Prettier, `tsc --noEmit`                                                                                     |                                                                                  |
+| Tests                      | Vitest (outils et schémas), Playwright (parcours clés), **axe-core** (accessibilité)                                 |                                                                                  |
+| Performance                | Lighthouse CI                                                                                                        | Budgets définis en section 9                                                     |
+| CI                         | GitHub Actions : lint, types, tests, build                                                                           |                                                                                  |
+| Hébergement                | **Vercel** (ou Cloudflare Pages)                                                                                     |                                                                                  |
 
 ---
 
@@ -218,6 +218,14 @@ Valeurs de référence : [`styles/tokens.css`](../styles/tokens.css). **Tout tex
 | —      | **Fond étoilé**                    | Un champ d'étoiles très discret, avec une parallaxe lente. Il sert de décor commun à M1 et M2.                                                                                                                                                                                                                                          | Fond dégradé fixe                             |
 
 **Écartés** : passage du plan à la photo, cotes et compteurs animés.
+
+### Notes de réalisation (étape 6)
+
+- **Canvas unique** monté dans la mise en page, chargé après le contenu (`requestIdleCallback`) et dans un fichier séparé (≈ 250 Ko compressés) : il ne pèse pas sur le premier affichage.
+- **Une unité 3D = un pixel CSS** : la caméra suit le défilement, ce qui permet au fil de passer exactement par les repères de la page (`data-thread` sur les filets numérotés, l'ouverture et le monogramme de fin).
+- **Fil d'or** : sur grand écran, il ondule entre les filets, alternativement à gauche et à droite, et passe derrière le contenu ; **sur mobile**, il reste dans la marge gauche pour ne pas traverser les paragraphes. En bas de page, il redessine le monogramme (barre et cercle), qui est alors masqué en HTML.
+- **Nuées** : formations en V de 5 à 8 silhouettes, ou un M50 seul et rapide, toutes les 20 à 40 s ; elles suivent la caméra (elles appartiennent au ciel, pas à la page). Le **bonus cliquable** est reporté à l'étape 8.
+- **Défilement fluide** : Lenis, désactivé en animations réduites.
 
 ### Règles communes
 

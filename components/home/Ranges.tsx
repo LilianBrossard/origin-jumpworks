@@ -23,7 +23,7 @@ export function Ranges({ ships }: { ships: Ship[] }) {
 
   return (
     <section aria-labelledby="gammes-titre" className="container-page py-24 md:py-40">
-      <SectionHeading id="gammes-titre" label={t("label")} title={t("title")} />
+      <SectionHeading id="gammes-titre" label={t("label")} title={t("title")} thread="left" />
 
       <div className="space-y-24 md:space-y-36">
         {RANGES.map((range, i) => {

@@ -47,7 +47,13 @@ export function Acquire({
 
   return (
     <section aria-labelledby="acquerir-titre" className="container-page py-24 md:py-40">
-      <SectionHeading id="acquerir-titre" label={t("label")} title={t("title")} lead={t("lead")} />
+      <SectionHeading
+        id="acquerir-titre"
+        label={t("label")}
+        title={t("title")}
+        lead={t("lead")}
+        thread="right"
+      />
       <Reveal>
         <AcquireMap dealerships={dealerships} />
       </Reveal>

@@ -13,7 +13,9 @@ export function Outro() {
       className="container-page flex flex-col items-center gap-8 py-32 text-center md:py-48"
     >
       <Reveal className="flex flex-col items-center gap-8">
-        <Monogram className="h-20 w-20" />
+        <span data-thread="end" className="block">
+          <Monogram className="h-20 w-20 transition-opacity duration-(--duration-slow)" />
+        </span>
         <Heading id="fin-titre" size="lg">
           {t("title")}
         </Heading>

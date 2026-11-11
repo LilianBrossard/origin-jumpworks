@@ -15,6 +15,17 @@ const eslintConfig = defineConfig([
       ],
     },
   },
+  {
+    // Scène 3D : three.js fonctionne par mutation d'objets (positions, uniforms, matériaux)
+    // à chaque image, et le décor est tiré au hasard une seule fois, côté navigateur
+    // (composants montés sans rendu serveur). Ces deux règles du compilateur React
+    // ne s'appliquent donc pas à ce dossier.
+    files: ["components/three/**"],
+    rules: {
+      "react-hooks/immutability": "off",
+      "react-hooks/purity": "off",
+    },
+  },
   // Désactive les règles de style qui entreraient en conflit avec Prettier.
   prettier,
   globalIgnores([".next/**", "out/**", "build/**", ".cache/**", "next-env.d.ts"]),

@@ -17,7 +17,7 @@ export function Flagship({ ship }: { ship: Ship }) {
   return (
     <section aria-labelledby="amiral-titre" className="py-24 md:py-40">
       <div className="container-page">
-        <Rule label={t("label")} ticks className="mb-10" />
+        <Rule label={t("label")} ticks thread="right" className="mb-10" />
       </div>
       <Reveal className="container-page">
         <Frame ticks>

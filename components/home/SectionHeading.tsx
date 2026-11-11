@@ -9,9 +9,12 @@ export function SectionHeading({
   label,
   title,
   lead,
+  thread,
   children,
 }: {
   id: string;
+  /** Côté par lequel passe le fil d'or */
+  thread?: "left" | "right";
   label: string;
   title: string;
   lead?: string;
@@ -19,7 +22,7 @@ export function SectionHeading({
 }) {
   return (
     <div className="mb-14 md:mb-20">
-      <Rule label={label} ticks className="mb-10" />
+      <Rule label={label} ticks thread={thread} className="mb-10" />
       <Reveal className="grid gap-6 md:grid-cols-12">
         <Heading id={id} size="lg" className="md:col-span-6">
           {title}

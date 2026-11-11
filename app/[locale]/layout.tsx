@@ -5,6 +5,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PreferencesSync } from "@/components/layout/PreferencesSync";
+import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { SceneLoader } from "@/components/three/SceneLoader";
 import { routing } from "@/i18n/routing";
 import { fontVariables } from "@/lib/fonts";
 import { PREFERENCES_SCRIPT } from "@/lib/preferences";
@@ -40,6 +42,8 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
           <PreferencesSync />
+          <SmoothScroll />
+          <SceneLoader />
           <a
             href="#contenu"
             className="fixed top-3 left-3 z-[60] -translate-y-20 bg-accent px-4 py-2 text-xs font-medium tracking-wide-2 text-bg uppercase transition-transform focus:translate-y-0"
@@ -47,7 +51,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             {t("skipToContent")}
           </a>
           <Header />
-          <main id="contenu" tabIndex={-1} className="flex flex-1 flex-col outline-none">
+          <main
+            id="contenu"
+            tabIndex={-1}
+            className="relative z-[1] flex flex-1 flex-col outline-none"
+          >
             {children}
           </main>
           <Footer />

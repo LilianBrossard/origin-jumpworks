@@ -21,7 +21,7 @@ export async function Footer() {
   const linkClass = "link-line text-sm text-ink-muted hover:text-ink";
 
   return (
-    <footer className="mt-auto border-t border-line">
+    <footer className="relative z-[1] mt-auto border-t border-line">
       <div className="container-page grid gap-12 py-16 md:grid-cols-12">
         <div className="space-y-5 md:col-span-4">
           <Monogram className="h-10 w-10" />
