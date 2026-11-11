@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Couleurs provisoires, remplacées par les tokens de la DA à l'étape 3. */
+:root {
+  --bg: #f5f2ec;
+  --ink: #14171c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0d12;
+    --ink: #ece7dd;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-ink: var(--ink);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
