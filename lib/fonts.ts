@@ -1,7 +1,7 @@
-import { Inter, JetBrains_Mono, Jost } from "next/font/google";
+import { Inter, JetBrains_Mono, Outfit } from "next/font/google";
 
 /** Titres : géométrique, utilisée en graisses fines (200–300). */
-export const fontDisplay = Jost({
+export const fontDisplay = Outfit({
   subsets: ["latin"],
   weight: ["200", "300", "400"],
   variable: "--ff-display",

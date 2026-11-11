@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
-import { Inter_Tight, Outfit } from "next/font/google";
+import { Inter_Tight, Jost } from "next/font/google";
 import type { ReactNode } from "react";
 import { ArrowRight, Button } from "@/components/ui/Button";
 import { Frame } from "@/components/ui/Frame";
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 // Polices candidates pour les titres, chargées uniquement sur cette page.
-const outfit = Outfit({ subsets: ["latin"], weight: ["200", "300"] });
+const jost = Jost({ subsets: ["latin"], weight: ["200", "300"] });
 const interTight = Inter_Tight({ subsets: ["latin"], weight: ["200", "300"] });
 
 const themes = parseThemeTokens(
@@ -195,15 +195,15 @@ export default function DesignPage() {
       >
         <div className="space-y-12">
           <div className="space-y-6">
-            <Annotation>display-xl · Jost 200</Annotation>
+            <Annotation>display-xl · Outfit 200</Annotation>
             <Heading as="p" size="xl">
               890 Jump
             </Heading>
-            <Annotation>display-lg · Jost 200</Annotation>
+            <Annotation>display-lg · Outfit 200</Annotation>
             <Heading as="p" size="lg">
               Ownership as a lifestyle
             </Heading>
-            <Annotation>display-md · Jost 300</Annotation>
+            <Annotation>display-md · Outfit 300</Annotation>
             <Heading as="p" size="md">
               Fondée en 2747, installée à New Austin depuis 2913
             </Heading>
@@ -223,8 +223,16 @@ export default function DesignPage() {
             <Eyebrow className="mb-8">Choix de la police de titre</Eyebrow>
             <ul className="space-y-8">
               {[
-                { name: "Jost", className: fontDisplay.className, note: "Retenue par défaut" },
-                { name: "Outfit", className: outfit.className, note: "Plus ronde, plus douce" },
+                {
+                  name: "Outfit",
+                  className: fontDisplay.className,
+                  note: "Retenue : plus ronde, plus douce",
+                },
+                {
+                  name: "Jost",
+                  className: jost.className,
+                  note: "Choix initial : plus géométrique",
+                },
                 {
                   name: "Inter Tight",
                   className: interTight.className,

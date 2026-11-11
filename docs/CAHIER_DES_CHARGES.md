@@ -181,7 +181,7 @@ Valeurs de référence : [`styles/tokens.css`](../styles/tokens.css). **Tout tex
 
 ### 5.3 Typographie
 
-- **Titres** : police sans empattement géométrique en très fine graisse (200 à 300), lettres espacées (`0.08em` à `0.2em`), souvent en capitales pour les sur-titres. Candidates : **Jost**, Outfit, Inter Tight. Le choix final se fera sur maquette.
+- **Titres** : police sans empattement géométrique en très fine graisse (200 à 300), lettres espacées (`0.08em` à `0.2em`), souvent en capitales pour les sur-titres. Police retenue : **Outfit** (Jost et Inter Tight ont été comparées sur `/design`).
 - **Texte courant** : la même famille ou une police humaniste, en graisse 400, 16 à 18 px, interlignage de 1.6.
 - **Données techniques** : une police à chasse fixe fine (par exemple _JetBrains Mono_ 300) pour les codes de type `ORIG-890`.
 - Polices hébergées sur le site (`next/font`), avec `font-display: swap` et seulement les caractères nécessaires.
@@ -360,7 +360,7 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 
 ## 12. Points ouverts (à trancher pendant les étapes concernées)
 
-- Choix final de la police de titre : Jost par défaut. Comparaison avec Outfit et Inter Tight sur la page `/design`.
+- ~~Choix final de la police de titre~~ : **Outfit** retenue à l'étape 3 (comparaison avec Jost et Inter Tight sur la page `/design`).
 - Vaisseau mis en avant dans l'ouverture : 890 Jump ou rotation aléatoire (étape 5).
 - Génération des cartes de profondeur : automatique ou à la main pour les images clés (étape 7).
 - Nom de domaine éventuel (étape 10).
