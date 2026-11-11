@@ -81,7 +81,14 @@ export function Flock({ colors }: { colors: ThemeColors }) {
 
   useEffect(() => {
     material.color.set(colors.ink);
-    material.opacity = colors.dark ? 0.42 : 0.22;
+    // Thème clair : silhouettes plus soutenues pour rester lisibles sur l'ivoire
+    material.opacity = colors.dark ? 0.42 : 0.6;
+    // Les vaisseaux déjà en vol changent aussi de teinte
+    for (const b of flight.current?.birds ?? []) {
+      const m = b.mesh.material as MeshBasicMaterial;
+      m.color.copy(material.color);
+      m.opacity = material.opacity;
+    }
   }, [colors, material]);
 
   useEffect(
