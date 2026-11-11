@@ -1,0 +1,340 @@
+# Origin Jumpworks — Cahier des charges
+
+> Site vitrine non officiel, réalisé par un fan, consacré au constructeur **Origin Jumpworks** de l'univers *Star Citizen*.
+> Projet de portfolio : montrer ce qu'un site moderne peut offrir en matière d'expérience, de mouvement et de finition.
+
+- **Dépôt** : https://github.com/LilianBrossard/origin-jumpworks
+- **Version du document** : 1.0 — 2026-11-11
+- **Statut** : validé, en attente du démarrage du code
+
+---
+
+## 1. Objectifs
+
+| # | Objectif | Comment on le mesure |
+|---|---|---|
+| O1 | Un site **très agréable** à visiter, à parcourir et à contempler | Mouvement fluide (60 fps sur une machine moyenne), aucune animation agressive |
+| O2 | Marquer une **évolution** par rapport au premier site (Anvil) | 3D liée au défilement, transitions entre pages, DA soignée |
+| O3 | Une vitrine **portfolio** qui démontre des savoir-faire | Code propre, typé, documenté. Accessibilité et performance mesurées |
+| O4 | Des **données fiables** sur la flotte jouable | Données issues du wiki et d'UEX, avec date et patch affichés |
+| O5 | **Accessible et inclusif** | WCAG 2.2 AA. Expérience complète sans animation et sans WebGL |
+
+### Hors périmètre
+- Vaisseaux à l'état de concept (non jouables)
+- Comptes utilisateurs, panier, contenu dynamique côté serveur
+- Prix mis à jour en temps réel
+- Toute utilisation commerciale
+
+---
+
+## 2. Cadre légal et crédits
+
+Le site doit afficher **clairement** qu'il est un projet de fan.
+
+- **Bandeau dans le pied de page, présent sur toutes les pages** :
+  « Projet de fan non officiel, sans lien avec Cloud Imperium Games. Star Citizen®, Origin Jumpworks et les visuels associés sont la propriété de Cloud Imperium Rights LLC. »
+- Le **logo « Made by the Community »** (fan kit officiel de CIG), conformément à ses conditions.
+- Une **page `/credits`**, accessible depuis le pied de page, qui liste :
+  - les textes issus de [starcitizen.tools](https://starcitizen.tools), sous licence **CC BY-SA 4.0**, avec un lien vers chaque page source ;
+  - les données de prix issues d'[UEX Corp](https://uexcorp.space), avec la date du relevé ;
+  - les images : propriété de CIG, reprises du wiki, avec la page fichier en source ;
+  - les polices et bibliothèques open source utilisées ;
+  - l'auteur du projet, avec un lien vers le portfolio et GitHub.
+- Le logo officiel d'Origin n'est **pas reproduit tel quel**. On utilise un monogramme « O » réinterprété en traits fins.
+- Les textes repris ou adaptés du wiki restent sous **CC BY-SA 4.0**. Le reste du contenu original et le code sont publiés sous une licence choisie à part (MIT pour le code).
+
+---
+
+## 3. Données
+
+### 3.1 Sources
+
+| Donnée | Source | Moyen d'accès |
+|---|---|---|
+| Liste des vaisseaux jouables d'Origin | starcitizen.tools | API MediaWiki (`api.php`) : catégorie ou requête par fabricant, puis filtre sur le statut « flight ready » |
+| Fiche technique (taille, équipage, cargo, vitesses, dimensions, masse, rôle, coloris) | starcitizen.tools | `action=parse`, puis lecture de l'infobox et des modules Lua (ou de la page brute) |
+| Description, historique, lore | starcitizen.tools | idem (texte en anglais) |
+| Images (photos officielles, rendus en vol, au sol) | starcitizen.tools | `action=query&prop=imageinfo`, puis téléchargement de l'original |
+| Prix en jeu et lieux d'achat ou de location | **UEX Corp API 2.0** | Jeton de type Bearer (gratuit), endpoints vehicles et terminals avec leurs prix |
+| Prix de précommande (USD) | starcitizen.tools | infobox |
+| Histoire de la marque (fondation en 2747, Cologne → New Austin en 2913, PDG Jennifer Friskers…) | starcitizen.tools | page `Origin_Jumpworks` |
+
+> ⚠️ La liste en tête de la page `Origin_Jumpworks` est incomplète (elle cite seulement 300i, 315p, 325a, 350r, M50 et 890 Jump). Le script doit lister les vaisseaux **par fabricant** et non à partir des liens de cette page.
+
+### 3.2 Script de collecte — `scripts/harvest.ts`
+
+- Lancé **à la main uniquement** : `pnpm harvest`. Il ne tourne jamais pendant le build ni sur le site en ligne.
+- Options :
+  - `--only=wiki|uex|images` : n'actualiser qu'une seule source ;
+  - `--ship=<slug>` : ne traiter qu'un vaisseau ;
+  - `--dry-run` : n'écrire aucun fichier.
+- Comportement :
+  1. Il récupère la liste des vaisseaux jouables d'Origin.
+  2. Pour chacun, il lit la fiche et la normalise en JSON validé par **Zod**. Le script s'arrête si un champ obligatoire manque.
+  3. Il télécharge les images originales. Il les convertit (avec `sharp`) en **AVIF et WebP** dans plusieurs largeurs, génère un **aperçu flou** (blurhash ou LQIP) et calcule une **carte de profondeur** pour l'effet de parallaxe (voir M4). Les cartes de profondeur sont générées dans un second temps, avec un modèle de type *Depth Anything*, ou faites à la main pour les images clés.
+  4. Il interroge UEX et enregistre, pour chaque vaisseau, les lieux d'achat et de location avec leurs prix en aUEC.
+  5. Il écrit un fichier `data/meta.json` qui contient la date du relevé, le patch du jeu et la version du script.
+- Les requêtes sont limitées (≤ 1 par seconde vers le wiki), avec un *User-Agent* générique, un cache local (`.cache/`, ignoré par git) et la reprise après erreur.
+- Le jeton UEX est lu depuis `.env.local` (`UEX_API_TOKEN`) et n'est jamais commité.
+
+### 3.3 Arborescence des données
+
+```
+data/
+  meta.json                # date du relevé, patch, sources
+  brand.json               # histoire, chronologie, philosophie
+  ships/
+    890-jump.json
+    m50.json
+    ...
+  ranges.json              # regroupement par gamme
+  locations.json           # concessions (système, planète, ville, terminal)
+public/ships/<slug>/
+  hero.{avif,webp}         # plusieurs tailles
+  gallery-01.{avif,webp}
+  depth-hero.png           # carte de profondeur (si disponible)
+  silhouette.svg           # profil de côté pour le comparateur d'échelle
+```
+
+### 3.4 Modèle d'un vaisseau (simplifié)
+
+```ts
+Ship {
+  slug, name, series, range: 'personal'|'touring'|'racing'|'ground'|'prestige'
+  role: string[]; size: 'snub'|'S1'..'S6'|'vehicle'
+  crew: { min, max }; cargoSCU; dimensions: { length, beam, height }; massKg
+  speed: { scm, max, quantum? }
+  pledgeUSD?: number
+  ingame: { buy?: Offer[]; rent?: Offer[] }   // Offer = { location, terminal, priceAUEC }
+  paints: string[]
+  description: { en: string; fr?: string }
+  images: { hero, gallery[], depth?, silhouette? }
+  source: { wikiUrl, revisionId, fetchedAt }
+}
+```
+
+### 3.5 Traduction du contenu
+- Les textes du wiki sont en anglais. La version française est **rédigée ou traduite une seule fois**, puis relue, et stockée dans `description.fr`.
+- L'interface du site est entièrement traduite (fichiers `messages/fr.json` et `messages/en.json`).
+
+---
+
+## 4. Stack technique
+
+| Domaine | Choix | Pourquoi |
+|---|---|---|
+| Framework | **Next.js (App Router) en export statique** | Stack déjà maîtrisée. Pas de serveur : génération à l'avance de toutes les pages |
+| Langage | **TypeScript strict** | |
+| Gestionnaire de paquets | **pnpm** | |
+| Styles | **Tailwind CSS v4** et des variables CSS (tokens) | Tokens de DA partagés entre le CSS et la 3D |
+| 3D | **three.js + React Three Fiber + drei** | Le fil d'or, le fond étoilé, les nuées |
+| Effets | shaders GLSL sur mesure, `@react-three/postprocessing` (léger) | |
+| Animations liées au scroll | **GSAP + ScrollTrigger** | Pilote à la fois le DOM et la 3D |
+| Défilement fluide | **Lenis** | Désactivé si l'utilisateur limite les animations |
+| Transitions de page | **View Transitions API**, avec un repli simple | Le saut quantique (M3) |
+| Langues | **next-intl** (`/fr`, `/en`) | Langue détectée au premier accès, puis mémorisée |
+| Thème | **next-themes** | Valeur par défaut = **celle du système**, sombre en repli |
+| Validation | **Zod** | Données et script de collecte |
+| Qualité | ESLint, Prettier, `tsc --noEmit` | |
+| Tests | Vitest (outils et schémas), Playwright (parcours clés), **axe-core** (accessibilité) | |
+| Performance | Lighthouse CI | Budgets définis en section 9 |
+| CI | GitHub Actions : lint, types, tests, build | |
+| Hébergement | **Vercel** (ou Cloudflare Pages) | |
+
+---
+
+## 5. Direction artistique
+
+### 5.1 Principe : « Le trait d'abord »
+L'écriture d'Origin repose sur des **lignes très fines, sobres, élégantes**. Le site se lit comme le catalogue d'un constructeur de luxe : beaucoup de vide, peu d'éléments, chaque détail soigné. **Calme, lent, luxueux.** Pas de chiffres qui défilent, pas d'effet agressif.
+
+### 5.2 Thèmes
+
+| Token | Sombre — « Nuit sur New Austin » | Clair — « Galerie » |
+|---|---|---|
+| `--bg` | `#0A0D12` bleu nuit presque noir | `#F5F2EC` ivoire |
+| `--surface` | `#11161E` | `#FBF9F5` |
+| `--ink` (texte) | `#ECE7DD` blanc cassé | `#14171C` encre |
+| `--ink-muted` | `#9AA0A8` | `#5B6068` |
+| `--line` (traits décoratifs) | `rgba(236,231,221,.18)` | `rgba(20,23,28,.16)` |
+| `--accent` (champagne / or) | `#C9B37E` | `#8A7340` (plus foncé pour garder le contraste AA) |
+| `--accent-glow` | `#E6D3A3` | `#B49A5E` |
+
+Les valeurs sont indicatives et seront ajustées lors des maquettes. **Tout texte doit atteindre un contraste ≥ 4.5:1.**
+
+- **Thème par défaut** : celui du système (`prefers-color-scheme`), sombre en repli. Le choix de l'utilisateur est mémorisé.
+
+### 5.3 Typographie
+- **Titres** : police sans empattement géométrique en très fine graisse (200 à 300), lettres espacées (`0.08em` à `0.2em`), souvent en capitales pour les sur-titres. Candidates : **Jost**, Outfit, Inter Tight. Le choix final se fera sur maquette.
+- **Texte courant** : la même famille ou une police humaniste, en graisse 400, 16 à 18 px, interlignage de 1.6.
+- **Données techniques** : une police à chasse fixe fine (par exemple *JetBrains Mono* 300) pour les codes de type `ORIG-890`.
+- Polices hébergées sur le site (`next/font`), avec `font-display: swap` et seulement les caractères nécessaires.
+
+### 5.4 Grammaire graphique
+- Des filets de **1 px** et des traits SVG d'épaisseur constante, quel que soit le zoom.
+- Des coins coupés à 45° sur les cadres et les boutons.
+- Des annotations discrètes façon plan technique (code vaisseau, échelle). Elles sont **fixes**, jamais animées en chiffres.
+- Un monogramme « O » réinterprété : un cercle fin et un trait horizontal.
+- Une grille éditoriale de 12 colonnes, avec des marges généreuses.
+
+### 5.5 Mouvement
+- Amortis longs (`cubic-bezier(.22,1,.36,1)`), durées de 600 à 1200 ms.
+- Apparitions par **fondu et léger glissement**, jamais par rebond.
+- Une seule chose bouge fortement à la fois.
+
+---
+
+## 6. Mécaniques visuelles retenues
+
+| # | Mécanique | Description | Repli (animations réduites ou pas de WebGL) |
+|---|---|---|---|
+| **M1** | **Le fil d'or** | Une ligne 3D unique, très fine et légèrement lumineuse, qui **descend avec le défilement** sur toute la page d'accueil. Elle se dessine progressivement, serpente entre les sections, entoure les titres et passe derrière les vaisseaux en jouant sur la profondeur. En bas de page, elle se referme en dessinant le monogramme « O ». | Un trait SVG fixe dans la marge, déjà dessiné |
+| **M2** | **Les nuées de vaisseaux** | De petites silhouettes de vaisseaux passent **rarement** au loin, en essaim, comme des oiseaux (toutes les 20 à 40 s). Parfois, un M50 seul traverse plus vite. **Bonus caché** : on peut cliquer sur un vaisseau de la nuée pour ouvrir sa fiche. | Désactivé |
+| **M3** | **Le saut quantique** | En transition entre deux pages, les étoiles s'étirent en traînées, un léger flash champagne apparaît, puis tout se stabilise (~600 ms). | Simple fondu enchaîné |
+| **M4** | **Profondeur sur les photos** | Les photos de vaisseaux (héros, vaisseau phare) prennent du relief grâce à une **carte de profondeur** et bougent très légèrement avec la souris ou le gyroscope. | Image fixe |
+| **M5** | **Lever de soleil sur New Austin** | Le passage clair/sombre joue un **lever ou un coucher de soleil** sur une ligne d'horizon en traits fins, puis les couleurs s'enchaînent (~1 s). | Changement de thème immédiat |
+| **M6** | **Lampe de showroom** | Dans les galeries, le curseur projette un **reflet doux** sur la carrosserie, comme l'éclairage d'un hall d'exposition. | Désactivé |
+| — | **Fond étoilé** | Un champ d'étoiles très discret, avec une parallaxe lente. Il sert de décor commun à M1 et M2. | Fond dégradé fixe |
+
+**Écartés** : passage du plan à la photo, cotes et compteurs animés.
+
+### Règles communes
+- Un seul **canvas WebGL**, partagé et fixé en arrière-plan, au lieu d'un canvas par section.
+- La 3D est chargée **après** le contenu, de façon différée, et **mise en pause** quand l'onglet est caché.
+- La qualité s'adapte à l'appareil (densité de pixels, nombre de vaisseaux dans les nuées) selon ses performances.
+- Le canvas est marqué `aria-hidden="true"`. Aucune information n'est portée **uniquement** par la 3D.
+
+---
+
+## 7. Structure et pages
+
+### 7.1 Plan du site
+
+```
+/[locale]                     Accueil (longue page)
+/[locale]/fleet               La flotte
+/[locale]/fleet/[slug]        Fiche vaisseau
+/[locale]/compare             Comparateur (2 à 3 vaisseaux)
+/[locale]/credits             Crédits et mentions légales
+/[locale]/404                 Page « Perdu dans le vide »
+```
+`locale` ∈ { `fr`, `en` }. La langue est détectée au premier accès, le choix est mémorisé, et les balises `hreflang` sont présentes.
+
+### 7.2 Accueil : la descente
+1. **Ouverture**. La nuit. Le fil (M1) apparaît et trace le monogramme, puis un vaisseau phare se révèle avec de la profondeur (M4). Titre : *Origin Jumpworks*. Sous-titre court. Une invitation discrète à faire défiler.
+2. **Manifeste**. « Ownership as a lifestyle » : 2 ou 3 phrases, beaucoup de vide.
+3. **Histoire**. Une frise que le fil traverse : 2747 (fondation, moteurs à fusion), 2899 (premières gammes 200 et 300), 2913 (installation à New Austin, Terra).
+4. **Les gammes**. Personnel, Touring, Course, Terrestre, Prestige. Une composition éditoriale par gamme, avec des liens vers les fiches.
+5. **Vaisseau phare : 890 Jump**. Plein écran, profondeur (M4), quelques caractéristiques clés en texte **fixe**.
+6. **Échelle**. Toutes les silhouettes alignées à la même échelle, du plus petit au 890 Jump. Défilement horizontal piloté par le scroll, ou glisser sur mobile.
+7. **Où les acquérir**. Une carte stylisée de Stanton en traits fins, avec les concessions marquées. Au survol ou au focus, on voit les vaisseaux disponibles et leur prix en aUEC. Mention « Prix relevés le JJ/MM/AAAA, patch X.Y ».
+8. **Pied de page**. Le fil se referme. Crédits bien visibles, sélecteurs de langue et de thème, lien vers le dépôt GitHub.
+
+Les nuées (M2) peuvent apparaître sur toute la page, sauf pendant l'ouverture.
+
+### 7.3 La flotte (`/fleet`)
+- Une grille de cartes : photo, nom, rôle, taille.
+- Filtres par gamme, rôle, taille et équipage, avec un tri. **L'état des filtres est conservé dans l'URL.**
+- Navigation complète au clavier. Le nombre de résultats est annoncé aux lecteurs d'écran (`aria-live`).
+
+### 7.4 Fiche vaisseau (`/fleet/[slug]`)
+- Image principale avec profondeur (M4), nom et série.
+- Description en FR ou EN.
+- **Fiche technique** sous forme de tableau sémantique (dimensions, masse, équipage, cargo, vitesses).
+- **Galerie** avec la lampe de showroom (M6) et une visionneuse plein écran accessible (focus piégé, touche Échap, flèches).
+- **Acquisition** : prix de précommande (USD), lieux d'achat ou de location en jeu avec leurs prix, date et patch du relevé.
+- Coloris disponibles.
+- Navigation vers le vaisseau précédent ou suivant, et lien « Comparer ».
+- Source wiki et crédits de la page.
+
+### 7.5 Comparateur (`/compare?ships=a,b,c`)
+- 2 ou 3 vaisseaux en colonnes. Silhouettes superposées à la même échelle. Caractéristiques alignées, avec la meilleure valeur légèrement mise en avant (sans animation de chiffres).
+
+### 7.6 Éléments présents partout
+- **En-tête** : monogramme, liens Flotte, Comparer, Crédits, sélecteurs de langue et de thème. Il se fait discret en descendant et réapparaît en remontant.
+- Un lien d'évitement « Aller au contenu ».
+- Une **option « Réduire les animations »** dans le site, en plus du réglage système.
+
+---
+
+## 8. Accessibilité (WCAG 2.2 AA)
+
+- HTML sémantique, titres hiérarchisés, zones de page identifiées (landmarks).
+- Contraste AA pour tout texte et toute icône utile. Les traits purement décoratifs en sont exemptés.
+- Navigation clavier complète, focus visible (un anneau champagne de 2 px), pas de piège au clavier.
+- `prefers-reduced-motion` et l'option interne désactivent Lenis, le fil animé, les nuées, la profondeur et la lampe. On garde des fondus simples.
+- Aucun contenu porté uniquement par la 3D, la couleur ou le survol.
+- Textes alternatifs pour toutes les images de contenu. Les images décoratives ont un `alt=""`.
+- Attribut `lang` correct, y compris sur les passages dans l'autre langue.
+- Zones cliquables d'au moins 24×24 px.
+- Lisible jusqu'à 200 % de zoom et sur un écran de 320 px de large, sans défilement horizontal de la page.
+- Tests automatisés avec axe-core sur chaque page, plus un test manuel au lecteur d'écran (NVDA) sur les parcours clés.
+
+---
+
+## 9. Performance et SEO
+
+| Indicateur | Objectif |
+|---|---|
+| LCP (affichage du contenu principal) | < 2.5 s (4G, mobile moyen) |
+| CLS (décalages de mise en page) | < 0.05 |
+| INP (réactivité aux interactions) | < 200 ms |
+| JavaScript initial (hors 3D) | < 150 Ko compressé |
+| Scores Lighthouse (Performance, Accessibilité, Bonnes pratiques, SEO) | ≥ 90 / 100 / 100 / 100 |
+
+- 3D chargée de façon différée, images responsives en AVIF ou WebP avec aperçu flou, polices limitées aux caractères utiles.
+- SEO : métadonnées par page et par langue, images Open Graph générées, `sitemap.xml`, `robots.txt`, données structurées (`Product` sans prix réel, `BreadcrumbList`).
+
+---
+
+## 10. Organisation du code (prévisionnelle)
+
+```
+origin-jumpworks/
+  app/[locale]/...            pages
+  components/
+    ui/                       boutons, cadres, filets, sélecteurs
+    sections/                 sections de l'accueil
+    three/                    Scene, GoldenThread, Starfield, Flock, DepthImage, QuantumJump
+  lib/                        data loaders, i18n, motion (préférences d'animation), utils
+  data/                       JSON générés par le script (commités)
+  messages/                   fr.json, en.json
+  public/ships/...            images optimisées
+  scripts/harvest.ts          collecte des données
+  docs/                       cahier des charges, notes de conception
+  tests/                      unit, e2e, a11y
+```
+
+---
+
+## 11. Étapes de réalisation
+
+Chaque étape se termine par une revue ensemble avant de passer à la suivante.
+
+| # | Étape | Livrables | Critère de fin |
+|---|---|---|---|
+| **0** | Cadrage | Ce document, dépôt git initialisé | Cahier des charges validé |
+| **1** | Socle du projet | Next.js, TypeScript, Tailwind v4, ESLint, Prettier, pnpm, CI GitHub Actions | `pnpm build` passe en CI |
+| **2** | Collecte des données | `scripts/harvest.ts`, schémas Zod, `data/*.json`, images optimisées, `meta.json` | Tous les vaisseaux jouables d'Origin collectés et validés |
+| **3** | Fondations de la DA | Tokens clair et sombre, polices, grille, composants de base, thème système par défaut | Page de démonstration des composants dans les deux thèmes, contrastes AA vérifiés |
+| **4** | Langues et navigation | next-intl, en-tête, pied de page avec crédits, lien d'évitement, option « Réduire les animations » | Bascule FR/EN et thème fonctionnelles, accessibles au clavier |
+| **5** | Accueil sans 3D | Les 8 sections, contenu réel, apparitions simples | Page complète et lisible sans JavaScript lourd |
+| **6** | Couche 3D | Canvas partagé, fond étoilé, **M1 le fil d'or**, **M2 les nuées** | 60 fps sur une machine moyenne, replis vérifiés |
+| **7** | Pages flotte | `/fleet`, `/fleet/[slug]`, `/compare`, galerie, **M4 profondeur**, **M6 lampe** | Toutes les fiches générées, visionneuse accessible |
+| **8** | Transitions et finitions | **M3 saut quantique**, **M5 lever de soleil**, page 404, bonus cachés | Transitions fluides, repli sans View Transitions |
+| **9** | Qualité | Tests Vitest, Playwright et axe, audit Lighthouse, test au lecteur d'écran | Budgets de la section 9 atteints |
+| **10** | Mise en ligne | Déploiement, domaine éventuel, README de portfolio (captures, choix techniques) | Site public, lien ajouté au portfolio |
+
+### Actualiser les données plus tard
+1. `pnpm harvest` (ou `pnpm harvest --only=uex` pour les prix seulement)
+2. Relire le diff des fichiers `data/`
+3. Commiter, ce qui redéploie le site
+
+---
+
+## 12. Points ouverts (à trancher pendant les étapes concernées)
+
+- Choix final de la police de titre (étape 3, sur maquette).
+- Vaisseau mis en avant dans l'ouverture : 890 Jump ou rotation aléatoire (étape 5).
+- Génération des cartes de profondeur : automatique ou à la main pour les images clés (étape 7).
+- Nom de domaine éventuel (étape 10).
