@@ -133,6 +133,11 @@
         "sourceUrl": "https://starcitizen.tools/File:890_Jump_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/890-jump/silhouette.png",
+      "width": 3613,
+      "height": 675
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -396,6 +401,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/50ddaf5e-a8e3-42fe-a1d3-7267f39b39b0",
     "wikiPage": "890 Jump",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:41.669Z"
+    "fetchedAt": "2026-11-11T17:59:51.231Z"
   }
 }

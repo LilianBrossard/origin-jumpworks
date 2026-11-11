@@ -60,7 +60,7 @@ Le site doit afficher **clairement** qu'il est un projet de fan. Les règles vie
 | Description officielle, prix de précommande, dates, brochure, bande-annonce                     | API du Star Citizen Wiki (champ `curated_data`, synchronisé depuis starcitizen.tools) | idem                                                                                                |
 | Prix en jeu et lieux d'achat ou de location                                                     | Données **UEX Corp**, incluses dans l'API (champ `uex_prices`)                        | idem, **sans jeton**                                                                                |
 | Images, auteurs et licences                                                                     | starcitizen.tools                                                                     | API MediaWiki : `action=parse&prop=images`, puis `action=query&prop=imageinfo` (avec `extmetadata`) |
-| Histoire de la marque (fondation en 2747, Cologne → New Austin en 2913, PDG Jennifer Friskers…) | starcitizen.tools                                                                     | page `Origin_Jumpworks`, rédigée à la main dans `data/brand.json` (étape 5)                         |
+| Histoire de la marque (fondation en 2747, Cologne → New Austin en 2913, PDG Jennifer Friskers…) | starcitizen.tools                                                                     | page `Origin_Jumpworks`, réécrite à la main en FR/EN dans `messages/*.json` (étape 5)               |
 
 > L'API du Star Citizen Wiki appartient au même projet communautaire que starcitizen.tools. Elle réunit les données du jeu, les données éditoriales du wiki et les prix UEX : on n'a donc **pas besoin de jeton UEX**.
 
@@ -96,7 +96,6 @@ Le site doit afficher **clairement** qu'il est un projet de fan. Les règles vie
 ```
 data/
   meta.json                # date du relevé, patch, sources
-  brand.json               # histoire, chronologie, philosophie (étape 5)
   locations.json           # lieux d'achat ou de location (système, planète, ville)
   ships/
     890-jump.json
@@ -105,6 +104,7 @@ data/
 public/ships/<slug>/
   hero-{960,1920}.{avif,webp}        # vue isométrique studio
   side-{960,1920}.{avif,webp}        # vue de profil
+  silhouette.png                     # silhouette de profil (masque), pour le comparateur d'échelle
   gallery-NN-{960,1920}.{avif,webp}
   depth-hero.png                     # carte de profondeur (étape 7)
 ```
@@ -373,6 +373,6 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 ## 12. Points ouverts (à trancher pendant les étapes concernées)
 
 - ~~Choix final de la police de titre~~ : **Outfit** retenue à l'étape 3 (comparaison avec Jost et Inter Tight sur la page `/design`).
-- Vaisseau mis en avant dans l'ouverture : 890 Jump ou rotation aléatoire (étape 5).
+- ~~Vaisseau mis en avant dans l'ouverture~~ : **890 Jump**, retenu à l'étape 5.
 - Génération des cartes de profondeur : automatique ou à la main pour les images clés (étape 7).
 - Nom de domaine éventuel (étape 10).

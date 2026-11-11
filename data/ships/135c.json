@@ -125,6 +125,11 @@
         "sourceUrl": "https://starcitizen.tools/File:135c_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/135c/silhouette.png",
+      "width": 3598,
+      "height": 640
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -380,6 +385,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/2f231daa-95e5-4cb2-a32e-4db8f29a30d6",
     "wikiPage": "135c",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:34.279Z"
+    "fetchedAt": "2026-11-11T17:59:38.624Z"
   }
 }

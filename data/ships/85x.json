@@ -123,6 +123,11 @@
         "sourceUrl": "https://starcitizen.tools/File:85x_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/85x/silhouette.png",
+      "width": 3517,
+      "height": 637
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -386,6 +391,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/9dc9c257-c413-416a-ab9b-06fbadf18d1e",
     "wikiPage": "85X",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:40.485Z"
+    "fetchedAt": "2026-11-11T17:59:49.697Z"
   }
 }

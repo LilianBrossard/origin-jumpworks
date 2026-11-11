@@ -124,6 +124,11 @@
         "sourceUrl": "https://starcitizen.tools/File:350r_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/350r/silhouette.png",
+      "width": 3411,
+      "height": 841
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -371,6 +376,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/316c6601-b405-4a3a-abac-394c655718f8",
     "wikiPage": "350r",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:37.829Z"
+    "fetchedAt": "2026-11-11T17:59:44.824Z"
   }
 }

@@ -125,6 +125,11 @@
         "sourceUrl": "https://starcitizen.tools/File:125a_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/125a/silhouette.png",
+      "width": 3472,
+      "height": 597
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -388,6 +393,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/e7eeba8d-b108-48a1-a332-d9edbab2b9c1",
     "wikiPage": "125a",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:33.433Z"
+    "fetchedAt": "2026-11-11T17:59:37.289Z"
   }
 }

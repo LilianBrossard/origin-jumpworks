@@ -142,6 +142,11 @@
         "sourceUrl": "https://starcitizen.tools/File:600i_Explorer_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/600i-explorer/silhouette.png",
+      "width": 3601,
+      "height": 784
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -405,6 +410,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/f8ac4c26-8f4d-4cb3-9be2-7d867a95a877",
     "wikiPage": "600i Explorer",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:39.699Z"
+    "fetchedAt": "2026-11-11T17:59:47.797Z"
   }
 }

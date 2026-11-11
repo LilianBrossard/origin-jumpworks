@@ -41,10 +41,117 @@
     "allCredits": "Tous les crédits et licences"
   },
   "home": {
-    "eyebrow": "Projet de fan · Star Citizen",
-    "title": "Origin Jumpworks",
-    "lead": "Le site est en cours de construction. La longue descente arrive à l'étape 5 ; en attendant, le système de design est consultable.",
-    "cta": "Voir le système de design"
+    "metaTitle": "Origin Jumpworks — l'élégance comme trajectoire",
+    "hero": {
+      "eyebrow": "Constructeur · New Austin, Terra · depuis 2747",
+      "title": "Origin Jumpworks",
+      "tagline": "L'élégance comme trajectoire.",
+      "lead": "Depuis New Austin, Origin dessine des vaisseaux comme on façonne un objet d'exception : peu de lignes, aucune de trop.",
+      "scroll": "Descendre",
+      "imageAlt": "Le 890 Jump, yacht amiral d'Origin, en vue isométrique"
+    },
+    "manifesto": {
+      "label": "01 — Manifeste",
+      "quote": "Posséder un Origin n'est pas un achat. C'est un art de vivre.",
+      "body": "Chez Origin, l'ingénierie s'efface derrière la ligne. On raconte que la maison verse des primes considérables à qui parvient à supprimer un seul boulon d'un de ses dessins. Le résultat se reconnaît au premier regard : des surfaces continues, une lumière qui glisse, et cette impression rare que rien n'a été laissé au hasard."
+    },
+    "history": {
+      "label": "02 — Histoire",
+      "title": "Trois siècles de lignes épurées",
+      "events": {
+        "founding": {
+          "year": "2747",
+          "title": "Les bords du Rhin",
+          "text": "Fondée à Cologne, la maison fabrique d'abord des moteurs à fusion haut de gamme, pour l'armée de l'UEE comme pour les yachts stellaires de RSI et d'Aegis."
+        },
+        "rise": {
+          "year": "+ 10 ans",
+          "title": "De fournisseur à concurrent",
+          "text": "Origin conçoit ses propres vaisseaux. En une décennie, l'un d'eux entre dans le top cinq des ventes de sa catégorie."
+        },
+        "lines": {
+          "year": "2899",
+          "title": "Les gammes 200 et 300",
+          "text": "Les premiers vaisseaux personnels de la marque. Origin tient depuis la deuxième place de ce marché."
+        },
+        "terra": {
+          "year": "2913",
+          "title": "Cap sur Terra",
+          "text": "La présidente Jennifer Friskers installe le siège et l'équipe de design à New Austin. Près de la Terre ne reste qu'un banc d'essai moteurs, sur la Lune."
+        },
+        "today": {
+          "year": "Aujourd'hui",
+          "title": "Une ville Origin",
+          "text": "New Austin vit au rythme de la marque. On y vient de toute la galaxie pour prendre livraison de son vaisseau à la sortie de l'usine."
+        }
+      }
+    },
+    "ranges": {
+      "label": "03 — Gammes",
+      "title": "Cinq façons de voyager",
+      "count": "{count, plural, one {# vaisseau} other {# vaisseaux}}",
+      "cta": "Voir la flotte",
+      "personal": {
+        "name": "Personnel",
+        "text": "Les séries 100 et 300 : l'entrée dans l'univers Origin, du biplace sobre au chasseur de luxe."
+      },
+      "touring": {
+        "name": "Grand tourisme",
+        "text": "Le 400i et les 600i : l'exploration et la croisière au long cours, avec le confort d'une résidence."
+      },
+      "racing": {
+        "name": "Course",
+        "text": "Le 350r, le M50 et le M80 : la vitesse pure, dans la lignée du vaisseau aux plus nombreuses victoires de la Carrington."
+      },
+      "prestige": {
+        "name": "Prestige",
+        "text": "Le 890 Jump et son annexe, le 85X : le sommet de la maison, un yacht et sa navette."
+      },
+      "gravlev": {
+        "name": "Glisseurs",
+        "text": "La famille X1 : des motos antigravité, au ras du sol, pour qui préfère sentir la vitesse."
+      }
+    },
+    "flagship": {
+      "label": "04 — Vaisseau amiral",
+      "eyebrow": "Prestige · Luxury Touring",
+      "title": "890 Jump",
+      "lead": "Deux cent dix mètres de lignes continues, un atrium, une piscine, des suites pour une vingtaine d'invités. Le 890 Jump n'est pas conçu pour aller vite d'un point à un autre : il est conçu pour que le voyage devienne la destination.",
+      "length": "Longueur",
+      "crew": "Équipage",
+      "cargo": "Cargo",
+      "speed": "Vitesse max.",
+      "pledge": "Précommande",
+      "imageAlt": "Le 890 Jump en vol au-dessus des nuages",
+      "credit": "Image : {author}"
+    },
+    "scale": {
+      "label": "05 — Échelle",
+      "title": "Du X1 au 890 Jump",
+      "lead": "Toute la flotte, à la même échelle. Le plus petit tient sous l'aile du plus grand.",
+      "hint": "Faites défiler horizontalement",
+      "region": "Silhouettes de profil de la flotte, à l'échelle",
+      "meters": "{value} m"
+    },
+    "acquire": {
+      "label": "06 — Acquérir",
+      "title": "Où les acquérir",
+      "lead": "Trois concessions du système Stanton vendent ou louent la flotte Origin. Prix en aUEC, la monnaie du jeu.",
+      "choose": "Choisir une concession",
+      "buy": "Achat",
+      "rent": "Location",
+      "none": "Aucune offre relevée ici.",
+      "unavailable": "Non vendus en concession actuellement : {ships}.",
+      "dateLine": "Prix relevés par la communauté (UEX) jusqu'au {date}, patch {version}. Ils évoluent à chaque mise à jour du jeu.",
+      "map": "Carte schématique du système Stanton",
+      "star": "Stanton"
+    },
+    "outro": {
+      "title": "Le fil se referme",
+      "lead": "Chaque vaisseau a sa fiche, ses images et ses caractéristiques.",
+      "fleet": "Explorer la flotte",
+      "compare": "Comparer"
+    }
   },
   "placeholder": {
     "eyebrow": "En préparation",

@@ -121,6 +121,11 @@
         "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/x1-velocity/silhouette.png",
+      "width": 3577,
+      "height": 1098
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -376,6 +381,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/58e25524-8bd3-450f-8442-7b58fdfc8a50",
     "wikiPage": "X1 Velocity",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:44.737Z"
+    "fetchedAt": "2026-11-11T17:59:57.105Z"
   }
 }

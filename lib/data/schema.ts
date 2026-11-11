@@ -97,6 +97,14 @@ export const ShipSchema = z.object({
     hero: ImageAssetSchema,
     /** Vue de profil (bâbord), base du comparateur d'échelle */
     side: ImageAssetSchema.optional(),
+    /** Silhouette de profil (PNG à transparence), recadrée : sa largeur = la longueur du vaisseau */
+    silhouette: z
+      .object({
+        src: z.string().startsWith("/"),
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+      })
+      .optional(),
     gallery: z.array(ImageAssetSchema),
   }),
   source: z.object({

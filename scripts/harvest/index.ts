@@ -21,7 +21,8 @@ import {
   type Ship,
 } from "../../lib/data/schema";
 import { EXCLUDED_API_SLUGS, HARVEST_VERSION, SHIPS, WIKI_BASE } from "./config";
-import { setRefresh } from "./http";
+import { getBuffer, setRefresh } from "./http";
+import { extractSilhouette } from "./silhouette";
 import {
   galleryCandidates,
   pickViews,
@@ -161,7 +162,22 @@ async function harvestShip(apiSlug: string, allNames: string[]): Promise<Ship> {
         }),
       );
     }
-    images = { hero, side, gallery };
+    // Silhouette de profil pour le comparateur d'échelle (toujours régénérée, c'est rapide).
+    let silhouette: Ship["images"]["silhouette"];
+    if (sideInfo) {
+      const sil = await extractSilhouette(await getBuffer(sideInfo.url), cfg.silhouetteThreshold);
+      silhouette = {
+        src: `/ships/${cfg.slug}/silhouette.png`,
+        width: sil.width,
+        height: sil.height,
+      };
+      if (!dryRun) {
+        await mkdir(path.resolve("public/ships", cfg.slug), { recursive: true });
+        await writeFile(path.resolve("public/ships", cfg.slug, "silhouette.png"), sil.png);
+      }
+    }
+
+    images = { hero, side, silhouette, gallery };
     if (!dryRun) {
       const removed = await pruneShipImages(cfg.slug, [hero, ...(side ? [side] : []), ...gallery]);
       if (removed.length) log(`  ${removed.length} image(s) obsolète(s) supprimée(s)`);

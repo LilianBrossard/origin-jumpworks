@@ -113,6 +113,11 @@
         "sourceUrl": "https://starcitizen.tools/File:X1_in_space_-_Port_2.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/x1/silhouette.png",
+      "width": 3604,
+      "height": 1019
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -360,6 +365,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/829d0525-e67e-4e57-9f52-b4e572a4f73d",
     "wikiPage": "X1",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:43.802Z"
+    "fetchedAt": "2026-11-11T17:59:55.091Z"
   }
 }

@@ -124,6 +124,11 @@
         "sourceUrl": "https://starcitizen.tools/File:600i_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/600i-touring/silhouette.png",
+      "width": 3671,
+      "height": 672
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -387,6 +392,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/11b660a2-c77c-490b-9e85-ee70400c5cf8",
     "wikiPage": "600i Touring",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:39.937Z"
+    "fetchedAt": "2026-11-11T17:59:48.589Z"
   }
 }

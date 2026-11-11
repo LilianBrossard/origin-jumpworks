@@ -125,6 +125,11 @@
         "sourceUrl": "https://starcitizen.tools/File:315p_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/315p/silhouette.png",
+      "width": 3480,
+      "height": 862
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -380,6 +385,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/dc537d66-2abb-43aa-9d37-4e963fc6e9e2",
     "wikiPage": "315p",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:35.581Z"
+    "fetchedAt": "2026-11-11T17:59:41.335Z"
   }
 }

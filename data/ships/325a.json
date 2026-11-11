@@ -133,6 +133,11 @@
         "sourceUrl": "https://starcitizen.tools/File:325a_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/325a/silhouette.png",
+      "width": 3515,
+      "height": 797
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -396,6 +401,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/039a2768-1aff-4969-b2a4-ed8aeb21dae1",
     "wikiPage": "325a",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:36.721Z"
+    "fetchedAt": "2026-11-11T17:59:43.125Z"
   }
 }

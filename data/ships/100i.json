@@ -155,6 +155,11 @@
         "sourceUrl": "https://starcitizen.tools/File:100i_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/100i/silhouette.png",
+      "width": 3530,
+      "height": 630
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -418,6 +423,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/6135a874-4cb1-4f49-9f29-5781e5991f2b",
     "wikiPage": "100i",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:32.909Z"
+    "fetchedAt": "2026-11-11T17:59:36.192Z"
   }
 }

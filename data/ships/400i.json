@@ -145,6 +145,11 @@
         "sourceUrl": "https://starcitizen.tools/File:400i_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/400i/silhouette.png",
+      "width": 3655,
+      "height": 684
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -408,6 +413,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/718f4435-628b-4436-bb80-bf9cfef9a945",
     "wikiPage": "400i",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:38.996Z"
+    "fetchedAt": "2026-11-11T17:59:46.482Z"
   }
 }

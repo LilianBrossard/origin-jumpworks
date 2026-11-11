@@ -137,12 +137,40 @@
   }
 }
 
+/* Barre de défilement discrète */
+@utility scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
 /* Conteneur éditorial centré */
 @utility container-page {
   width: 100%;
   max-width: var(--content-max);
   margin-inline: auto;
   padding-inline: var(--gutter);
+}
+
+/* Invitation à descendre : un trait qui glisse lentement le long d'un filet */
+@keyframes descend {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+
+/* ---------------------------------------------------------------- Apparitions au défilement */
+/* Masqué seulement si JavaScript tourne : sans JS, tout reste lisible. */
+[data-reveal] {
+  transition:
+    opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+}
+[data-js] [data-reveal]:not([data-revealed]) {
+  opacity: 0;
+  transform: translateY(1.5rem);
 }
 
 /* ---------------------------------------------------------------- Animations réduites */

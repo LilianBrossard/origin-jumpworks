@@ -134,6 +134,11 @@
         "sourceUrl": "https://starcitizen.tools/File:300i_in_space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/300i/silhouette.png",
+      "width": 3312,
+      "height": 826
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -397,6 +402,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/ce937681-caa2-4cfa-ab80-f5bf2a5b9a6c",
     "wikiPage": "300i",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:34.620Z"
+    "fetchedAt": "2026-11-11T17:59:39.728Z"
   }
 }

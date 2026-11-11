@@ -142,6 +142,11 @@
         "sourceUrl": "https://starcitizen.tools/File:M50_in_Space_-_Port.jpg"
       }
     },
+    "silhouette": {
+      "src": "/ships/m50/silhouette.png",
+      "width": 3524,
+      "height": 763
+    },
     "gallery": [
       {
         "id": "gallery-01",
@@ -405,6 +410,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/1b57cdac-693b-410b-8343-68fa194c94ae",
     "wikiPage": "M50",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T16:56:42.014Z"
+    "fetchedAt": "2026-11-11T17:59:52.142Z"
   }
 }

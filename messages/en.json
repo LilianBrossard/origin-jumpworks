@@ -41,10 +41,117 @@
     "allCredits": "All credits and licences"
   },
   "home": {
-    "eyebrow": "Fan project · Star Citizen",
-    "title": "Origin Jumpworks",
-    "lead": "The site is under construction. The long descent arrives in step 5; in the meantime, the design system is available.",
-    "cta": "See the design system"
+    "metaTitle": "Origin Jumpworks — elegance as a trajectory",
+    "hero": {
+      "eyebrow": "Manufacturer · New Austin, Terra · since 2747",
+      "title": "Origin Jumpworks",
+      "tagline": "Elegance as a trajectory.",
+      "lead": "From New Austin, Origin designs ships the way one crafts an exceptional object: few lines, none to spare.",
+      "scroll": "Scroll down",
+      "imageAlt": "The 890 Jump, Origin's flagship yacht, isometric view"
+    },
+    "manifesto": {
+      "label": "01 — Manifesto",
+      "quote": "Owning an Origin is not a purchase. It is a lifestyle.",
+      "body": "At Origin, engineering steps back behind the line. The company is said to pay considerable bonuses to anyone who can remove a single bolt from one of its designs. The result is recognisable at first glance: continuous surfaces, light that glides, and the rare feeling that nothing was left to chance."
+    },
+    "history": {
+      "label": "02 — History",
+      "title": "Three centuries of clean lines",
+      "events": {
+        "founding": {
+          "year": "2747",
+          "title": "The banks of the Rhine",
+          "text": "Founded in Cologne, the company first builds high-end fusion engines, for the UEE military as well as for RSI and Aegis star yachts."
+        },
+        "rise": {
+          "year": "+ 10 years",
+          "title": "From supplier to competitor",
+          "text": "Origin designs its own ships. Within a decade, one of them enters the top five sellers of its class."
+        },
+        "lines": {
+          "year": "2899",
+          "title": "The 200 and 300 lines",
+          "text": "The brand's first personal ships. Origin has held second place in that market ever since."
+        },
+        "terra": {
+          "year": "2913",
+          "title": "Bound for Terra",
+          "text": "President Jennifer Friskers moves the headquarters and design team to New Austin. All that remains near Earth is an engine test facility on the Moon."
+        },
+        "today": {
+          "year": "Today",
+          "title": "An Origin town",
+          "text": "New Austin lives to the brand's rhythm. Buyers travel across the galaxy to take delivery of their ship straight off the factory floor."
+        }
+      }
+    },
+    "ranges": {
+      "label": "03 — Ranges",
+      "title": "Five ways to travel",
+      "count": "{count, plural, one {# ship} other {# ships}}",
+      "cta": "See the fleet",
+      "personal": {
+        "name": "Personal",
+        "text": "The 100 and 300 series: the way into the Origin world, from the understated two-seater to the luxury fighter."
+      },
+      "touring": {
+        "name": "Grand touring",
+        "text": "The 400i and 600i: long-range exploration and cruising, with the comfort of a residence."
+      },
+      "racing": {
+        "name": "Racing",
+        "text": "The 350r, M50 and M80: pure speed, in the lineage of the ship with the most Carrington wins."
+      },
+      "prestige": {
+        "name": "Prestige",
+        "text": "The 890 Jump and its tender, the 85X: the pinnacle of the house, a yacht and its shuttle."
+      },
+      "gravlev": {
+        "name": "Gravlev",
+        "text": "The X1 family: anti-gravity bikes, skimming the ground, for those who prefer to feel the speed."
+      }
+    },
+    "flagship": {
+      "label": "04 — Flagship",
+      "eyebrow": "Prestige · Luxury Touring",
+      "title": "890 Jump",
+      "lead": "Two hundred and ten metres of continuous lines, an atrium, a pool, suites for some twenty guests. The 890 Jump is not built to get quickly from one point to another: it is built so that the journey becomes the destination.",
+      "length": "Length",
+      "crew": "Crew",
+      "cargo": "Cargo",
+      "speed": "Max speed",
+      "pledge": "Pledge",
+      "imageAlt": "The 890 Jump flying above the clouds",
+      "credit": "Image: {author}"
+    },
+    "scale": {
+      "label": "05 — Scale",
+      "title": "From the X1 to the 890 Jump",
+      "lead": "The whole fleet, at the same scale. The smallest fits under the wing of the largest.",
+      "hint": "Scroll horizontally",
+      "region": "Side silhouettes of the fleet, to scale",
+      "meters": "{value} m"
+    },
+    "acquire": {
+      "label": "06 — Acquire",
+      "title": "Where to acquire them",
+      "lead": "Three dealerships in the Stanton system sell or rent the Origin fleet. Prices in aUEC, the in-game currency.",
+      "choose": "Choose a dealership",
+      "buy": "Purchase",
+      "rent": "Rental",
+      "none": "No offer recorded here.",
+      "unavailable": "Not currently sold at dealerships: {ships}.",
+      "dateLine": "Prices reported by the community (UEX) up to {date}, patch {version}. They change with every game update.",
+      "map": "Schematic map of the Stanton system",
+      "star": "Stanton"
+    },
+    "outro": {
+      "title": "The thread closes",
+      "lead": "Every ship has its own page, images and specifications.",
+      "fleet": "Explore the fleet",
+      "compare": "Compare"
+    }
   },
   "placeholder": {
     "eyebrow": "Coming soon",

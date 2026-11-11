@@ -19,6 +19,7 @@ export type MotionPreference = "system" | "reduced";
  */
 export function applyStoredPreferences() {
   const root = document.documentElement;
+  root.setAttribute("data-js", "");
   try {
     const theme = localStorage.getItem(STORAGE_KEYS.theme);
     if (theme === "light" || theme === "dark") root.setAttribute("data-theme", theme);
@@ -34,7 +35,9 @@ export function applyStoredPreferences() {
 }
 
 /**
- * Script exécuté dans <head> avant l'affichage. Sans préférence enregistrée,
+ * Script exécuté dans <head> avant l'affichage. Il marque aussi <html data-js>
+ * (les apparitions au défilement ne masquent le contenu que si JavaScript tourne).
+ * Sans préférence enregistrée,
  * aucun attribut n'est posé : le CSS suit alors le réglage du système.
  */
-export const PREFERENCES_SCRIPT = `(function(){try{var d=document.documentElement;var t=localStorage.getItem("${STORAGE_KEYS.theme}");if(t==="light"||t==="dark")d.setAttribute("data-theme",t);if(localStorage.getItem("${STORAGE_KEYS.motion}")==="reduced")d.setAttribute("data-motion","reduced");}catch(e){}})();`;
+export const PREFERENCES_SCRIPT = `(function(){var d=document.documentElement;d.setAttribute("data-js","");try{var t=localStorage.getItem("${STORAGE_KEYS.theme}");if(t==="light"||t==="dark")d.setAttribute("data-theme",t);if(localStorage.getItem("${STORAGE_KEYS.motion}")==="reduced")d.setAttribute("data-motion","reduced");}catch(e){}})();`;
