@@ -144,7 +144,8 @@
       "unavailable": "Non vendus en concession actuellement : {ships}.",
       "dateLine": "Prix relevés par la communauté (UEX) jusqu'au {date}, patch {version}. Ils évoluent à chaque mise à jour du jeu.",
       "map": "Carte schématique du système Stanton",
-      "star": "Stanton"
+      "star": "Stanton",
+      "announce": "{city} : {count, plural, one {# offre} other {# offres}}"
     },
     "outro": {
       "title": "Le fil se referme",

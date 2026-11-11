@@ -71,7 +71,10 @@ export function AcquireMap({ dealerships }: { dealerships: Dealership[] }) {
                   r={p.orbit}
                   fill="none"
                   strokeWidth={1}
-                  className={cn("transition-colors", active ? "stroke-accent/60" : "stroke-line")}
+                  className={cn(
+                    "transition-colors duration-(--duration-base)",
+                    active ? "stroke-accent/60" : "stroke-line",
+                  )}
                 />
                 <g
                   className={cn(dealer && "cursor-pointer")}
@@ -80,14 +83,17 @@ export function AcquireMap({ dealerships }: { dealerships: Dealership[] }) {
                 >
                   {/* Zone de survol plus large que le point */}
                   <circle cx={x} cy={y} r={22} fill="transparent" />
-                  {active && (
+                  {dealer && (
                     <circle
                       cx={x}
                       cy={y}
                       r={14}
                       fill="none"
                       strokeWidth={1}
-                      className="stroke-accent"
+                      className={cn(
+                        "stroke-accent transition-opacity duration-(--duration-base) ease-(--ease-out)",
+                        active ? "opacity-100" : "opacity-0",
+                      )}
                     />
                   )}
                   <circle
@@ -96,7 +102,7 @@ export function AcquireMap({ dealerships }: { dealerships: Dealership[] }) {
                     r={dealer ? 5 : 3.5}
                     strokeWidth={1}
                     className={cn(
-                      "transition-colors",
+                      "transition-colors duration-(--duration-base)",
                       active
                         ? "fill-accent stroke-accent"
                         : dealer
@@ -153,39 +159,71 @@ export function AcquireMap({ dealerships }: { dealerships: Dealership[] }) {
           ))}
         </div>
 
-        {current && (
-          <div aria-live="polite">
-            <p className="font-display text-display-md font-extralight text-ink">{current.city}</p>
-            <p className="mb-6 text-sm text-ink-muted">
-              {current.planet} · {t("star")}
-            </p>
-            {current.offers.length === 0 ? (
-              <p className="text-ink-muted">{t("none")}</p>
-            ) : (
-              <table className="w-full text-left text-sm">
-                <caption className="sr-only">{current.city}</caption>
-                <tbody>
-                  {current.offers.map((o) => (
-                    <tr key={`${o.ship}-${o.kind}`} className="border-b border-line">
-                      <th
-                        scope="row"
-                        className="py-3 pr-4 font-display text-base font-light text-ink"
-                      >
-                        {o.ship}
-                      </th>
-                      <td className="py-3 pr-4 text-xs tracking-wide-2 text-ink-muted uppercase">
-                        {t(o.kind)}
-                      </td>
-                      <td className="py-3 text-right font-mono text-xs whitespace-nowrap text-ink tabular-nums">
-                        {formatAUEC(locale, o.price)}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            )}
-          </div>
-        )}
+        {/* Annonce pour les lecteurs d'écran (les panneaux visuels sont permutés en fondu) */}
+        <p aria-live="polite" className="sr-only">
+          {current && t("announce", { city: current.city, count: current.offers.length })}
+        </p>
+
+        {/*
+          Tous les panneaux occupent la même cellule de grille : le bloc prend la hauteur
+          du plus grand et ne « saute » plus d'une planète à l'autre. On passe de l'un à
+          l'autre par un fondu enchaîné ; les lignes arrivent avec un léger décalage.
+        */}
+        <div className="grid">
+          {dealerships.map((d) => {
+            const active = d.id === current?.id;
+            return (
+              <div
+                key={d.id}
+                inert={!active}
+                aria-hidden={!active}
+                className={cn(
+                  "col-start-1 row-start-1 transition-[opacity,translate,visibility] duration-(--duration-base) ease-(--ease-out)",
+                  active
+                    ? "visible translate-y-0 opacity-100"
+                    : "invisible translate-y-2 opacity-0",
+                )}
+              >
+                <p className="font-display text-display-md font-extralight text-ink">{d.city}</p>
+                <p className="mb-6 text-sm text-ink-muted">
+                  {d.planet} · {t("star")}
+                </p>
+                {d.offers.length === 0 ? (
+                  <p className="text-ink-muted">{t("none")}</p>
+                ) : (
+                  <table className="w-full text-left text-sm">
+                    <caption className="sr-only">{d.city}</caption>
+                    <tbody>
+                      {d.offers.map((o, i) => (
+                        <tr
+                          key={`${o.ship}-${o.kind}`}
+                          className={cn(
+                            "border-b border-line transition-[opacity,translate] duration-(--duration-base) ease-(--ease-out)",
+                            active ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0",
+                          )}
+                          style={{ transitionDelay: active ? `${Math.min(i, 12) * 30}ms` : "0ms" }}
+                        >
+                          <th
+                            scope="row"
+                            className="py-3 pr-4 font-display text-base font-light text-ink"
+                          >
+                            {o.ship}
+                          </th>
+                          <td className="py-3 pr-4 text-xs tracking-wide-2 text-ink-muted uppercase">
+                            {t(o.kind)}
+                          </td>
+                          <td className="py-3 text-right font-mono text-xs whitespace-nowrap text-ink tabular-nums">
+                            {formatAUEC(locale, o.price)}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

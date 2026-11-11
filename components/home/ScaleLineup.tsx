@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import { DragScroll } from "@/components/ui/DragScroll";
 import { Reveal } from "@/components/ui/Reveal";
 import type { Ship } from "@/lib/data/schema";
 import { formatNumber } from "@/lib/format";
@@ -10,7 +11,7 @@ const PX_PER_M = 6.6;
 /**
  * 6. Échelle : toutes les silhouettes de profil, alignées sur une même ligne de sol
  * et à la même échelle. Les silhouettes sont des masques teintés par la couleur
- * du thème. Défilement horizontal natif (clavier, molette, glisser au doigt).
+ * du thème. Défilement horizontal : glisser à la souris (avec inertie), au doigt, ou au clavier.
  */
 export function ScaleLineup({ ships }: { ships: Ship[] }) {
   const t = useTranslations("home.scale");
@@ -26,13 +27,13 @@ export function ScaleLineup({ ships }: { ships: Ship[] }) {
       </div>
 
       <Reveal>
-        <div
+        <DragScroll
           role="region"
           aria-label={t("region")}
           tabIndex={0}
-          className="scrollbar-thin overflow-x-auto overscroll-x-contain pb-6 focus-visible:outline-offset-[-2px]"
+          className="scrollbar-thin [mask-image:linear-gradient(to_right,transparent,black_var(--gutter),black_calc(100%_-_var(--gutter)*2),transparent)] pb-6 focus-visible:outline-offset-[-2px]"
         >
-          <ul className="flex w-max items-end gap-10 px-[var(--gutter)] md:gap-14">
+          <ul className="flex w-max items-end gap-10 pr-[calc(var(--gutter)*3)] pl-[var(--gutter)] md:gap-14">
             {lineup.map((ship) => {
               const sil = ship.images.silhouette!;
               const width = ship.dimensions.length * PX_PER_M;
@@ -66,7 +67,7 @@ export function ScaleLineup({ ships }: { ships: Ship[] }) {
               );
             })}
           </ul>
-        </div>
+        </DragScroll>
       </Reveal>
 
       <div className="container-page mt-6 flex items-center justify-between gap-6">

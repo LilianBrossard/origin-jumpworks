@@ -144,7 +144,8 @@
       "unavailable": "Not currently sold at dealerships: {ships}.",
       "dateLine": "Prices reported by the community (UEX) up to {date}, patch {version}. They change with every game update.",
       "map": "Schematic map of the Stanton system",
-      "star": "Stanton"
+      "star": "Stanton",
+      "announce": "{city}: {count, plural, one {# offer} other {# offers}}"
     },
     "outro": {
       "title": "The thread closes",
