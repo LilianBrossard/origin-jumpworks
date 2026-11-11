@@ -1,0 +1,410 @@
+{
+  "slug": "m50",
+  "name": "M50 Interceptor",
+  "range": "racing",
+  "order": 31,
+  "role": "Racing",
+  "career": "Competition",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 0,
+  "dimensions": {
+    "length": 11.5,
+    "beam": 11,
+    "height": 3.5
+  },
+  "massKg": 11945,
+  "speed": {
+    "scm": 280,
+    "max": 1575
+  },
+  "quantum": {
+    "speedMs": 239127300,
+    "rangeM": 122448979592
+  },
+  "shieldHp": 1920,
+  "hullHp": 2281,
+  "description": {
+    "en": "If you want to get from point A to point B as quickly as possible and with as much style as possible then ORIGIN's M50 is for you. Featuring supercharged engines that counter a tiny weapons loadout, the M50 goes extremely fast and looks incredibly good doing it. As Origin’s premier racing chassis, you shouldn’t expect anything less."
+  },
+  "pledge": {
+    "msrpUSD": 100,
+    "originalUSD": 80,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-m50/M50"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 1424430,
+        "updatedAt": "2026-10-17T04:33:29+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      },
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 1499400,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": [
+      {
+        "terminal": "Regal Luxury Rentals - New Babbage Interstellar Spaceport - New Babbage",
+        "locationId": "new-babbage",
+        "priceAUEC": 37485,
+        "updatedAt": "2026-11-09T00:42:47+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=147"
+      }
+    ]
+  },
+  "dates": {
+    "concept": "2012-11-18",
+    "addedInVersion": "Patch V0.9"
+  },
+  "paints": ["Polar", "Skullcrusher", "Stormbringer"],
+  "links": {
+    "wiki": "https://starcitizen.tools/M50",
+    "brochure": "https://robertsspaceindustries.com/media/g2ckrimb7n0bkr/source/M50-Brochure-V7.pdf",
+    "trailer": "https://www.youtube.com/watch?v=_SpsjUHj_II"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "M50 in Space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/m50/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m50/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/m50/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m50/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBfnMX1bzxdX8Z+XDn+2tNJhQAD+9CtdTqjWWLzv8U+J5CspcCWqOJj5mbPIu7WP1qDyPwLoJdpEMsiY9RL3KENVWDKAv+aMXTZ5wHN5/74xxEXGKvlZvYsL41ehpV5xmRE9jAzuBrdi7H5QQGhLr0G1KKYzgAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:M50_in_Space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "M50 in Space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/m50/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m50/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/m50/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m50/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAwCdASoYAA4APu1kqk4ppaQiMAgBMB2JQAALfXuICs0LygJoAAD+8qk6O5hM8wQRNRl4616RBFh6jgsV7KX5AcPuaa0hjwO5o9WHPQYeJMuj3GFgFyON5LiR/8DsmmdfyVHAAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:M50_in_Space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "M50 in SelfLand - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQCdAB9C0Pd6JRwkQd/eIAD+6YcSZ4rOxf/bcHhytTeTgW2w43tv1ijXLPUbQRhwTkxxshMHyzA/rNO2h+1NTMj85JZEnQXeEKeFUuxs0NEKisPp0dx0MAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:M50_in_SelfLand_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "M50 in SelfLand - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JZQCsAAM7mTOOOG8oAP5vlBhw/FCwVfy/1FfDi8uCCBWL5dGYi/ceZ8RwZV4b5b80VbqM56NHCAhFrfy9ymZICg5hq8OKCis9r8AA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:M50_in_SelfLand_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "M50 in SelfLand - Port",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JYwCw7Bjke60ttvjMAP7vgum8maWCfftHPp4qCxJLLKPbrD8TQeG3q1QYZF20xgcyoFSIeHWr2K6p/3wI64KeSBSGLFpNnzQm8czpsZmRJMiy/t6Q7e+twJSY4op7jaDPOVp767TVk5KkGn6GQAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:M50_in_SelfLand_-_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "M50 in SelfLand - Front",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoYAA4APu1kqU4ppaOiMAgBMB2JZwAAW4V/b+s31qwUAAD+8MsjShLkLJyTH/YU477jp+c81WZGri0nUMkbYV6XxtGyirvqQvT4UA10bQeGaRNeNpc20ke/No8LkoK3XcW8Wf64AAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:M50_in_SelfLand_-_Front.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "M50 in SelfLand - Rear",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoYAA4APu1kqU2ppaOiMAgBMB2JZwC7ABn4NCJcvcK/2h4AAP7Q+E8dpgaIUa/ov3LZqtXqJBmZYIuHFawWFZog6RpK7b81GAxkUHqx4Ld+y8rQEHBQ0ORLOQXQc05YRgSgAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:M50_in_SelfLand_-_Rear.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "2020 updated M50 over microTech",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOkBL1IHurRdNcgsucxj6RBniMAAPjeSTFOs0BIg/q0CDe6KKwe0bXicFC8jY1XHO/figlElNfP5rR9rz0hhUBcwwY3N/YxO6dKziDph7sE0Yp2zlm5frGB3vzp/EpSyae6LfWlNi92AqLHpND4AAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M50_Microtech_flyby.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "2020 updated M50 cockpit",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JQAALgX0GxrkjKXzVKnaAAAD+8UzqTBiCPpVOvHzTZMGYqFIqmCazKaMVuQv8uoFL0Q1Nr29hz/U+PpRY6amTYHzamA51C5zIcT62G2BSERf98oUY037kg7OhoT0lKweIASuAAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M50_cockpit_ext.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "2020 updated M50 cockpit",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m50/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m50/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoYAA4APu1kqU2ppaQiMAgBMB2JQBdgBFSsafz6OhdZ+Ta16zNQAP7s4SbvuaCqQ//Ip17zcKmCPAMi1r+U+CQBMyB3KrtxeI/PpI0LYkwVMPjRE0zQ2fdwgpx6TUCOqGunCX1j31EQhIKukor8sPFDVKn4fQR+Xj3aHfYZjv8AAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M50_Cockpit.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/1b57cdac-693b-410b-8343-68fa194c94ae",
+    "wikiPage": "M50",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:42.014Z"
+  }
+}

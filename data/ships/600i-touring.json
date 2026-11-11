@@ -1,0 +1,392 @@
+{
+  "slug": "600i-touring",
+  "name": "600i Touring",
+  "range": "touring",
+  "order": 42,
+  "role": "Luxury Touring",
+  "career": "Exploration",
+  "size": "Large",
+  "sizeClass": 5,
+  "crew": {
+    "min": 3,
+    "max": 5
+  },
+  "cargoSCU": 20,
+  "dimensions": {
+    "length": 91.5,
+    "beam": 52,
+    "height": 17
+  },
+  "massKg": 1653964,
+  "speed": {
+    "scm": 165,
+    "max": 975
+  },
+  "quantum": {
+    "speedMs": 238314300,
+    "rangeM": 908256880734
+  },
+  "shieldHp": 144000,
+  "hullHp": 197250,
+  "description": {
+    "en": "Let the voyage begin with the 2947 600i from Origin Jumpworks. This multi-role luxury vessel from Origin Jumpworks features an exquisitely detailed hull design that balances performance and versatility in a sleek and timeless form. The 600i is designed with a cutting-edge modular technology, allowing you to customize your ship for your needs. Taking the family on a long-distance trip across the stars? The Touring module lets your guests relax in ease with stunning furniture from some of the Empire's top designers."
+  },
+  "pledge": {
+    "msrpUSD": 435,
+    "originalUSD": 400,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 24938600,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2017-10-26"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/600i_Touring",
+    "brochure": "https://robertsspaceindustries.com/media/awfctcstfkykur/source/Origin600i-Brochure-Optimised.pdf",
+    "trailer": "https://youtu.be/gbCSQDhPOlk"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "600i in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/600i-touring/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-touring/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/600i-touring/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-touring/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDMHYvM3K+wgXVqapABtPbkwAAA/vQlLmtb37QiG1skmJM0tIM+dpbzQWX4Yg743DJV6PFPYbfEbgx/8futSoN3/jBtF/sdQkKFg5t1dk4XeKLZc7ehzlcO4vi6D17mGdM3+IaA0aOaNEAAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:600i_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "600i in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/600i-touring/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-touring/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/600i-touring/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-touring/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JZwAAW+GgpvnC8Tb4AP7wzJXc0uFjFPdlolXLDTw/eKPZEPndqD34pvHfxdz/H9WosdNc1m/s4hC+VEtfDcenEaUR+d0J4ASKPbXit6cweIF8YPG0AAAA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:600i_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "600i in RandY - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDE2BZ0rCFxQUZzgOtQAPYZjwQ3QHoFHNvGhpL+ndoYW7YjpOUg5V2oNTvVlGDuzBylJaDA9uUxEgom9MU2FVsGBHxPF91dn+9VCL3jdgPspBP3y/qk40xj4R5O9YBwL4LWBOiQAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:600i_in_RandY_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "600i in RandY - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JaQAASZZFmvLn2fPzNYoAAP7A7PDqQdjH+EmKepyTbWPEJzLC53IJtqyfnCol6/bCpY2HiwtM8AzVJ66fROsPdWj+Ky36fgf9LiOwZB4Pvs1ffzW+WCMljrFLtsgdsT9v1IuyIlECkROJpqRjU62DCXgAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:600i_in_RandY_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "600i Landed on luxury Island - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JbACdH8ABp4+O2SyIG2+gewAA/s/shiH4uv0PplndarshfIfLgYTWBPU07PKXsGevlF18GlTzcN4UTWDezOsWpV7PVGwPqADJ67YwRX6u5fnH1SejvUubRfTfGmhfeGTfwwpbV1mK+Jmoz1bb+6FwECDhK4TA235FQAAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Landed_on_luxury_Island_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "600i Touring - Bottom of Staircase - Living Area",
+        "width": 1920,
+        "height": 810,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoYAAoAPu1iqk2ppaQiMAgBMB2JYwAAW7xEVIXhed5SJAAA/uW/LxuWih1lVTKbo34ZURociCes5Ze/JXpEc1m2h17iXzVnLOnSa83RjvOwNHCBsV9XeJFGZCnhxIiEx877agnt1Qx+yyhgOFfdYUkce5p/Oj35lwAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Touring_-_Bottom_of_Staircase_-_Living_Area.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "600i Touring - Guest Rooms - Starcase",
+        "width": 1920,
+        "height": 810,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JZQAAXoKqRRlPuXuBBhoobIAA/tvNC7qPCuKPk8w06XggobBRvUOIA+yP4JmIX9md6EuBrxgx3MC3vxcXHgKrWT0YMobzRfgfcHfKWJDYsjj5f1tGgAAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Touring_-_Guest_Rooms_-_Starcase.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "600i Touring - Guest Room Interior",
+        "width": 1920,
+        "height": 810,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JZQAAXgQ10+HNYE6RWWTUwAD+qw/qBfJebTX8fAxBoBOhXJjfqst75urH/cJg/2EJC+tlBRKXEl4a15n4cdIXrbNQf+zr9mcyiZTiP2Cfcu8twyFI7Gy9KTEEAjAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Touring_-_Guest_Room_Interior.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "600i Touring - Living Area 01",
+        "width": 1920,
+        "height": 810,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoYAAoAPu1iqk2ppaQiMAgBMB2JYwC7ACPW5B7SII5m6hfUCfAA/s33TdcHCpcYbaNqnwOiI1G6CKcLy45LqCFYuSSfRhB6d1d9hW/haQL7iNpg91gxAPX5+PaY+I6GTSK4fLwI+CzU8xtzrl4IB83ajDEAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Touring_-_Living_Area_01.png"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "600i Touring - Living Area 02",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-touring/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-touring/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwAAXBt0ZMMDLuQKtEYHQAD+6Njc7I/+U/Wic0TpabYB6KPnd8FA+sYSpmT1ByzDvNFNvcOqHEb+tB/rD7hzMnw2ZY/R7kWrZPTL0ZWL93g4AAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Touring_-_Living_Area_02.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/11b660a2-c77c-490b-9e85-ee70400c5cf8",
+    "wikiPage": "600i Touring",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:39.937Z"
+  }
+}

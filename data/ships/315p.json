@@ -1,0 +1,385 @@
+{
+  "slug": "315p",
+  "name": "315p",
+  "range": "personal",
+  "order": 21,
+  "role": "Pathfinder",
+  "career": "Exploration",
+  "size": "Small",
+  "sizeClass": 2,
+  "crew": {
+    "min": 1,
+    "max": 3
+  },
+  "cargoSCU": 12,
+  "dimensions": {
+    "length": 27,
+    "beam": 17,
+    "height": 8
+  },
+  "massKg": 82901,
+  "speed": {
+    "scm": 258,
+    "max": 1460
+  },
+  "quantum": {
+    "speedMs": 219200000,
+    "rangeM": 155172413793
+  },
+  "shieldHp": 4488,
+  "hullHp": 9100,
+  "description": {
+    "en": "Exploration is man's highest calling. Prepare to chart distant horizons with man's most sophisticated piece of technology, the ORIGIN 315p. Featuring a more robust power plant and a custom scanning package, exclusively designed by Chimera Communications."
+  },
+  "pledge": {
+    "msrpUSD": 65,
+    "originalUSD": 65,
+    "availability": "Always available",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/315p"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 1490580,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2013-06-21",
+    "addedInVersion": "Patch V0.9.2.1"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/315p",
+    "brochure": "https://robertsspaceindustries.com/media/exfjsh7mejoxir/source/300series_brochure.pdf",
+    "trailer": "https://www.youtube.com/watch?v=qDQ8dbE8qSo"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "315p in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/315p/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/315p/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/315p/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/315p/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZQDKACHw45C/tnb1ZNPaQA1gAP70I7tMsnA153muN9WoTJ47v+l7r9Y8pvMBm2UI6c5uTLoAeB6bhz2yfQS2gu/Wp063IEwFaXdnN+jHJ7q4kLS78FhwRQAAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:315p_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "315p in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/315p/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/315p/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/315p/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/315p/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoYAA4APu1yrU+pp6QiMAgBMB2JZwDE2CHgXVJ8g8oNDbCxGAD+8ps3I/u6YHFi/WGbqDwgc6geQOEgeXyCmccTK91/JLRPRIdfVIgA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:315p_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "315p in SelfLand - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoADyb3gmXzmgTX6BiAA/uWQP7AytlmCMKK3eUx5HvRKmzJ4SyG1ck+HG37alM6aqCnUdjBfaXoZypSx/xr4bzCyLKsu04tMcYGoVsfCsdd++BDN8RXZ1TTVfVLmqlol0LEXYThriFx/wOgA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:315p_in_SelfLand_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "315p in SelfLand - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAAg8q0hSf1FYSAAAP6DOwabpl5gymdFiYEVBnZXAJ9bAgVNy/bwlfjGbYOusbHh5FiM4dCK5TIW/SS3m/jAXURhpgdjWwlf15j/AHAedL9gAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:315p_in_SelfLand_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "315p in SelfLand - Port",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoGv/gPIRiSD/R8XBysAAAD+69jGL249fQisF/0URnpWJrGemsOj+ONStBBSmeiqbBzCPCLzif+LKvV7/x6cdLj9EjVhQNZCcSEYJe1ZVo4VOYaNW8aVkDOPi7wZ0mKWwrw68I2c4yB1vR1WbeYJAAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:315p_in_SelfLand_-_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "315p in SelfLand - Front",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC2yCHw3LDdPNDjF1yAAP7oyausC0FlgHZZI8ByGnA4KNI5mOQY2Oz4Z4RhcV5TjItDvGK3CTgCNebuE6nxegzNuPpZNbCWYzf/bs/lpk2QZ8S9gvIgJC4zQdjDbAAAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:315p_in_SelfLand_-_Front.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "315p in SelfLand - Rear",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQCw7B6MeK4LY4pK6J4A/ulDC6aK016xFvTtvc1TV2cnSyrapHjM1o2xKjeOfPWdb3icNixWvRtIpsDJAvFC1Cx+gUuf3h2fruHJOjCQKXxiq1klMagAAAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:315p_in_SelfLand_-_Rear.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "315p and 350r flying over moon - Above",
+        "width": 1920,
+        "height": 748,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoYAAkAPu1mq04ppaQiMAgBMB2JZwDE2CByeBRhNS0U5REAAP7qLJ/uQuhkL426/WL/0j7u42gVDV1vJN4DbMADafJqh0E6jqF6fJgH4cUBb0NfzjCywjWBe7qGrsPvfbq4MdcDKf4HkM2Nh2OYu8ZAAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:315p_and_350r_flying_over_moon_-_Above.png"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "315p with white back - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/315p/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoYAA4APu1iqk4ppaQiMAgBMB2JZQAD4rnaPRSYFOsY6xBoAAD+8eDB/+LogPTw57NgQMU6n6QEieG2V/iFeel1j6bmSarw15sEaWwF9imj1jzkdja7918RaKzB7cP+tr79rxSgZq0MCGD08HqO2hDLAXKAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:315p_with_white_back_-_Isometric.png"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "315p - White room - Above",
+        "width": 960,
+        "height": 510,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-08-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/315p/gallery-08-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYAA0APu1kqk4ppaQiMAgBMB2JZwAD4zHaRMYf8d/iZqhnIIcAAP7rCuaVSE+MxuPHI5CBbH91uiisUwYh4Towum06VL13KumbD8OgI2iQRdHsdM5CIfRXt7229Rrg0SuwkuWqFqNAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:315p_-_White_room_-_Above.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/dc537d66-2abb-43aa-9d37-4e963fc6e9e2",
+    "wikiPage": "315p",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:35.581Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "slug": "600i-explorer",
+  "name": "600i",
+  "range": "touring",
+  "order": 41,
+  "role": "Expedition",
+  "career": "Exploration",
+  "size": "Large",
+  "sizeClass": 5,
+  "crew": {
+    "min": 5,
+    "max": 5
+  },
+  "cargoSCU": 44,
+  "dimensions": {
+    "length": 91.5,
+    "beam": 52,
+    "height": 17
+  },
+  "massKg": 1653994,
+  "speed": {
+    "scm": 165,
+    "max": 975
+  },
+  "quantum": {
+    "speedMs": 238314300,
+    "rangeM": 908256880734
+  },
+  "shieldHp": 144000,
+  "hullHp": 197250,
+  "description": {
+    "en": "This multi-role luxury vessel from Origin Jumpworks features an exquisitely detailed hull design that balances performance and versatility in a sleek and timeless form. The 600i is designed with a cutting-edge modular technology, allowing you to customize your ship for your needs. Looking to stamp your name in history with the discovery of a new star system? The 600i's Explorer module swaps the lounge for a robust scanning station as well as additional utility hardpoints to increase the ship's effectiveness even more."
+  },
+  "pledge": {
+    "msrpUSD": 475,
+    "originalUSD": 435,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Explorer"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 27231800,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": [
+      {
+        "terminal": "Regal Luxury Rentals - New Babbage Interstellar Spaceport - New Babbage",
+        "locationId": "new-babbage",
+        "priceAUEC": 680794,
+        "updatedAt": "2026-11-09T00:42:47+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=147"
+      }
+    ]
+  },
+  "dates": {
+    "concept": "2017-10-26"
+  },
+  "paints": [
+    "Auspicious Red Dog",
+    "Auspicious Red Dragon",
+    "BIS2951",
+    "BIS2953",
+    "Cold Forge",
+    "Fortuna",
+    "FF",
+    "Sterling"
+  ],
+  "links": {
+    "wiki": "https://starcitizen.tools/600i_Explorer",
+    "brochure": "https://robertsspaceindustries.com/media/awfctcstfkykur/source/Origin600i-Brochure-Optimised.pdf",
+    "trailer": "https://youtu.be/gbCSQDhPOlk"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "600i Explorer in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/600i-explorer/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-explorer/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/600i-explorer/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-explorer/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwAD5FIFTXnPwOnTebe3wAD+9CUZAKShK9jz4bm6LCPu23iyELNVyWlD3VJa0ienWnW+Ch/8hdvz5HLiPhEUohMBuLfiWevTw/eKiR1rT8eZGUwd8lxWcz3bFuyFtj1pzMHllpMWJnplLt2u/fRpQ/QAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:600i_Explorer_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "600i Explorer in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/600i-explorer/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-explorer/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/600i-explorer/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/600i-explorer/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoYAA4APu1kq04ppaQiMAgBMB2JZQDG9CHhGRgTHPVFrBT7AAD+9B/+26q8Ps+2gs9kyaBiup4v6hnqL+hdaLZoi9Ez2rCc5FViEHhOVsV0ciQSG7WSgK2aTnK+iSeQHACGcHHWxuAAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:600i_Explorer_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "600i Explorer - Firing weapons",
+        "width": 1920,
+        "height": 1173,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYAA8APu1Ct1apoqakGAEwHYllAABc7BBJqfs7Hnbb1wAA/vQgrNfT9I3XLOeEN/jqbpOQ7RcawMmUhLp97Arb0McBHdqvHG+otpnDskmf5mVkwi4xXn8qcAAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Explorer_-_Firing_weapons.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "600i - Scanning Room",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoR3ACfdMGrPB+kuhgG1wugQwAD+70p4y+r8x8HfTGch1IcyPIreDguYLm62R3jS24En/gy37unBHaNL1yDDJkaqNJE4YRid6vq817UQrFvfDa5IPkJeEqjev5Ha9C5VgBlywFQGASUyPDUwMEQg3t0heBAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_-_Scanning_Room.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "600i - Garage bay with Cyclone",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAACQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZgCdMoR3AB6SvIjQyxlfjk3+6AAA/vK0NyMOjt+tmaikweGzmZmfwvoogjFok9AX+cHrrzI8Hq6A2Ko79XMAtBqTwF4i/BglqAcGhMc4jqU823aRB28XFqvJZe7t3RaRynz5iYxg4r/oAH1Rn/1BujZZ4QTN6mgAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_-_Garage_bay_with_Cyclone.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "600i Explorer - Upper Escape Pods",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZwCdACPp0dfhuAEX+/2MyQwAAP7s22vMivWvTSJA+nvLMQxZUr0W66p/Am4YPcKP8Rf8kzdLkcqF9WuaPBAuy8NC9BRsV8dd/6108VGhYuH7z6dAIceFiOphgCjiarDG+iCeIw4BT+bDlVNF88mAAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_Explorer_-_Upper_Escape_Pods.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "600i - Bridge - Portside",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JQBdgBDwKXqSv3nMZCcLXAAD+8RECEn9WdY1FHy41I9sT6ipJmHuLokiLZ77g6x/mnSyIEuDqKrGVp4e+hvhP3XOZYcU59NBKbVpOjYt/cseDGrOaMDlgt6G2ez6P/AO/MJqw7KaMztfROimAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_-_Bridge_-_Portside.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "600i - Crew quarters",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JQBdgA9EtI3FJ9AON6laAAP7zALMH8EmhdopQEg0CtcEI5KX8UsqOl3GZKCyaGhhbd2YCe1UOU7gZzHAyiJNqrRhO7TL5ZP7lbQ9IgkOVqUc7shZS8K25jUaLwho9SVpe9sFcgAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_-_Crew_quarters.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "600i - Engineering Room",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoADK/aE6mc817+KeCN2AAD+8SDPGFQv+sdQYYrpRaObeey4UXc2PqpLy4ltvH6zbZrcdYPvvn5wlLNnJSThcobWcVrkyYivxkOpO3vnPSIPyJv0T6mRt3Osm4AAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_-_Engineering_Room.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "600i - Captains quarters",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/600i-explorer/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/600i-explorer/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JYwCdACHPrOL2tQJ2ZBZbYoAA/uW9IzWJk75DkQkA6xOGMLBGJvv4bg18Ffau3okwUeK8AQq9tlfQ1B6Z6hkG3Y+3B+4YNHK6UIQV79uu3ztHE0H69ZSG6XbAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:600i_-_Captains_quarters.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/f8ac4c26-8f4d-4cb3-9be2-7d867a95a877",
+    "wikiPage": "600i Explorer",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:39.699Z"
+  }
+}

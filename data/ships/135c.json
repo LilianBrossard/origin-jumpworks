@@ -1,0 +1,385 @@
+{
+  "slug": "135c",
+  "name": "135c",
+  "range": "personal",
+  "order": 12,
+  "role": "Light Freight",
+  "career": "Transporter",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 6,
+  "dimensions": {
+    "length": 19,
+    "beam": 12,
+    "height": 5
+  },
+  "massKg": 50661,
+  "speed": {
+    "scm": 220,
+    "max": 1250
+  },
+  "quantum": {
+    "speedMs": 189309100,
+    "rangeM": 91836734694
+  },
+  "shieldHp": 2160,
+  "hullHp": 4550,
+  "description": {
+    "en": "With a deceptive amount of storage space in its sleek, stylish frame, and Origin's patented AIR fuel system, the 135c model is the obvious choice for musicians, couriers, and anyone trying to get the party started. Get it there fast, and look good while you're doing it."
+  },
+  "pledge": {
+    "msrpUSD": 65,
+    "originalUSD": 60,
+    "availability": "Always available",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-100/135c"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 1490580,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2018-04-18",
+    "addedInVersion": "Alpha 3.11.0"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/135c",
+    "brochure": "https://robertsspaceindustries.com/media/sb217acbbj976r/source/Origin-100-Series-Brochure-FINAL.pdf",
+    "trailer": "https://www.youtube.com/watch?v=QGMxGdzYVY8"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "135c in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/135c/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/135c/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/135c/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/135c/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoADSy6rdbXfmPJHG/AA/vKiXI6mMwmXc624ionF4I/8Q/jtNQyw14c9FtMDI5LlHCOc803jBnY/s+PqDu9QLa+fiazFh3ozYeitl+Lqaht5HINR0Q5QAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:135c_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "135c in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/135c/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/135c/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/135c/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/135c/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoYAA4APu1oqk6ppiQiMAgBMB2JQBOmUABpyr0TWg0e3BRwAP7ynfC/TKsV29FU6gZ4p1H/fHBLw+Mkb2Nvi4cAMM3zzrgSeeDl6uHznogeGp4WJ5/s6T28WdWFYAAA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:135c_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "135c",
+        "width": 1920,
+        "height": 640,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoYAAgAPu1iqU2ppaOiMAgBMB2JQBOgAxn5ljlg08B3AAAA/s/rFZ+y5A7nb5L4BN417xjw4bXfN+VRU/Z1k417kUew18So5g6m2JWlF8NUTUXWSuA0AAAA",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_UpgradeBanner.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "135c",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoYAAoAPu1qrU8ppiQiMAgBMB2JYwCdABAOlTsdDtUBDQAAy0OpFLaKndryh2WynIjzZPB+eaFBWI7JaMBymE9oFAricg0rjYWHnDFv9fKOu0psf5ljvs//x04Hb2H4072MtHhUy/KRIlV+0GWI8AAA",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_Cargo.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "135c Rear cargo hold down",
+        "width": 960,
+        "height": 741,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-03-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-03-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQAwCdASoYABMAPu1osFAppaSiqAqpMB2JQBXDgelhn98Cvk+7F4AA/tyJPOWhGuApzivbcXlU/dnGLE6s0UNRpVz0rpbHRNxJaAs+qb37g3qDAhB5h7IxwH81N7V7V3ghJ10hfo4jijJjYSAaG8NIhr/LYyfkcQVtHRLDuvgWc/okp7bg58xPdFMAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_Rear_cargo_hold_down.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "135c",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoYAAoAPu1mqk2ppaQiMAgBMB2JZwAAOPS2CQqKFTKc9CAA/u6g0d9+QcWo61ueq1CqPnH5ITepzS/zlFmUO5f/vZDgelb1u21cqelwJfn6/axomeo8Odh7XZ5EVT7owd+ADH0wygAAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_Interior.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "135c",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoYAAoAPu1iqk4ppaQiMAgBMB2JQBOmXkBpixALzzMm8BgA/ulYlDCDcGHmPnk9zjjwenSv2UGRjRRT5sBdXa6nWZPVq2P0ywkN0caNIPjDecr/6Z5Ujs31uxHTuHMaf/XJu98VFbVAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_Hero_Shot.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "135c with 100i and 125a flying away from Port Tressler",
+        "width": 1920,
+        "height": 772,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYAAoAPu1qrU8ppiQiMAgBMB2JZQCdAYvW4SLCBlYmX493UhAAAP7w3CdWue/k47S7uvjZP8yPgI/FK8V7IRhILowAAImfWhPz0ygPWdVy6e0fwARe04jL3xgrK8AHRgAw94AThgAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_with_100i_and_125a_flying_away_from_Port_Tressler.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "135c - Maintaining ship in hangar",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAA5zmAl+IOjzS8AAP7sSS0Kih1IjgrIOBSZIejHRQqgqzAaH59PJKzWczzkEOfP4MoUgOkOLFWYhUzMTLO/9Z5sYMigLP2FYQwKRXgCCSojum+u8OjUehGz0VqJIoU79lF5sxu2oAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:135c_-_Maintaining_ship_in_hangar.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "135c in flight above Lyria",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/135c/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/135c/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAA4APu1kqU2ppaOiMAgBMB2JaACdMoACs+XKrTELsLKoAAD+9DLJ1UHmN2+dMcC3PO+hEsfVranaYVGX5A7Zf9Jw0/Fih9f9a306tmI0UToDvFV6HQIZOf37yc74a9jZ1swn2fwY8YewSInKj03x50lkkgapgAA=",
+        "credit": {
+          "author": "Jonrellim",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:Orig-135c-3.11-space-flight.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/2f231daa-95e5-4cb2-a32e-4db8f29a30d6",
+    "wikiPage": "135c",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:34.279Z"
+  }
+}

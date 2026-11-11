@@ -1,0 +1,401 @@
+{
+  "slug": "325a",
+  "name": "325a",
+  "range": "personal",
+  "order": 22,
+  "role": "Interceptor",
+  "career": "Combat",
+  "size": "Small",
+  "sizeClass": 2,
+  "crew": {
+    "min": 1,
+    "max": 3
+  },
+  "cargoSCU": 4,
+  "dimensions": {
+    "length": 27.5,
+    "beam": 17,
+    "height": 8
+  },
+  "massKg": 85140,
+  "speed": {
+    "scm": 260,
+    "max": 1430
+  },
+  "quantum": {
+    "speedMs": 161410900,
+    "rangeM": 37593984962
+  },
+  "shieldHp": 6336,
+  "hullHp": 9300,
+  "description": {
+    "en": "Just because it's a rough galaxy doesn't mean you need to sacrifice your comfort: the 325a can come out on top in any dogfight. The 325a features an advanced weapon payload as well as a custom targeting system designed especially for the 325a by WillsOp."
+  },
+  "pledge": {
+    "msrpUSD": 70,
+    "originalUSD": 70,
+    "availability": "Always available",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/325a"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 1852200,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": [
+      {
+        "terminal": "Regal Luxury Rentals - New Babbage Interstellar Spaceport - New Babbage",
+        "locationId": "new-babbage",
+        "priceAUEC": 46305,
+        "updatedAt": "2026-11-09T00:42:47+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=147"
+      }
+    ]
+  },
+  "dates": {
+    "concept": "2014-08-04",
+    "addedInVersion": "Patch V0.9.1.3"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/325a",
+    "trailer": "https://youtu.be/qDQ8dbE8qSo"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "325a in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/325a/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/325a/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/325a/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/325a/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoYAA4APu1orU2ppqSiMAgBMB2JZQC+SGlw3zP/8H/QKkqwAAD+/kjJI01kRCeHVzHElhK/yUbuOiCFVvhz9hPMsM5ER7yivw55fsDH0kp3EvZVTh6NOXkW3u36So3fmz+wES+AAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:325a_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "325a in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/325a/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/325a/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/325a/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/325a/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAwCdASoYAA4APu1qrU8ppiQiMAgBMB2JZwDImCHpTJLk9P588IQAAP7yoUiKxxDm4/q76YNCEfWJuXcpZ6FRYa0H8NeQPTMIiVSAAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:325a_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "325a in SelfLand - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JQBOgBER/sWizEzPyiXqju2KAAP7O7gm6I5qXVgKR4rpGolx/hdlqaaBNfrDXPzYEuvbBvDKFAydu+bbQ9RcwnHs2CxMfzH8YrlFXywqCF5CQDN17b1xDd4GCVvujKt9pnSLVmhBF3mp8pjUAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:325a_in_SelfLand_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "325a in SelfLand - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwCsACEqrZ0y+8PRIlusaYAA/j7R9fqFTYH6nQX49tE9PO5Y2ut2M2BStKACeHXgwYbvZ5M/8IaIgQ4t45m471fW0ie3gEFcL5APLiAAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:325a_in_SelfLand_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "325a in SelfLand - Port",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JQBbbP/wHkfwtoywz5k9rc/AA/uvUF1Z2uxGzlt3u0lszh5Tx6+SuMx8D9YYm/w6AhFQ9JCC7CStGvMG1PkdF0ejiDp/Vh6oAIPIfnPhiMbb53LCE3U0DKGXHugSIXB7WMN7YrAAAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:325a_in_SelfLand_-_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "325a in SelfLand - Front",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQC/7CHpOfadWQ+azBvYKRAA/ujMMMHhHrnvlDsrLjmh/CqP+HcW/UjXrJYhsqP9rpHRA4gyZFdex91E0n2b+4GTcQoKTvvNWjWQb3huAuid5eOZBHQYEgOgAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:325a_in_SelfLand_-_Front.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "325a in SelfLand - Rear",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDE2B6VvK8J92YsKRK4wAD+3O/cYdGq9U9nVuKw/kHLBGe0HL9nssHJ+VuEdQpEYWy9tnx+yar6KbPPV8L9LgsvWU65Des7L4Bxj+G5iPxZ6JzOG0YeP3gAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:325a_in_SelfLand_-_Rear.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "325a - Flying fast over clouded mountains",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoYAA4AA4BaJYwAAuaXe84XsS8WMAD+9qhaYDJPoEPYn6y64h8Yj6yST2QZ1lgk9jXNpmt270liQPrDJSfRN2IUJAqbEBwLmferl9qb0Vd2Ulir13j/JB/pQAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:325a_-_Flying_fast_over_clouded_mountains.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "325a - 3x Attacking Buccaneers at Space Station - Rear Port",
+        "width": 1920,
+        "height": 764,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBACdASoYAAoAPu1iqU2ppaQiMAgBMB2JZQCdABuQo35TxzfBRrHaAAD+6k2gs+gjiFzQVBt00zqwN7M19W4qZlYMU95v5UbRC93WXQ+8J6+1rwspIcFvw8XbSeT95UsqtAnBAQO8fTY6cxumj9I4bycadvB+boG49aP0s69BZZLZEAFlIAAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:325a_-_3x_Attacking_Buccaneers_at_Space_Station_-_Rear_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "325a with white back - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/325a/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/325a/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZwAD43nTAeP6GY/rpKWfTMAAAP7x4MH/bi/CAe1IiyREZaNDx8s3lEFgISIm/ZnwSZc/JOQVypzw2FpPYebZdLIeo0L5+bqbzh34W/WOHzX7jyh3c3e7uSPiK1gX7RlnkAAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:325a_with_white_back_-_Isometric.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/039a2768-1aff-4969-b2a4-ed8aeb21dae1",
+    "wikiPage": "325a",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:36.721Z"
+  }
+}

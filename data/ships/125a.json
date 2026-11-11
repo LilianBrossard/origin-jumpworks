@@ -1,0 +1,393 @@
+{
+  "slug": "125a",
+  "name": "125a",
+  "range": "personal",
+  "order": 11,
+  "role": "Light Fighter",
+  "career": "Combat",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 2,
+  "dimensions": {
+    "length": 19,
+    "beam": 12,
+    "height": 5
+  },
+  "massKg": 50798,
+  "speed": {
+    "scm": 230,
+    "max": 1260
+  },
+  "quantum": {
+    "speedMs": 189309100,
+    "rangeM": 91836734694
+  },
+  "shieldHp": 3168,
+  "hullHp": 4550,
+  "description": {
+    "en": "Risks were meant to be taken, but why risk running out of fuel in the heat of battle? With the AIR fuel system, a souped-up weapons package, and all the luxury and refinement you've come to expect from Origin Jumpworks, the 125a has been designed for the discerning maverick."
+  },
+  "pledge": {
+    "msrpUSD": 60,
+    "originalUSD": 55,
+    "availability": "Always available",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-100/125a"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 1508220,
+        "updatedAt": "2026-10-17T04:33:29+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2018-04-18",
+    "addedInVersion": "Alpha 3.11.0"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/125a",
+    "brochure": "https://robertsspaceindustries.com/media/sb217acbbj976r/source/Origin-100-Series-Brochure-FINAL.pdf",
+    "trailer": "https://www.youtube.com/watch?v=QGMxGdzYVY8"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "125a in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/125a/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/125a/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/125a/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/125a/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYAA4APu1iqk4ppaQiMAgBMB2JaQAAXAYZyN4Mxv8ZlYAAAP70Iml6ykVRIBG3eSPiul6UQD7e9hZT8EpIkFJGR02+BwhbrQjPv5cMrmvDq6ptBLCS4SWOAoIxbV70wDZXGpydpsvAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:125a_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "125a in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/125a/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/125a/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/125a/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/125a/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoYAA4APu1krU6ppaSiMAgBMB2JZwDLLCHcN67QRjMI+QAA/vKtMX1DLKDgt7u5A1G+EspsvxLQmlUxMCgO62mOka+uNw2xHDiHN0TaFNT9hEgAAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:125a_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "125a",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JZQAAXJp1nf9xZ/3/J+hqAAD+6dkuWIXkl2hYwLnVxnm5eMbtnvcc5U/pcuLbwwgpkVOOadSCxsdOtxHemzYMv2X1jgTDPXfI0wa7gAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:125a_Hero_Shot.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "125a",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JQBWGUABqmwWm1whvgo8+ZjYAAP7qJ/BdGXYOJgjdXGvvhPpekGfutjoxoJYRM4Fl5JHH1sidCKfqzk76+MVxqWbgD583s8jhdDNqA5oFlmFubfe2CP19KrrnRiGAAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:125a_Yela.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "125a - Headlights",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JaACdMoR3AB5lfH1EkRoT/AAA/tzU8KEreQ/gVRzs3TzpxXYLViJfzsV7rYqxxEuFSDTfp+zd4AYd13x/vKyYAAAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:125a_-_Headlights.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "125a 100i 135c",
+        "width": 1920,
+        "height": 394,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoYAAUAPu1kqU2ppaQiMAgBMB2JQBOmUABejmm1DL+H8ADLM4mXOLXtCyp68S9t/jM3b/Dz4TeuSb5JLr2eEwKV8RJImj4SBPIn9JMfgsKGsFyncOMgAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:Origin-100-Series_showcase.png"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "125a",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoYAAoAPu1iqU2ppaQiMAgBMB2JZwC2yB4M48ebaDVL3P2AAP7U0SHleI9jNzIGHfMLo7fg8nNR8Ry3zLESw249+qghfLGoEdsbJDBOZr8TbzK45RDfvZL3L7wbMIo4S1633PGgQFrfdQgybESuD6YAPMHyCb4o2KvkAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:125a_MicrotechFiring.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "125a - Shooting - Fly though debris",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDKABojcEuqJZaMeAAA/uxEY6qsPrHNq0Z9jZ/FY9rzA1Q09P6Be/6sXsKeOpxyg8CTFIk/4Lv+B0ZjA+lFtA2S5YXkfn0K/Whs8MoYgphzWAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:125a_-_Shooting_-_Fly_though_debris.png"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "125a at the Intergalactic Aerospace Expo 2950",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQC7Ba0AtpwapOl2IkRDAAD+TNHARP7XuJjJSpq4VDupLu+A8VyWnBK+PIdGtqNCuG8oHaOni5fohrL5ZoeW3+GGg2BIsiGJpe79KRMKdJPATpoxuulFlaeJcAcccnXHyys/6x7HAbNKDKzRfLflwOy3u7gA",
+        "credit": {
+          "author": "Jonrellim",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:IAE2950-day8-125a.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "Concept art of the 100i",
+        "width": 1920,
+        "height": 984,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/125a/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/125a/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JQBOgMX6aqQLz7sEsj57ygAAAzjda2DtCeDvmNowNTo/o5gvA66Fm75M7Ecfm0+34woXmJsRhor7bZhmKVtmL/QU9VfaBfG0vFhCGR7cJUa8Q6QpNHVXw5XgVHmDXrjb6E4RCWYDEKK0AAAA=",
+        "credit": {
+          "author": "Cloud Imperium Games",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:125a_Firing_Concept.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/e7eeba8d-b108-48a1-a332-d9edbab2b9c1",
+    "wikiPage": "125a",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:33.433Z"
+  }
+}

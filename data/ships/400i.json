@@ -1,0 +1,413 @@
+{
+  "slug": "400i",
+  "name": "400i",
+  "range": "touring",
+  "order": 40,
+  "role": "Expedition",
+  "career": "Exploration",
+  "size": "Large",
+  "sizeClass": 4,
+  "crew": {
+    "min": 3,
+    "max": 4
+  },
+  "cargoSCU": 42,
+  "dimensions": {
+    "length": 56,
+    "beam": 32,
+    "height": 12.5
+  },
+  "massKg": 440549,
+  "speed": {
+    "scm": 215,
+    "max": 1225
+  },
+  "quantum": {
+    "speedMs": 263400000,
+    "rangeM": 681760794546
+  },
+  "shieldHp": 72000,
+  "hullHp": 81500,
+  "description": {
+    "en": "To explore the stars is a most noble endeavor, and Origin Jumpworks has risen to the occasion in crafting the 400i, the ultimate high-performance pathfinder. Representing a harmonious concourse of style, quality, and sophistication, the 400i exhibits class-leading range, substantial defensive capabilities, and a factory-equipped scanning array, while maintaining the comfort and elegance Origin is known for. Take on the harshest corners of the galaxy without compromise."
+  },
+  "pledge": {
+    "msrpUSD": 250,
+    "originalUSD": 250,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/400i/400i"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 8398060,
+        "updatedAt": "2026-10-17T04:33:29+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      },
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 8840070,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2021-10-09",
+    "addedInVersion": "Alpha 3.15.0"
+  },
+  "paints": [
+    "Afterglow",
+    "Auspicious Red Dog",
+    "Auspicious Red Dragon",
+    "Calacatta",
+    "Deck the Hull",
+    "Fortuna",
+    "Icebreak",
+    "Meridian",
+    "Penumbra",
+    "Polar",
+    "Stormbringer",
+    "Stratus"
+  ],
+  "links": {
+    "wiki": "https://starcitizen.tools/400i",
+    "trailer": "https://youtu.be/SNtwvxjF4Zg"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "400i in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/400i/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/400i/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/400i/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/400i/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaQAD5GoOBNxP/Nvlt/WXNgmAAP70Iq3TdnUtfoxBuN5MaaaZbkmPphvF46IadXS7Q3tBtWaqk+kkI9Kavvo5lbx8Ql6mR/eNnzPYIZ+ymRfgWNpz7+2GaDcZvCkCNCHqb3ktGRkAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:400i_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "400i in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/400i/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/400i/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/400i/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/400i/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoYAA4APu1oqk6ppiQiMAgBMB2JaQAD5AoNgt+HgU2FpIAA/vQclnp10jWJaG4WHQMC3a9Xze/+Smcj1pCtDPFpVdav2U0P6089Hqnn+LDMDcJPh2AAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:400i_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "400i standard paint",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoYAAoAPu1kqU2ppaOiMAgBMB2JZQCsACKQwbar4SdJpLeAAP14Ja1v5Vauivy8djMoAN6IO65cxcLFa3UQ8+9pcziEq96SQm4diljx1LtP2B/VFO1Gal6npTDvsYw7p603WoXwADxQm0RCT6gAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i-standard-paint.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "400i in flight over a planet",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZACdMoR4GCxxndH/mc6bP3F8AADh7J7xB+YZMEjItk5C7fYzWnacrQKzjwyNkelX78juezqMdSqufOzkw5JWZV7d7//mJzhYdPegAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i_Ship_Showdown.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "400i - Landed Loaded with personal luggage",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAAYfC6QskwxqD+ZJ0AAP7kaCiFzS9GSu00VeNv1G6vHDfj2SVpiJSi5Im3STku0Wi5sjZtOV7Mz5X6+C7BzcdiQHem1LTqpn14Dy2VUZK6RNk7rd7/wei2QGSonUj32bE72zhGkR9QNzKIGI64AAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i_-_Landed_Loaded_with_personal_luggage.png"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "400i - Landed Campfire beside trees and water",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC06CKl2kJEFDcQkzeiE8AA/uo1rXQdnJ7YD40JFX+jzqf9DUGsSfHTMmXGUg/J7cZZvUm7Jx+j3e5sjFJZRXylfW9sd1aqqrOW5F5uQeUaDCrTkfVBxObNWtOngwFjVuFvTfnGP2sMM4IIqfTnKJg64AAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i_-_Landed_Campfire_beside_trees_and_water.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "400i - flying over mountains - under attack by Reliants",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBWABBovZOWtNCiyMUR1KgAA/q/ukxu0l2f+7BlAiZBmElkN8IXQn9OsDpEx7vXnl/3I3EjBW6V3SE/m6nSe+eukY2sf1bElecTmqUri2MkduJjKrQAfH/A1Ca0EexSvIvRHzi0CbtBTkAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i_-_flying_over_mountains_-_under_attack_by_Reliants.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "400i - Above view flying over blue landscape",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQAAMNOBA9j3yHB5pO8NAAP7fzMMHNO5VD+mPNFHxjDSiB/Zp1FAtDZrGN4zJaoZixf/sPlWns1vIT2KLCwVL17gij3iKnBVsBh7H7TBhsG1ZHQKGP3eksEwAoTAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i_-_Above_view_flying_over_blue_landscape.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "400 - X1 lift down with NPC climbing stairs",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoYAA4APu1krU6ppaSiMAgBMB2JYwCw7CHHrH5wXyG2b69IjO6AAP3dfkmkogZiz+vLlXqG0+7G+B3tTJWXMND5y/OItlMvZ1yxq3bD8bDvJc+KF6Nm4w4w2sFypDQ7biL6eJpL33NbxiuwZvl4c6LEHH1FSL6+NKbk6CAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400_-_X1_lift_down_with_NPC_climbing_stairs.png"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "400i - Flying away from X1 and player sitting",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/400i/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/400i/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoYAA4APu1kqU2ppaQiMAgBMB2JYwCdAB0/Krj5dZSyGTAwAMqyROGiNoiFom4tboK1bOA0qPQe+dQss6DfFYRQ5pyPaa8GoW0rQUVjt15vE4Ub8cO2PBI+Lub3GdPHjAAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:400i_-_Flying_away_from_X1_and_player_sitting.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/718f4435-628b-4436-bb80-bf9cfef9a945",
+    "wikiPage": "400i",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:38.996Z"
+  }
+}

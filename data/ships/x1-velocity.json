@@ -1,0 +1,381 @@
+{
+  "slug": "x1-velocity",
+  "name": "X1 Velocity",
+  "range": "gravlev",
+  "order": 61,
+  "role": "Racing",
+  "career": "Competition",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 0,
+  "dimensions": {
+    "length": 5.19,
+    "beam": 1.87,
+    "height": 1.55
+  },
+  "massKg": 5354,
+  "speed": {
+    "scm": 222,
+    "max": 611
+  },
+  "hullHp": 2820,
+  "description": {
+    "en": "Subtract weight, add speed. The X1 Velocity offers a lighter chassis to improve overall performance, making it a dangerous new addition to the open-canopy racer lineup."
+  },
+  "pledge": {
+    "msrpUSD": 50,
+    "url": "https://robertsspaceindustries.com/pledge/ships/x1/X1-Velocity"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 113117,
+        "updatedAt": "2026-10-18T00:04:46+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      },
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 119070,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {},
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/X1_Velocity"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "X1 Velocity in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/x1-velocity/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-velocity/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/x1-velocity/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-velocity/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoYAA4APu1qrU8ppiQiMAgBMB2JQBibMXJWrYtOtwkPEF+jFAAA/v3awOGB251+0ORDun2EtpRvBPdMvL4Q9OV3kEcV9klBWbEL1LUgv/DiOf55t2Yz23z3w4YAUdsYJN1iEgON7uSU2bdFoU3oDuQCBAAAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "X1 Velocity in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/x1-velocity/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-velocity/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/x1-velocity/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-velocity/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYAA4APu1mq04ppaQiMAgBMB2JZQC/7CHfsUQAeqm+u2AA/vQd2LmSlVSY1bRjQ8/IBpIbJKXTKEuM21J0yDSSr2CarvbkcZY8Ml87pHrrXCzT0oLI2LO3bEYAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "X1 Velocity landed in hangar - Isometric - cut",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYAA4APu1kqk4ppaQiMAgBMB2JZwAAXGUKKnWP96GXYPAA/u6FlnwC/mkyIMNHP9439/V9Y5/NmJs04La2XCXxgMKlrZc4dj3qurhEYyDU6VixKnBMXUNcWyoAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_landed_in_hangar_-_Isometric_-_cut.png"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "X1 Velocity moving fast against blurred BG",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JYgCdAGlP7WwVTrtJ0rSny8AA/vPxfomfJPvzjZ8e2tFxSbfSRScip9i//ChulY8Xkxn/0eNAVcJxL5o9u1P0iadaYSan71WUAeCo0JGXAiZ2g/UdfVwYKz0pCMCuWXwAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_moving_fast_against_blurred_BG.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "X1 Velocity rear against sky blue BG",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JagCdMoRwABl0qBc44ajggAD+IsnfjoZkfvcgrleMIZ9/LUsS1UwkjF2TPXU+RqDftyHqAN1U/LB+t2K1DOud1ynTVKedgAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_rear_against_sky_blue_BG.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "X1 Velocity stylised on white BG",
+        "width": 960,
+        "height": 322,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-04-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-04-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoYAAgALrV2u12jqampiYC0SxgF2QJiMxKWUSGm5bh7QAD+9Ut7b8kBNQAlSBeJRaaxAyzuvxqj4+dAGYSpOHtAtem1pMH04vvUKXnnDINtYx8nmpD+w3MJUWolJoC0xxV80AAdVAAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_stylised_on_white_BG.png"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "In-game screenshot from Star Citizen Alpha 3.22: Taken as a PNG with ReShade at 5500x3094 Downsampled to 4k",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoYAA0APu1iqk2ppaQiMAgBMB2JZQC2yB8xTeOMwMUYX5RogAD+7Dx6GJ3vYbzzKfo5TiPtD7XPOKWPUCfRh27YfE4jjAHrWNnvQlES2woVmCp7wH35V2uG9ZE4PVQDk33Su7tjWWdpsgaaat+GAAAA",
+        "credit": {
+          "author": "Hasgaha",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_profile_streak.png"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "X1 Velocity - Dark",
+        "width": 1920,
+        "height": 1079,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAwCdASoYAA0APu1iqk2ppaQiMAgBMB2JaQAAW4VBx7q9VAAA/vQjvPUWXGw1EN5xZ71pdLB08c7eLb+PRmTbAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Velocity_-_Dark.png"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "X1 series",
+        "width": 1920,
+        "height": 952,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAAwAPu1iqU2ppaQiMAgBMB2JZQDE2CKsQ8FWP6zfsfCwAADN8wkoE58pSlyXPeVP5kUtI0xScgJacaTfJstPHv3dvLmYBcnLbX07KxiHD/b7S0xbSZjbA9krNIxvTVY2joVCN0KhsO6bU/lLu9Ir5YbNav1GAAA=",
+        "credit": {
+          "author": "Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Concept_Velocity.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "X1 firing weapon moving fast against blurred BG - Cut",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-velocity/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-velocity/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwAwCdASoYAA4APu1kqU2ppaOiMAgBMB2JQBOiP/wIC858R1nEKliAAP7oTTHNiyBwjWn4ftp0urH2ZHysZFFEkK6Fp2nPD1INc1v/XFenIQfIgJbuWtwX85abtq7FLWPybbrvAcgt8N3G7HowuaSovr+0M+kQFA+gRRyAgMrAk2z8K9LAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_firing_weapon_moving_fast_against_blurred_BG_-_Cut.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/58e25524-8bd3-450f-8442-7b58fdfc8a50",
+    "wikiPage": "X1 Velocity",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:44.737Z"
+  }
+}

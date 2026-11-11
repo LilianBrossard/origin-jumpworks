@@ -1,0 +1,391 @@
+{
+  "slug": "85x",
+  "name": "85X Limited",
+  "range": "prestige",
+  "order": 50,
+  "role": "Touring",
+  "career": "Exploration",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 2,
+    "max": 2
+  },
+  "cargoSCU": 0,
+  "dimensions": {
+    "length": 14,
+    "beam": 13.5,
+    "height": 4
+  },
+  "massKg": 24623,
+  "speed": {
+    "scm": 235,
+    "max": 1250
+  },
+  "quantum": {
+    "speedMs": 161410900,
+    "rangeM": 32223415682
+  },
+  "shieldHp": 1920,
+  "hullHp": 2100,
+  "description": {
+    "en": "Elegantly styled and meticulously constructed, the 85X is a versatile and comprehensive away-vessel that features precision control in and out of atmosphere. Utilizing much of the same thruster technology as the 300 series, it has the power of a racer with the reliability of a touring ship. Whether descending down to the planet surface or taking in the sights of your system, this runabout continues Origin’s proud tradition of turning heads.\n"
+  },
+  "pledge": {
+    "msrpUSD": 50,
+    "originalUSD": 50,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/85x/85X"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 544635,
+        "updatedAt": "2026-10-17T04:33:29+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2016-11-18",
+    "addedInVersion": "Alpha 2.6.0"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/85X"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "85x in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/85x/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/85x/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/85x/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/85x/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoYAA4APu1kq04ppaQiMAgBMB2JaQAAW+vHqk7q2zIMW58AAP70Iok8P5wrsbN6Vd+PIL98HtXLDzY3hCyeMPgR202xs+P7ecK4x6OB83Eims/8zNo7/HaMV2eK1j4I+9PvvNAAAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:85x_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "85x in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/85x/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/85x/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/85x/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/85x/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoYAA4APu1kq04ppaQiMAgBMB2JaQAAW+wQR/H7j+PdCAAA/vQcN4DY+e/tuwWNW4W45vQwNNCzTlegm9jlo3uhxhh2GUcsLwcO7p3ZFzlAAAAA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:85x_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "85x in SelfLand - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZwCw7BUiXiPA4QQPQwAA/tIDYK4JjNccn/XTvyGt7oxmHMy7lVF/pq8wqwTZNAio+5g8LzJzqD6YaSYc/tsWafKO6ltzqtqL5+uNt/Y0Oshozxl2BONcILy5hoZWAAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:85x_in_SelfLand_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "85x in SelfLand - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZwCuHB9xqI0Xf9wVfGl6K6AA/p6iBpRHU2VVTnZQ4m6XIz+PmQf4IiQEk6cTqVH+a/raxCznbYuF6sx2CjlnL5eAk/st3sVFFKBMnFAVSlhcup1BYCgAAAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:85x_in_SelfLand_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "85x in SelfLand - Port",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JZwC7ACHad5k/2jM0+FgA/vDjxjyIPuIDTmbH4cfchiOq7ETPo0zODxcUIwwrBWe9qZ+KpETwOeaEG7+h6QBO1LUWnO3ZwE/zzWX/28THObT7U5xJ4L4xD3fLQ50lkOQTZ/r+4YAAXWaHzVKAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:85x_in_SelfLand_-_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "85x in SelfLand - Front",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwC+SCHdy7abQj/vVj7WLAAA/vDJI6fp2mORwFEXgVGUaHAmXgE7QK6isumOkOdNQ79OCasBGyCT1rmmlvYjvqVbBJOtp7riV7asIj0iL33owAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:85x_in_SelfLand_-_Front.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "85x in SelfLand - Rear",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwC+SB6x32VwfVE121u6AAD9UF0YddUPP7SR1vhtH1jMLuBFzJghGDhqnO8l8dy6vTEFgLKxZM7bBkAWLD0XHZvXfyvEYMStokdUd0M6J3S9J27KlKN1+3hWczggjMBTOXOkS0hVcAw+AAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:85x_in_SelfLand_-_Rear.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "85X - Flying through clouds over city - Front Starboard",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQCdACB0MbFGa0fp1hrdAAD+1GkyEKSrF4vs8MnKRTpgCQPNyrxiqxZ12cP803UmjH+IzQrTVzJkXFnlkRnw6yR85GNe1BY1LLYf2RA5SyIbC4kMWUY/60j765LsJRkgAAAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:85X_-_Flying_through_clouds_over_city_-_Front_Starboard.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "Ship 85x city",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQCdACFN0ulwtYekv1xmvwAA/uzeiAo59XM3+lONlCOaMFpHVP7OD/8opiMaXbScxRCEQ/FhDusknuJIynwCmapKg4mRunkzPrOMjGKXP570laZr9S0EHzeHu0mpMFA+ho+KjDEYAA==",
+        "credit": {
+          "author": "Inconnu",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:Ship_85x_city.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "85x x2 in formation low over water",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/85x/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/85x/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoR3ACrvSiIT50UVCwAA/kMf35JGIx4KVuAd9uFmk5I1uGmfikY2FEK6ii9gCQEJUXvSg86ZagiiNogfBLhYFnlpnTCA60cyaFtrkdPGquMX5N0WMc9pORfU8tFT1UwWn6xbA/fMtj08HZY7TK5lj0AA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:85x_x2_in_formation_low_over_water.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/9dc9c257-c413-416a-ab9b-06fbadf18d1e",
+    "wikiPage": "85X",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:40.485Z"
+  }
+}

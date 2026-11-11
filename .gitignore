@@ -43,5 +43,3 @@ next-env.d.ts
 # cache du script de collecte
 /.cache
 
-# exemple de variables d'environnement (commité)
-!.env.example

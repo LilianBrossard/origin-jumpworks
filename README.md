@@ -30,7 +30,27 @@ pnpm dev          # serveur de développement sur http://localhost:3000
 | `pnpm typecheck`               | Vérification TypeScript                     |
 | `pnpm format` / `format:check` | Prettier                                    |
 | `pnpm check`                   | Lint, types et format en une seule commande |
+| `pnpm harvest`                 | Collecte les données de la flotte (manuel)  |
 
-## Variables d'environnement
+## Données
 
-Copier `.env.example` en `.env.local` et renseigner `UEX_API_TOKEN` (nécessaire uniquement pour le script de collecte des données).
+Les données sont collectées **une fois**, à la main, puis commitées : le site en ligne ne fait aucun appel externe.
+
+- `data/ships/*.json` : une fiche par vaisseau jouable (caractéristiques, prix, crédits des images)
+- `data/locations.json` : lieux d'achat et de location en jeu
+- `data/meta.json` : date du relevé, patch du jeu, sources
+- `public/ships/<slug>/` : images optimisées (AVIF et WebP, 960 et 1920 px)
+
+Sources : [API du Star Citizen Wiki](https://api.star-citizen.wiki) (caractéristiques et prix [UEX](https://uexcorp.space)), [starcitizen.tools](https://starcitizen.tools) (images et crédits). Aucun jeton n'est nécessaire.
+
+### Actualiser
+
+```bash
+pnpm harvest                  # tout (les images déjà présentes ne sont pas réencodées)
+pnpm harvest --skip-images    # caractéristiques et prix seulement
+pnpm harvest --ship=890-jump  # un seul vaisseau
+```
+
+Autres options : `--force-images` (réencoder), `--cached` (réutiliser le cache HTTP de `.cache/`), `--dry-run`.
+
+Ensuite : relire le diff de `data/`, puis commiter. Les réglages par vaisseau (gamme, ordre, exclusions d'images) sont dans [scripts/harvest/config.ts](scripts/harvest/config.ts). Un vaisseau devenu jouable est signalé par le script et doit y être ajouté.

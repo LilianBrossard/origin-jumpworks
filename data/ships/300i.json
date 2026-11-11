@@ -1,0 +1,402 @@
+{
+  "slug": "300i",
+  "name": "300i",
+  "range": "personal",
+  "order": 20,
+  "role": "Luxury Touring",
+  "career": "Exploration",
+  "size": "Small",
+  "sizeClass": 2,
+  "crew": {
+    "min": 1,
+    "max": 3
+  },
+  "cargoSCU": 8,
+  "dimensions": {
+    "length": 27,
+    "beam": 17,
+    "height": 8
+  },
+  "massKg": 82917,
+  "speed": {
+    "scm": 258,
+    "max": 1440
+  },
+  "quantum": {
+    "speedMs": 189309100,
+    "rangeM": 71428571429
+  },
+  "shieldHp": 4320,
+  "hullHp": 8700,
+  "description": {
+    "en": "If you're going to travel the stars... why not do it in style? The 300i is Origin Jumpworks' premiere luxury spacecraft. It is a sleek, silver killer that sends as much of a message with its silhouette as it does with its weaponry."
+  },
+  "pledge": {
+    "msrpUSD": 60,
+    "originalUSD": 55,
+    "availability": "Always available",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/300i"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 1375920,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": [
+      {
+        "terminal": "Regal Luxury Rentals - New Babbage Interstellar Spaceport - New Babbage",
+        "locationId": "new-babbage",
+        "priceAUEC": 34398,
+        "updatedAt": "2026-11-09T00:42:47+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=147"
+      }
+    ]
+  },
+  "dates": {
+    "concept": "2013-06-21",
+    "addedInVersion": "Patch V0.8"
+  },
+  "paints": ["Obsidian", "Ultramarine"],
+  "links": {
+    "wiki": "https://starcitizen.tools/300i",
+    "brochure": "https://robertsspaceindustries.com/media/0iplijfsgmlb8r/source/300series_brochure-1.pdf",
+    "trailer": "https://www.youtube.com/watch?v=qDQ8dbE8qSo"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "300i in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/300i/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/300i/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/300i/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/300i/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZwDMHYtA4IduiTDcBdLenCwAAP70JO1Acu6ud2R90/X8uT6TraF1TkYzF0z8EsC+NzP/oGnMxrIiohy5pU57qbp5/CemAbqcj38rxyPYOrqTfHkGVMW55QwHvaaO/wV1zxlkjmUt2c1XXTSQcXhggAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:300i_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "300i in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/300i/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/300i/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/300i/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/300i/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZwDDNCHw9SBYo6kfYI2gAAD+9Ci2YQTEm4EHzQkfRS6oXa4X9jhkMzDhfN5RTXMZfDkPD52Dj25+D7lIX8SErOz5lVddbMJQDyPIjHsFEQAA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:300i_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "300i in SelfLand - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JYwC/OB6Au/Nn+XaVhkG4doAA/unjGyI0HuDMRK35thDJFOrIvOKZXjlDGmIC4cNiyT0K+xW5y22eeeTDjYr0eFAf1yxxgaa1cfUzQ9/bRcSrioRGJ4/u18tvKgVhVBBOiYbjtaJ8qAY2FhuoOvgN1fVyf0+JmMNnakQ/u7w9lNVKmfEAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:300i_in_SelfLand_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "300i in SelfLand - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZwC+SYvW4HqaSni61EtE8u0AAP67wQACp0mMIvJrxzYhGQcgW4f8ihSZQzrflUDIvSu/PGj8KT4oBqJfCl+g/3BPDnC7g9R7lhAzQCtdYvlfKwyd/IGMnbOIBHuz/2YYb5gYylr6lQpX5jcheAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:300i_in_SelfLand_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "300i in SelfLand - Port",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JYwDHBf/gPH120gspiWGeAP7ufsMH3R1MLV/up3y6fKkID9kUgyAxDFCEgffSdRGjbhTMDCM565qlu+ASNhQInHulO3Vy0dLLZ3ilQZVjXWxt7sO/9agMdPtH4xaeIdx0k6tqDzjiQGxFK6tXxO9wM349VQl97MYUV70Q4CT5AAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:300i_in_SelfLand_-_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "300i in SelfLand - Front",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZwDImCE+nua7HhD/+DHE3FAA/u6dKl96kGb5rinixbkFnXQ6cOReFoko/6XXqRrR500nm8Wz7KrFayXei3UAilTIHppPjDsEPsMnIuqUNOa+ap3StdewSbv8sctilI1FR5JAenjLztn2P94+IDbkYzBaU6YAAAA=",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:300i_in_SelfLand_-_Front.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "300i in SelfLand - Rear",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDG9CHhud27vAXUNNOgAP7r76hDEPsOWGPpIRS8OOvUyQUNk5SCOrv34aecFAJkC3frPsAnpW96dDfJnYkJ/89a0yNttWV+JJ1BdT23cxh+k7GPs/28Vgn0VP9evsQg8dfIXJoAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:300i_in_SelfLand_-_Rear.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "300i flying in space with bright Nebula - Starboard",
+        "width": 1920,
+        "height": 810,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoYAAoALrV2u12jqampiYC0SxAE6AI/zD282ss5CVdthvMAAP7xes5RKer28MLTrCortp4Uedfxew56oQDSb1rd24CnpxuSfIRfjMxol6smge2b+hNxQAe7zp2YwZ5kaI00eoEIsHwM9SSqRiNmbAKvRVYvhnxn1LfUDTIwAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:300i_flying_in_space_with_bright_Nebula_-_Starboard.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "300i promo 4K-Min",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQDCgBm3Y9yhm4htHdkt3lAA4gUqnF0oL+1jKAK4e8NNqVzQuUV6x08G/pq6iWL5DULYrCMAx+zYEG00HmSxRJ+6M86HoRLX8OM05Cg20x5sd8hhfn2cSYKkiCTDXKusMb1wAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:300i_promo_4K-Min.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "2019 rework of the 300i",
+        "width": 1920,
+        "height": 1018,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/300i/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/300i/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoYAA0APu1Ct1apoqakGAEwHYlpAAEd6Hc70L62EJMGAAD+/QFE1jv9A3v4OJ68lgZa/t5kcKHnmHeIGiNu/Uo8z4P6/0NJEtXBZsRc13sWRDVlSgL3fdDVX0uKGnFja68HykhRs1MeQAAA",
+        "credit": {
+          "author": "Cloud Imperium Games, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:300i-rework-anniversary-2948.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/ce937681-caa2-4cfa-ab80-f5bf2a5b9a6c",
+    "wikiPage": "300i",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:34.620Z"
+  }
+}

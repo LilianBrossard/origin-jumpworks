@@ -4,7 +4,7 @@
 > Projet de portfolio : montrer ce qu'un site moderne peut offrir en matière d'expérience, de mouvement et de finition.
 
 - **Dépôt** : https://github.com/LilianBrossard/origin-jumpworks
-- **Version du document** : 1.0 — 2026-11-11
+- **Version du document** : 1.1 — 2026-11-11 (sources de données précisées à l'étape 2)
 - **Statut** : validé, en attente du démarrage du code
 
 ---
@@ -16,7 +16,7 @@
 | O1  | Un site **très agréable** à visiter, à parcourir et à contempler | Mouvement fluide (60 fps sur une machine moyenne), aucune animation agressive |
 | O2  | Marquer une **évolution** par rapport au premier site (Anvil)    | 3D liée au défilement, transitions entre pages, DA soignée                    |
 | O3  | Une vitrine **portfolio** qui démontre des savoir-faire          | Code propre, typé, documenté. Accessibilité et performance mesurées           |
-| O4  | Des **données fiables** sur la flotte jouable                    | Données issues du wiki et d'UEX, avec date et patch affichés                  |
+| O4  | Des **données fiables** sur la flotte jouable                    | Données issues du Star Citizen Wiki et d'UEX, avec date et patch affichés     |
 | O5  | **Accessible et inclusif**                                       | WCAG 2.2 AA. Expérience complète sans animation et sans WebGL                 |
 
 ### Hors périmètre
@@ -50,67 +50,79 @@ Le site doit afficher **clairement** qu'il est un projet de fan.
 
 ### 3.1 Sources
 
-| Donnée                                                                                          | Source               | Moyen d'accès                                                                                              |
-| ----------------------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Liste des vaisseaux jouables d'Origin                                                           | starcitizen.tools    | API MediaWiki (`api.php`) : catégorie ou requête par fabricant, puis filtre sur le statut « flight ready » |
-| Fiche technique (taille, équipage, cargo, vitesses, dimensions, masse, rôle, coloris)           | starcitizen.tools    | `action=parse`, puis lecture de l'infobox et des modules Lua (ou de la page brute)                         |
-| Description, historique, lore                                                                   | starcitizen.tools    | idem (texte en anglais)                                                                                    |
-| Images (photos officielles, rendus en vol, au sol)                                              | starcitizen.tools    | `action=query&prop=imageinfo`, puis téléchargement de l'original                                           |
-| Prix en jeu et lieux d'achat ou de location                                                     | **UEX Corp API 2.0** | Jeton de type Bearer (gratuit), endpoints vehicles et terminals avec leurs prix                            |
-| Prix de précommande (USD)                                                                       | starcitizen.tools    | infobox                                                                                                    |
-| Histoire de la marque (fondation en 2747, Cologne → New Austin en 2913, PDG Jennifer Friskers…) | starcitizen.tools    | page `Origin_Jumpworks`                                                                                    |
+| Donnée                                                                                          | Source                                                                                | Moyen d'accès                                                                                       |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Liste des vaisseaux d'Origin et statut (jouable ou concept)                                     | API du Star Citizen Wiki                                                              | `GET /api/v2/vehicles?filter[manufacturer]=ORIG`                                                    |
+| Fiche technique (taille, équipage, cargo, vitesses, dimensions, masse, rôle, bouclier)          | API du Star Citizen Wiki                                                              | `GET /api/v2/vehicles/<slug>`                                                                       |
+| Description officielle, prix de précommande, dates, brochure, bande-annonce                     | API du Star Citizen Wiki (champ `curated_data`, synchronisé depuis starcitizen.tools) | idem                                                                                                |
+| Prix en jeu et lieux d'achat ou de location                                                     | Données **UEX Corp**, incluses dans l'API (champ `uex_prices`)                        | idem, **sans jeton**                                                                                |
+| Images, auteurs et licences                                                                     | starcitizen.tools                                                                     | API MediaWiki : `action=parse&prop=images`, puis `action=query&prop=imageinfo` (avec `extmetadata`) |
+| Histoire de la marque (fondation en 2747, Cologne → New Austin en 2913, PDG Jennifer Friskers…) | starcitizen.tools                                                                     | page `Origin_Jumpworks`, rédigée à la main dans `data/brand.json` (étape 5)                         |
 
-> ⚠️ La liste en tête de la page `Origin_Jumpworks` est incomplète (elle cite seulement 300i, 315p, 325a, 350r, M50 et 890 Jump). Le script doit lister les vaisseaux **par fabricant** et non à partir des liens de cette page.
+> L'API du Star Citizen Wiki appartient au même projet communautaire que starcitizen.tools. Elle réunit les données du jeu, les données éditoriales du wiki et les prix UEX : on n'a donc **pas besoin de jeton UEX**.
 
-### 3.2 Script de collecte — `scripts/harvest.ts`
+**Flotte retenue : les 17 vaisseaux jouables.** Sont exclus :
+
+- les G12, G12a et G12r, encore en concept ;
+- le 600i 2951 BIS et le 600i Executive Edition, des éditions spéciales sans données propres.
+
+### 3.2 Script de collecte — `scripts/harvest/`
 
 - Lancé **à la main uniquement** : `pnpm harvest`. Il ne tourne jamais pendant le build ni sur le site en ligne.
 - Options :
-  - `--only=wiki|uex|images` : n'actualiser qu'une seule source ;
   - `--ship=<slug>` : ne traiter qu'un vaisseau ;
+  - `--skip-images` : actualiser seulement les caractéristiques et les prix, en gardant les images existantes ;
+  - `--force-images` : réencoder toutes les images ;
+  - `--cached` : réutiliser le cache HTTP (utile en développement) ;
   - `--dry-run` : n'écrire aucun fichier.
 - Comportement :
-  1. Il récupère la liste des vaisseaux jouables d'Origin.
-  2. Pour chacun, il lit la fiche et la normalise en JSON validé par **Zod**. Le script s'arrête si un champ obligatoire manque.
-  3. Il télécharge les images originales. Il les convertit (avec `sharp`) en **AVIF et WebP** dans plusieurs largeurs, génère un **aperçu flou** (blurhash ou LQIP) et calcule une **carte de profondeur** pour l'effet de parallaxe (voir M4). Les cartes de profondeur sont générées dans un second temps, avec un modèle de type _Depth Anything_, ou faites à la main pour les images clés.
-  4. Il interroge UEX et enregistre, pour chaque vaisseau, les lieux d'achat et de location avec leurs prix en aUEC.
-  5. Il écrit un fichier `data/meta.json` qui contient la date du relevé, le patch du jeu et la version du script.
-- Les requêtes sont limitées (≤ 1 par seconde vers le wiki), avec un _User-Agent_ générique, un cache local (`.cache/`, ignoré par git) et la reprise après erreur.
-- Le jeton UEX est lu depuis `.env.local` (`UEX_API_TOKEN`) et n'est jamais commité.
+  1. Il récupère la liste des vaisseaux d'Origin, garde les jouables et signale tout nouveau vaisseau absent de `config.ts`.
+  2. Pour chacun, il lit la fiche et la normalise en JSON validé par **Zod** (`lib/data/schema.ts`). Le script s'arrête si un champ obligatoire manque.
+  3. Il choisit les images :
+     - la **vue isométrique** studio du wiki devient l'image principale (`hero`) ;
+     - la **vue de profil bâbord** devient `side`, qui servira au comparateur d'échelle ;
+     - la **galerie** reprend jusqu'à 8 images d'au moins 1280 px, dans l'ordre de la page, sans les vues WIP, les icônes ni les logos ;
+     - les noms des coloris sont déduits des vues isométriques des variantes.
+  4. Il convertit chaque image (avec `sharp`) en **AVIF et WebP**, à 960 et 1920 px de large, et génère un **aperçu flou** (LQIP). Il enregistre l'**auteur et la licence** de chaque image, qui alimenteront la page de crédits. Les cartes de profondeur (M4) seront ajoutées à l'étape 7.
+  5. Il écrit les prix d'achat et de location en aUEC (avec le terminal, le lieu, la date et le patch), `data/locations.json` et `data/meta.json`.
+- Les requêtes sont limitées (≤ 1 par seconde et par hôte), avec un _User-Agent_ générique, de nouvelles tentatives en cas d'erreur et un cache local (`.cache/`, ignoré par git).
+- Une description française déjà rédigée (`description.fr`) est conservée d'une collecte à l'autre.
 
 ### 3.3 Arborescence des données
 
 ```
 data/
   meta.json                # date du relevé, patch, sources
-  brand.json               # histoire, chronologie, philosophie
+  brand.json               # histoire, chronologie, philosophie (étape 5)
+  locations.json           # lieux d'achat ou de location (système, planète, ville)
   ships/
     890-jump.json
     m50.json
     ...
-  ranges.json              # regroupement par gamme
-  locations.json           # concessions (système, planète, ville, terminal)
 public/ships/<slug>/
-  hero.{avif,webp}         # plusieurs tailles
-  gallery-01.{avif,webp}
-  depth-hero.png           # carte de profondeur (si disponible)
-  silhouette.svg           # profil de côté pour le comparateur d'échelle
+  hero-{960,1920}.{avif,webp}        # vue isométrique studio
+  side-{960,1920}.{avif,webp}        # vue de profil
+  gallery-NN-{960,1920}.{avif,webp}
+  depth-hero.png                     # carte de profondeur (étape 7)
 ```
 
-### 3.4 Modèle d'un vaisseau (simplifié)
+### 3.4 Modèle d'un vaisseau
+
+Le schéma de référence est dans [`lib/data/schema.ts`](../lib/data/schema.ts). En résumé :
 
 ```ts
 Ship {
-  slug, name, series, range: 'personal'|'touring'|'racing'|'ground'|'prestige'
-  role: string[]; size: 'snub'|'S1'..'S6'|'vehicle'
+  slug, name, range: 'personal'|'touring'|'racing'|'prestige'|'gravlev', order
+  role, career?, size, sizeClass?
   crew: { min, max }; cargoSCU; dimensions: { length, beam, height }; massKg
-  speed: { scm, max, quantum? }
-  pledgeUSD?: number
-  ingame: { buy?: Offer[]; rent?: Offer[] }   // Offer = { location, terminal, priceAUEC }
-  paints: string[]
-  description: { en: string; fr?: string }
-  images: { hero, gallery[], depth?, silhouette? }
-  source: { wikiUrl, revisionId, fetchedAt }
+  speed: { scm, max }; quantum?: { speedMs, rangeM }; shieldHp?; hullHp?
+  description: { en, fr? }
+  pledge: { msrpUSD?, originalUSD?, availability?, url? }
+  ingame: { buy: Offer[]; rent: Offer[] }  // Offer = { terminal, locationId, priceAUEC, updatedAt, gameVersion }
+  dates: { concept?, addedInVersion? }; paints: string[]
+  links: { wiki, brochure?, trailer? }
+  images: { hero, side?, gallery[] }       // chaque image : sources AVIF/WebP, LQIP, crédit (auteur, licence)
+  source: { apiUrl, wikiPage, gameVersion, fetchedAt }
 }
 ```
 
@@ -233,7 +245,7 @@ Les valeurs sont indicatives et seront ajustées lors des maquettes. **Tout text
 1. **Ouverture**. La nuit. Le fil (M1) apparaît et trace le monogramme, puis un vaisseau phare se révèle avec de la profondeur (M4). Titre : _Origin Jumpworks_. Sous-titre court. Une invitation discrète à faire défiler.
 2. **Manifeste**. « Ownership as a lifestyle » : 2 ou 3 phrases, beaucoup de vide.
 3. **Histoire**. Une frise que le fil traverse : 2747 (fondation, moteurs à fusion), 2899 (premières gammes 200 et 300), 2913 (installation à New Austin, Terra).
-4. **Les gammes**. Personnel, Touring, Course, Terrestre, Prestige. Une composition éditoriale par gamme, avec des liens vers les fiches.
+4. **Les gammes**. Personnel, Touring, Course, Prestige, Glisseurs (X1). Une composition éditoriale par gamme, avec des liens vers les fiches.
 5. **Vaisseau phare : 890 Jump**. Plein écran, profondeur (M4), quelques caractéristiques clés en texte **fixe**.
 6. **Échelle**. Toutes les silhouettes alignées à la même échelle, du plus petit au 890 Jump. Défilement horizontal piloté par le scroll, ou glisser sur mobile.
 7. **Où les acquérir**. Une carte stylisée de Stanton en traits fins, avec les concessions marquées. Au survol ou au focus, on voit les vaisseaux disponibles et leur prix en aUEC. Mention « Prix relevés le JJ/MM/AAAA, patch X.Y ».
@@ -313,7 +325,7 @@ origin-jumpworks/
   data/                       JSON générés par le script (commités)
   messages/                   fr.json, en.json
   public/ships/...            images optimisées
-  scripts/harvest.ts          collecte des données
+  scripts/harvest/            collecte des données
   docs/                       cahier des charges, notes de conception
   tests/                      unit, e2e, a11y
 ```
@@ -328,7 +340,7 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 | ------ | ------------------------ | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **0**  | Cadrage                  | Ce document, dépôt git initialisé                                                                  | Cahier des charges validé                                                         |
 | **1**  | Socle du projet          | Next.js, TypeScript, Tailwind v4, ESLint, Prettier, pnpm, CI GitHub Actions                        | `pnpm build` passe en CI                                                          |
-| **2**  | Collecte des données     | `scripts/harvest.ts`, schémas Zod, `data/*.json`, images optimisées, `meta.json`                   | Tous les vaisseaux jouables d'Origin collectés et validés                         |
+| **2**  | Collecte des données     | `scripts/harvest/`, schémas Zod, `data/*.json`, images optimisées, `meta.json`                     | Tous les vaisseaux jouables d'Origin collectés et validés                         |
 | **3**  | Fondations de la DA      | Tokens clair et sombre, polices, grille, composants de base, thème système par défaut              | Page de démonstration des composants dans les deux thèmes, contrastes AA vérifiés |
 | **4**  | Langues et navigation    | next-intl, en-tête, pied de page avec crédits, lien d'évitement, option « Réduire les animations » | Bascule FR/EN et thème fonctionnelles, accessibles au clavier                     |
 | **5**  | Accueil sans 3D          | Les 8 sections, contenu réel, apparitions simples                                                  | Page complète et lisible sans JavaScript lourd                                    |
@@ -340,7 +352,7 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 
 ### Actualiser les données plus tard
 
-1. `pnpm harvest` (ou `pnpm harvest --only=uex` pour les prix seulement)
+1. `pnpm harvest` (ou `pnpm harvest --skip-images` pour les caractéristiques et les prix seulement)
 2. Relire le diff des fichiers `data/`
 3. Commiter, ce qui redéploie le site
 

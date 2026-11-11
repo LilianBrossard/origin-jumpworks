@@ -1,0 +1,365 @@
+{
+  "slug": "x1",
+  "name": "X1",
+  "range": "gravlev",
+  "order": 60,
+  "role": "Passenger",
+  "career": "Exploration",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 0,
+  "dimensions": {
+    "length": 5.19,
+    "beam": 1.87,
+    "height": 1.55
+  },
+  "massKg": 5550,
+  "speed": {
+    "scm": 207,
+    "max": 569
+  },
+  "hullHp": 2820,
+  "description": {
+    "en": "Designed to further hone the cutting-edge of high-performance luxury vehicles, the X1 is class-defying transportation built for anyone who’s ever asked, “Can I go faster?”"
+  },
+  "pledge": {
+    "msrpUSD": 45,
+    "url": "https://robertsspaceindustries.com/pledge/ships/x1/X1"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 105840,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {},
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/X1"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "X1 in space - Isometric 2",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/x1/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/x1/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoYAA4APu1orU6ppiSiMAgBMB2JaQAD4tIN/kIrGAdoY4AAAP70IDHZmScLGi0tUUMH83pJSBRWsvdgE/KsMnNokfwWcFfYVfy/omdgomcRf8HnPU+/4Czb8ONwnlk8AAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:X1_in_space_-_Isometric_2.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "X1 in space - Port 2",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/x1/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/x1/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoYAA4APu1kq04ppaQiMAgBMB2JaQAAW+wOIc7LWnHAAAD+9Bv3ZDV+KwpjytxuRFvKEk7rOZQKDlefdx4G8DguqsNS9jR0T6yUwZSV/sYizKx9HsnY7sq2BAAAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:X1_in_space_-_Port_2.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "X1 landed in hangar - Isometric - cut",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JaQAAXJpDZWT9L7pTgAD+7odJfXUhPGhzzSWJzLCrVsG8yzcW/jOW0vpq4sA9T82h8B1PalZTz5ZNcgu97ND0v8DbkDFbB+1JtgAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_landed_in_hangar_-_Isometric_-_cut.png"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "X1 with character staring into the sunset",
+        "width": 1920,
+        "height": 412,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoYAAUAPu1kqU4ppaOiMAgBMB2JQBOiP/wG0cd2t21ctAAA/kEzfxmj4Nnw/R7eTBBqOlCi5VzdkGW2xP8aJhht14HnSSxXJ20fiPlBLJweVGB+AAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_with_character_staring_into_the_sunset.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "X1 portside against white BG",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoYAAoAPu1yrU+pp6QiMAgBMB2JaQABHuucCX1xnpxMAAD+9ioVxqNVOjfxfl9CLbbCOh59HfzFp4FRfXg4X9a7aQhsPsRdYxF50zbpBccOXkkhVDnkVoFmxaQn15waMzM9bcwAAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_portside_against_white_BG.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "X1 stylised on white BG",
+        "width": 960,
+        "height": 353,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-04-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-04-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoYAAkAPu1iqU2ppaOiMAgBMB2JZwAATreKnKuU/6kLfwgA/fB3w17iiPlgHoQjxL2kxFadsqSG+Dm4TyJ7p5frE8RjpXA2kJPfHWlHgbh8KHx8eMwT6/nA+0LlRuKCgAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_stylised_on_white_BG.png"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "X1 firing weapon moving fast against blurred BG",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACQAwCdASoYAAoAPu1kqk4ppaQiMAgBMB2JYgCdACKUFvtyduZGAP62APKQx3k+3O6Oo7IK4Ua6cVnpzP8K0e+8nQa802nFWhF+1JqGPv59FzojWj6oeC4Bachi3cp3peyM4VAgAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_firing_weapon_moving_fast_against_blurred_BG.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "X1 in the holosuite at the Intergalactic Aerospace Expo 2952",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JbACdMoHCZgNPT+cDQvxLcHwMAP7w36Pe/xp/WYYwR5STzbqSogAg+ACRtzZzXTbHi9cLb5I6TsTZeRoFs6pFYEHGxA0t2JEm1YLcmcvubBWYKwuNalV+xycWZzXAAAA=",
+        "credit": {
+          "author": "Jonrellim",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:IAE2952-day2-origin-X1.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "The Origin X1",
+        "width": 1920,
+        "height": 747,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYAAkAPu1iqU2ppaQiMAgBMB2JZACdIDZDA01Ff3V7/ljBJwAA/urnzsgzclWPxq2YSdmHN3h4hdDGXq9tqumeJoja308A3l2eeJhMQDfqzqVpW0ZhBcuKL7dLNcOlDj+blmpXwOo33sf6PgAAAA==",
+        "credit": {
+          "author": "Cloud Imperium Games",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Promo_Image_01.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "The Origin X1",
+        "width": 960,
+        "height": 329,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-08-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1/gallery-08-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQAwCdASoYAAgAPu1iqk2ppaQiMAgBMB2JZACsABuY7nEusYfVwQAA/pwDZ1xuxUrsdflafmr4SqQA43ZrYhJoROk8LXY6nEGEw1sL5xLhWVFfNwO4NK7uzNyBmqeWz3BHPbMz1cJUGmkRnBw5I3e5t9ahrACjX6Vd4haEAAA=",
+        "credit": {
+          "author": "Cloud Imperium Games",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Store_Image_02.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/829d0525-e67e-4e57-9f52-b4e572a4f73d",
+    "wikiPage": "X1",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:43.802Z"
+  }
+}

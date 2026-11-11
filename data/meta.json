@@ -1,0 +1,24 @@
+{
+  "fetchedAt": "2026-11-11T16:56:45.480Z",
+  "gameVersion": "4.10.2-LIVE.12881860",
+  "pricesUpdatedAt": "2026-11-09T00:42:47.000Z",
+  "shipCount": 17,
+  "harvestVersion": "1.0.0",
+  "sources": [
+    {
+      "name": "Star Citizen Wiki API",
+      "url": "https://api.star-citizen.wiki",
+      "license": "Données de jeu © Cloud Imperium Games"
+    },
+    {
+      "name": "starcitizen.tools",
+      "url": "https://starcitizen.tools",
+      "license": "CC BY-SA 4.0 (textes) — images : voir chaque crédit"
+    },
+    {
+      "name": "UEX Corp",
+      "url": "https://uexcorp.space",
+      "license": "Prix en jeu relevés par la communauté"
+    }
+  ]
+}

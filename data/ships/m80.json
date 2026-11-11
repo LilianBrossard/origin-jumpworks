@@ -1,0 +1,375 @@
+{
+  "slug": "m80",
+  "name": "M80",
+  "range": "racing",
+  "order": 32,
+  "role": "Heavy Fighter",
+  "career": "Combat",
+  "size": "Small",
+  "sizeClass": 2,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 2,
+  "dimensions": {
+    "length": 11.5,
+    "beam": 11,
+    "height": 3.5
+  },
+  "massKg": 150669,
+  "speed": {
+    "scm": 225,
+    "max": 1400
+  },
+  "quantum": {
+    "speedMs": 263400000,
+    "rangeM": 387172796903
+  },
+  "shieldHp": 20000,
+  "hullHp": 17000,
+  "description": {
+    "en": "Origin’s first ever Heavy Fighter continues a legacy of beauty and elegance combined with high performance. Retractable weapons, missiles, and high durability furnish the M80 to dominate in sustained combat - a culmination of style and overwhelming force."
+  },
+  "pledge": {
+    "msrpUSD": 300,
+    "originalUSD": 300,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/m80/M80"
+  },
+  "ingame": {
+    "buy": [],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2026-05-16",
+    "addedInVersion": "Alpha 4.8.0"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/M80",
+    "trailer": "https://www.youtube.com/watch?v=hS9CRj3JiMM"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "M80 in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/m80/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m80/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/m80/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m80/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JaQAAW+oFHgHYBB4AAP70IofL+D0/MtZyb8pAiBv5kLspkURQVK9iZfZPRdj2Oi75zZ9MEWCJN/kjQOEI4240/Gw7ehv46/ArF8TdrR/sMYQAAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:M80_in_space_-_Isometric.png"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "M80 in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/m80/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m80/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/m80/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/m80/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoYAA4APu1yrU+pp6QiMAgBMB2JaQAAW+vSoYNl7DzxwAD+9B3bR2NtL0sLKUpqURdOf07KWZmRaF2s1XhGSP0fvcKQEMJnEK27b1egAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:M80_in_space_-_Port.png"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "M80 landed in hangar - cropped",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACQAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JaQAAW8Negt51DGIAAP70Kn37gl9vnuIIccT9JZ+FBsCZiSwKYLw9kuhR3w6QGx077Bqq5m+3spW9xfgbM/QYlBZxn25a21Bvk+T23qClCyuYAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_landed_in_hangar_-_cropped.png"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "M80 x2 flying over clouds firing weapons",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoYAAoAPu1iqU2ppaQiMAgBMB2JYgCdACB7koHFcAqV5kQAAP54vRTlfZ8Ba8voeofA4oZ5uTQzBbbCZG1nQLModO322Xp2sTLRjFQcCBo0w9xO6LFr79dkGgfVCK7hLZquzge/keRe+QVUjhB05MNTXLL8L+1srK7TqfeusT9AaOwkAvJnSnOsZ2QgAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_x2_flying_over_clouds_firing_weapons.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "M80 on landing pad with pilot climbing up stairs",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoYAA4APu1orU2ppqSiMAgBMB2JZQAAW4MGGAIn1j6AAP7r63QVk+d2OCxtpQoO16Sz8rsR0w0qQV0LmtNMriW20W9zSiODoMWvRyx/c3UDkckhwAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_on_landing_pad_with_pilot_climbing_up_stairs.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "M80 flying at night over water",
+        "width": 1920,
+        "height": 860,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoYAAsAPu1kqU4ppaOiMAgBMB2JZQC06CP7phklWx+7qQAA/vEN9eXBj4jamZQC/CEYOMpMMgMBABX9btZyX77KSlwAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_flying_at_night_over_water.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "M80 various views with graphics for DefenseCon 2956",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC7AB6PjQFU0ESCk8owAP55KSVgpc3vbpZvd+KxDGZBgFVOemRR5KFm8GZmzfFoydNxaHXi4eMszB+AMUImxlmgqLYGCPfjir/pr4yFLfoJuWnQBp7hzqMIt4xZFHAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_various_views_with_graphics_for_DefenseCon_2956.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "M80 nose section closeup",
+        "width": 960,
+        "height": 359,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-06-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-06-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoYAAkALrV2u12jqampiYC0S0gABbxIX+3CZrHZfUEAAP7vYKAPm4oAnJf9AqwM4zY+9VtAEIs+FStNBDpda3s6ZkdQy+oLJ5g794jsXhUslAAAAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_nose_section_closeup.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "M80 rear starboard closeup",
+        "width": 1920,
+        "height": 1054,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoYAA0APu1iqk2ppaQiMAgBMB2JaQAAYXuVT59dg1/l0OFgAP4zT+IVUzpq+IKtTx/Ol28mTZ/iBLCPcba7in4BHI8q58zIMMZI1ALtc1PRu58IKbbUkIxYSbLvzVnZsOK42UHY4AA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_rear_starboard_closeup.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "M80 cockpit instruments",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/m80/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/m80/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACQAwCdASoYAAoAPu1iqU2ppaOiMAgBMB2JYwCsABugT/fs6OoAAP7sxEEdpzGZPW2eTfI9gy+BzkwcKrXoE+5AedzbF5KEVqyvU8psG4lG+aCS+sgrHM/jgUPRkhmsm+8or70GwQvnHkz6AAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:M80_cockpit_instruments.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/01c24704-ae47-4b31-931c-d35655edaa05",
+    "wikiPage": "M80",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:43.396Z"
+  }
+}

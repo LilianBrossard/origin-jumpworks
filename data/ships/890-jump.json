@@ -1,0 +1,401 @@
+{
+  "slug": "890-jump",
+  "name": "890 Jump",
+  "range": "prestige",
+  "order": 51,
+  "role": "Luxury Touring",
+  "career": "Exploration",
+  "size": "capital",
+  "sizeClass": 6,
+  "crew": {
+    "min": 8,
+    "max": 8
+  },
+  "cargoSCU": 388,
+  "dimensions": {
+    "length": 210,
+    "beam": 80,
+    "height": 45
+  },
+  "massKg": 44347377,
+  "speed": {
+    "scm": 110,
+    "max": 915
+  },
+  "quantum": {
+    "speedMs": 1262910000,
+    "rangeM": 539967373573
+  },
+  "shieldHp": 720000,
+  "hullHp": 153200,
+  "description": {
+    "en": "With an elegant, sleek exterior that belies its spacious interior, the 890 Jump is a true engineering marvel; crafted to impress from every angle by combining a unique, innovative design with the finest materials and the most advanced technology. The result is a vessel that is in a class all of its own, a masterpiece worthy of the name ORIGIN."
+  },
+  "pledge": {
+    "msrpUSD": 950,
+    "originalUSD": 600,
+    "availability": "Quantity-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/890-jump/890-Jump"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 62088400,
+        "updatedAt": "2026-10-17T04:33:29+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      },
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 65356200,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2014-08-04",
+    "addedInVersion": "Alpha 3.6.2"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/890_Jump",
+    "brochure": "https://robertsspaceindustries.com/media/dzh8rlhcm9i1dr/source/890-Jump-Brochure-V8-Merged.pdf",
+    "trailer": "https://www.youtube.com/watch?v=rvKS70FDZV8"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "890 Jump in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/890-jump/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/890-jump/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/890-jump/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/890-jump/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoYAA4APu1kqU2ppaQiMAgBMB2JaQAD40oLrnafZAMgEstgAAD+9CJm1uWzeFzWQK5twefyFQKiF+5ZNGLP2F2nxbEFm9sqP6vgXYYti3Jp14lfzsbZn7LT/+J9+e/ysp8//XWXJ3iXSuB3geQr/1Hs/urm9yOA+G7pDpPHVYfwXWAAAAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:890_Jump_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "890 Jump in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/890-jump/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/890-jump/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/890-jump/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/890-jump/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JaQAAW9Wa4gucCyAAAP70IB6mdTtZ9lo2Tz3naLDzzRAY46sQYz5Fed50OibbljF+6Kr6sBMMuvHsIfnq4s5EnipZluxCdNqAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:890_Jump_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "890 Jump flying in the clouds",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoMljEYoW3mDd+eek0tQ19gA/rgfEY2CnRd+52T3dshMGxCcSeD/da1Aw16PThXyqqXKFlzOEkr5/7g1HvtCbFpxAL6nzQ7FYSNepg+g0EYjgNU9XnE/6ATWeSQJbPQExdZPziO9Loa6/skInfMoZv7BAcXdwok5h1/hRANrTL+rnb2Qq5QHI1lbMAAAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:890_Jump_Clouds-2-Min.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "890 Jump landed on a beach",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoYAA0APu1iqU2ppaOiMAgBMB2JQBOgBA/dHFA60KCEzVgA/pnveOK+u7TfXMInq1s2aXHdeHeN0yJK9to4AlqmepS7Z2kud26NSD12VrqRYguF2318rlXvgA9RQoNvFuRMtDs0xDTW2hpc7ZT7Yc+Ek7Pxe4DIlml4l2+fcDkeJ2FzQAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:890Jump_beach.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "09 890Jump Space",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoYAA4APu1iqk2ppaQiMAgBMB2JYwCsABwlzYz4axzb3xR+AAD+4ABEnU63Z6Z1mQQUGMiy/zX/cVeE6mw3G5iwfxn5ypUWcqWUJW3eh6UFi8oKMvwOeADve5qfjRsvTUaF+tBDzPaN4MywEVbWE8RFNQq7s3chP1ro0f3AAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:09_890Jump_Space.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "Atrium of the 890 Jump",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAD4/Hk4LHGIHDCNF0BNiDvAAD+5DxtcRs1NfIWfG9dZOGRAJae+xR5JoJl5PK9r07PcEQhApvlfDks9HrDuccRWdne2SC8Atv6lm/qKsODlzcXD4vxk5J8J/psd54zpEeWNh3wbaPhlL45vmRJmABX6y89+p91W8qVbqEAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:01_890_Atrium.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "Pool of the 890 Jump",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoADQbAd9RvzT9l7yj+AAP7vQvU6z1qsfF+YLNnM4k5qdBR/jZszzToPmD1C6q+EXX4TjOlJmzyhACHyot47I3hBqWevkvrnNuS4XMG87CEn8DCAW2TluXvAjQAAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:05_890_pool.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "Captain's office of the 890 Jump",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQDG9CFrs8j2yynBq0QA/u9jJIM+Y+YEvIxhyDyAvR+o/BIfXvwf86TMBgkpPBCC8CuFwnxy2TURemdjZQKUeSvDAypUXxTv0OVX/snToeTbhTOdkIoJRBwf0oqH9qpVMFZEYsm8LiC+reQHWhQuxrrgAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:07_890_Office.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "Master bedroom of the 890 Jump",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQC06BKH8ZOEcpwZ7pQAAP7mAVWMYnc8LIlfLXjByS56DvEATDzsJ1DEXGDTGlM5RWk3JDB15za7lrvd6m2M3G/VGNuT2RagKzW9sF8tGxf5oZl3XoY80MZ7Bj2FArahETKWx06vZyZyYQS4JBeWtLL1VnEAAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:08_Master_Bedroom.jpg"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "The bridge of the 890 Jump",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/890-jump/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/890-jump/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQAwCdASoYAA0APu1iqU2ppaOiMAgBMB2JQBOmUABnxxag0hkxNAAA/CGceTUOrBlcuL+TQhGCEjJWQTVc1XKezGvYMAberF8BT8b/48lkPck58JKLPK7R0BmFGpvXt3e6KydfKZvY/oUcFXODwOrsNdNCa0PPl7DvLld4eZIU60h/uDPYp05J79MyoggA",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:890-jump-bridge.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/50ddaf5e-a8e3-42fe-a1d3-7267f39b39b0",
+    "wikiPage": "890 Jump",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:41.669Z"
+  }
+}

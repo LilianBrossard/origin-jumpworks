@@ -1,0 +1,23 @@
+[
+  {
+    "id": "area18",
+    "name": "Area18",
+    "type": "LandingZone",
+    "parent": "ArcCorp",
+    "system": "Stanton"
+  },
+  {
+    "id": "lorville",
+    "name": "Lorville",
+    "type": "LandingZone",
+    "parent": "Hurston",
+    "system": "Stanton"
+  },
+  {
+    "id": "new-babbage",
+    "name": "New Babbage",
+    "type": "LandingZone",
+    "parent": "microTech",
+    "system": "Stanton"
+  }
+]

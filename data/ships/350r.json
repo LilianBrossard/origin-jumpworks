@@ -1,0 +1,376 @@
+{
+  "slug": "350r",
+  "name": "350r",
+  "range": "racing",
+  "order": 30,
+  "role": "Racing",
+  "career": "Competition",
+  "size": "Small",
+  "sizeClass": 2,
+  "crew": {
+    "min": 1,
+    "max": 2
+  },
+  "cargoSCU": 4,
+  "dimensions": {
+    "length": 27,
+    "beam": 17,
+    "height": 8
+  },
+  "massKg": 90966,
+  "speed": {
+    "scm": 265,
+    "max": 1500
+  },
+  "quantum": {
+    "speedMs": 199272700,
+    "rangeM": 65832784727
+  },
+  "shieldHp": 3840,
+  "hullHp": 2400,
+  "description": {
+    "en": "Origin Jumpwork’s 300 Series is the ultimate fusion of elegance and power. Every component, every part is individually calibrated, so no matter which model and options you choose, your ship will stay in perfect harmony as the ultimate in astroengineering.  By far the fastest member of the family, the 350r refocus all of the 300’s power and translates it into pure speed.\n"
+  },
+  "pledge": {
+    "msrpUSD": 125,
+    "originalUSD": 100,
+    "availability": "Time-limited sales",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/350r"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 3748500,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {
+    "concept": "2014-08-04",
+    "addedInVersion": "Patch V0.9"
+  },
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/350r",
+    "trailer": "https://www.youtube.com/watch?v=qDQ8dbE8qSo"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "350r in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/350r/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/350r/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/350r/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/350r/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZwDKACHpSZgP0TQMlOAAAP70IxCuAEzWUOAejFfZ4LkQkHpmAyoDKZX/kiMvfNVU9o+l3+UcIHNLgAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:350r_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "350r in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/350r/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/350r/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/350r/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/350r/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASoYAA4APu1oqk6ppiQiMAgBMB2JZwDKADKKuw/PU4AA/vBBr//5616X3IMQjreZ1RTLtdDpc4Z+Iri/at7ounU6+gx89vrsQAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:350r_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "350r in SelfLand - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JQBWAA3Jyvo+yV5KzHgAA/tlkPEf5Qy4nwhZ5WKj6Q83jLFwQO15Yv5fYQCeKJC0IMi6UB60UAWswbsKgpPmBH/vGKWDMPY362Nj79w7Rb03OAzxW5mNVa7o0+hN9NNpMoZW9t0C+wX9IL88ZAAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:350r_in_SelfLand_-_Isometric.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "350r in SelfLand - Above",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAAWhaaccYitaptis2cgAD9lpYS5v1ZI+F4NyH3+59dfzbP0kXmz+PEyS9qc3ersOeLZ9XglC7eTqnZ2QQpOojdvBDR10MUHcIgasU1gAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:350r_in_SelfLand_-_Above.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "350r in SelfLand - Port",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBafP/wHkg6zwobOVE17adAAAP7r3qg/lEa7yNbBRyklpDcOyYpyqQFiofbS56yYieuJflFcu6aNM1BDPruUH+71iNxDuO3Z/4ctYTiFli7ZKbsNJps98QbaCGaq52E3bO/ATa4nyAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:350r_in_SelfLand_-_Port.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "350r in SelfLand - Front",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQC2yCHfb9FwvpD9HF1l+AAA/uvPN1zqg1h8nhuE2mhyAmwoTZfDp2XiKtQNTI5q54svOvT/fsPepnwck29+I4xa91p6bIhhcp2e43VtMZI8P4pvrQXu+SAAAA==",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:350r_in_SelfLand_-_Front.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "350r in SelfLand - Rear",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQCw7CHICZiPiwtZi/2wAP7l48wP5GMtOaJaDT7h03BipBKGo2HeQtmARN02S11wBEiRe5nOue0BDBEgq1kHEi9h8Z9PiY5WlDKRTawzpGhuCmBmAAAA",
+        "credit": {
+          "author": "Weehamster",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:350r_in_SelfLand_-_Rear.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "350r with white back - Isometric",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/350r/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JaQAD5LHaJuztPZjfAUAAAP7x4MIEqJElIpMvumd99Gmrr5oLJjo3G2FcdWv9xjFi2VfC4ToNjdO0kE5e6PxkZvgXxNUsuvD836hcWZ/dzdWSeKceJb3vA5ZWbmKGvEAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:350r_with_white_back_-_Isometric.png"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "350r - White room - Above",
+        "width": 960,
+        "height": 510,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-07-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-07-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoYAA0APu1mqk4ppaOiMAgBMB2JaQAAUquP/EyrPUA/qNVjUAD+6wrmlUhR7ByRrzjllWeTuNsKR7MCQ2H85ghgCjvODTRnVgIrAeoYOZ8j0+1jepQ6dwGpd2UPYfHTAdAVl2BwAAA=",
+        "credit": {
+          "author": "Cloud imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:350r_-_White_room_-_Above.png"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "350r - White room - Front",
+        "width": 960,
+        "height": 510,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-08-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/350r/gallery-08-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoYAA0APu1iqU2ppaOiMAgBMB2JaQAATrd+LuxOnPMifloAAP7tX8+NAq9zhyEmvRQmg1PECYDXoQXeJT7v/aVlW0uYF3T3KxHwmAXZVFfRRD5odGBAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:350r_-_White_room_-_Front.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/316c6601-b405-4a3a-abac-394c655718f8",
+    "wikiPage": "350r",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:37.829Z"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "slug": "x1-force",
+  "name": "X1 Force",
+  "range": "gravlev",
+  "order": 62,
+  "role": "Passenger",
+  "career": "Combat",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 0,
+  "dimensions": {
+    "length": 5.19,
+    "beam": 1.87,
+    "height": 1.55
+  },
+  "massKg": 5464,
+  "speed": {
+    "scm": 207,
+    "max": 569
+  },
+  "shieldHp": 720,
+  "hullHp": 2820,
+  "description": {
+    "en": "Travel in confidence with the X1 Force. Featuring additional defensive capabilities, this open-canopy vehicle from Origin Jumpworks is equally suited to ground-based exploration, reconnaissance expeditions, and security operations."
+  },
+  "pledge": {
+    "msrpUSD": 55,
+    "url": "https://robertsspaceindustries.com/pledge/ships/x1/X1-Force"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 125685,
+        "updatedAt": "2026-10-18T00:04:46+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      },
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 132300,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": []
+  },
+  "dates": {},
+  "paints": [],
+  "links": {
+    "wiki": "https://starcitizen.tools/X1_Force"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "X1 Force in Space - Isometric 2",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/x1-force/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-force/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/x1-force/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-force/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoYAA4APu1orU6ppiSiMAgBMB2JaQAAW+q95sv+O8AA/vQbi1bGaXfAzj01VUhnY0GuFasupICShA3Icx6kHujggfzf+2Ra4Ze5FNHh18sGqgPbwrR6AAAA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:X1_Force_in_Space_-_Isometric_2.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "X1 Force in Space - Port 2",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/x1-force/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-force/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/x1-force/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/x1-force/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoYAA4APu1kqk2ppaQiMAgBMB2JaQAAW+zdQF7VVw8z8QAA/vQd2VpZxZMgpL4oerbJHOtRRWb8qC9GnrI8FbbUe9nXD9r8jEsphBAABG3BAAAA",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:X1_Force_in_Space_-_Port_2.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "X1 Force landed in hangar - Isometric - cut",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JaQDG9C0Lf/GDBUAA/u+COYsDFk+3cvt55C/vH9pjHY5tB2E7ZLwwIMpnrBah/WuREh0nWJARIAAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Force_landed_in_hangar_-_Isometric_-_cut.png"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "X1 Force front left against bronze BG",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABwBACdASoYAAoAPu1mqk2ppaQiMAgBMB2JaACdMoMYADvYbSCvRnlkcCHjIAD54y6okr7Z632bHp0G/5oJCNcy2nT3SRqp2lbkU9gE4/2Drtshr8JYGg3g0cb1iPc8sN9umZHfaw2Ua31mRcGtCJFjGRp0DVkpVcRHuAu39AAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Force_front_left_against_bronze_BG.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "X1 Force stylised on white BG",
+        "width": 960,
+        "height": 313,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-03-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-03-960.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAwCdASoYAAgALrV2u12jqampiYC0S0gABio+PGMtIo4AAP71S3tvyPR3bukhXjdylOqz0lo0Y/7UG1mE8oMmFd/Z9VMAlDERn8y6b+MdcTfh7Ps7MFuAAAA=",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Force_stylised_on_white_BG.png"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "X1 Force firing weapon moving fast against blurred BG",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoYAAoAPu1kqk4ppaQiMAgBMB2JZACdEf/gQGQzuXAuDvjWAAD+6T6/rmVtdAORlK1T9QWvxkBXrH1u3ElddwyjOMPByth1mvveMygx+cY7lJ+1ZBa/Po+Z4rvhtSHEkliJ4gAA",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Force_firing_weapon_moving_fast_against_blurred_BG.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "X1 Force - Dark",
+        "width": 1920,
+        "height": 1079,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAgCdASoYAA0APu1iqk2ppaQiMAgBMB2JaQAAetCIAAD+8P9xFsTSNt6H+b1ulVuUYbEhZ/63DbdsYo4AAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Force_-_Dark.png"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "X1 series",
+        "width": 1920,
+        "height": 952,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoYAAwAPu1kqk4ppaQiMAgBMB2JZwDE2CFMetCeejxOUAD+6NvkQTIiuR72JEDrltpiT2NK1+OJY86UFiuZZ5JIG/AAAA==",
+        "credit": {
+          "author": "Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Concept_Force.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "X1 Force firing weapon moving fast against blurred BG - Cut",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoGv/gOw1H/dd/14pM5mIAD+7Nf435+w+leggewKxHCNU0hOs0JvBfg1Rws/AbTsx/mNGDL5JFjVRVrjKyWMR1bko/yTn0YWVkJXteSj0rkpG1G/H/mJnQUqWuTXf6Eu3QAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_Force_firing_weapon_moving_fast_against_blurred_BG_-_Cut.png"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "X1 firing weapon moving fast against blurred BG - Cut",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/x1-force/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/x1-force/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwAwCdASoYAA4APu1kqU2ppaOiMAgBMB2JQBOiP/wIC858R1nEKliAAP7oTTHNiyBwjWn4ftp0urH2ZHysZFFEkK6Fp2nPD1INc1v/XFenIQfIgJbuWtwX85abtq7FLWPybbrvAcgt8N3G7HowuaSovr+0M+kQFA+gRRyAgMrAk2z8K9LAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:X1_firing_weapon_moving_fast_against_blurred_BG_-_Cut.png"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/b416dbbf-53f2-489e-a9dc-456286aa6c70",
+    "wikiPage": "X1 Force",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:44.216Z"
+  }
+}

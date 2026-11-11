@@ -1,0 +1,423 @@
+{
+  "slug": "100i",
+  "name": "100i",
+  "range": "personal",
+  "order": 10,
+  "role": "Starter / Pathfinder",
+  "career": "Exploration",
+  "size": "Small",
+  "sizeClass": 1,
+  "crew": {
+    "min": 1,
+    "max": 1
+  },
+  "cargoSCU": 2,
+  "dimensions": {
+    "length": 19,
+    "beam": 12,
+    "height": 5
+  },
+  "massKg": 50221,
+  "speed": {
+    "scm": 223,
+    "max": 1230
+  },
+  "quantum": {
+    "speedMs": 189309100,
+    "rangeM": 91836734694
+  },
+  "shieldHp": 2160,
+  "hullHp": 4550,
+  "description": {
+    "en": "Tour the universe with the perfect coupling of luxury and performance. The 100i features Origin Jumpworks' patented AIR fuel system, making it the most efficient and eco-friendly ship on the market. Capable of long distance flights that most ships of its size aren't equipped for, the 100i is perfect for solo pilots looking to turn heads without sacrificing functionality or reliability."
+  },
+  "pledge": {
+    "msrpUSD": 50,
+    "originalUSD": 45,
+    "availability": "Always available",
+    "url": "https://robertsspaceindustries.com/pledge/ships/origin-100/100i"
+  },
+  "ingame": {
+    "buy": [
+      {
+        "terminal": "New Deal - Teasa Spaceport - Lorville",
+        "locationId": "lorville",
+        "priceAUEC": 1089270,
+        "updatedAt": "2026-10-17T04:33:29+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+      },
+      {
+        "terminal": "Astro Armada - Area 18",
+        "locationId": "area18",
+        "priceAUEC": 1146600,
+        "updatedAt": "2026-10-10T20:19:13+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=148"
+      }
+    ],
+    "rent": [
+      {
+        "terminal": "Regal Luxury Rentals - New Babbage Interstellar Spaceport - New Babbage",
+        "locationId": "new-babbage",
+        "priceAUEC": 28665,
+        "updatedAt": "2026-11-09T00:42:47+00:00",
+        "gameVersion": "4.10.2-LIVE.12881860",
+        "uexUrl": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=147"
+      }
+    ]
+  },
+  "dates": {
+    "concept": "2018-04-18",
+    "addedInVersion": "Alpha 3.11.0"
+  },
+  "paints": [
+    "Auspicious Red Dog",
+    "Auspicious Red Dragon",
+    "Blue Ametrine",
+    "DTH",
+    "Flame",
+    "Frostbite",
+    "IceBreak",
+    "Invictus BG",
+    "Melrose",
+    "Sand Wave",
+    "Slate Camo",
+    "Timberline"
+  ],
+  "links": {
+    "wiki": "https://starcitizen.tools/100i",
+    "brochure": "https://robertsspaceindustries.com/media/sb217acbbj976r/source/Origin-100-Series-Brochure-FINAL.pdf",
+    "trailer": "https://www.youtube.com/watch?v=QGMxGdzYVY8"
+  },
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "100i in space - Isometric",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/100i/hero-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/100i/hero-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/100i/hero-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/100i/hero-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoYAA4APu1iqU2ppaQiMAgBMB2JaQAD5GoHDSbn5B5esOmAAP70JRm2vlFRDlvR+2PAkv/lJMjPuYQQPRN5fBQbL8diij2KNUGV+m3RsTc9nJgFpWAa7/6/EGhyZvav34HMX3UF9UXgfgr2SBENT9y8AAA=",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:100i_in_space_-_Isometric.jpg"
+      }
+    },
+    "side": {
+      "id": "side",
+      "alt": "100i in space - Port",
+      "width": 1920,
+      "height": 1080,
+      "avif": [
+        {
+          "width": 960,
+          "src": "/ships/100i/side-960.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/100i/side-1920.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 960,
+          "src": "/ships/100i/side-960.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/ships/100i/side-1920.webp"
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoYAA4APu1qrU8ppiQiMAgBMB2JaQAAW+GiNX40nCM1gAAA/vQgFPqSoGM4G3Rgw2bkOdUvYaxAcOYGwUobRFIQzOnIm39l/Kos0ONIZK+ZKlJqIdmAAA==",
+      "credit": {
+        "author": "Weehamster",
+        "license": "CC BY SA 4.0",
+        "sourceUrl": "https://starcitizen.tools/File:100i_in_space_-_Port.jpg"
+      }
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt": "100i",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-01-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-01-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-01-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-01-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBACdASoYAAoAPu1iqU2ppaQiMAgBMB2JYgC2yCBS7gCU+4xyC35VL+kAAP4drSZOQI1LjGCvDs6HlGnQKtjoS8QnKYSCNWw2jbAP8vdnDhGWIDx7zh0eNP2y1JPItOBXb7okbPsiJ+L0OTA3LuRUZj6/suHTpCeCEXAGZUVW2YYD8ktnyQAA",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:100i_Hero_Shot.jpg"
+        }
+      },
+      {
+        "id": "gallery-02",
+        "alt": "100i",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-02-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-02-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-02-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-02-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACQAwCdASoYAAoAPu1iqk2ppaQiMAgBMB2JZgCdABWV+Fe7pjYAAP611Ll6B/7UY0VSc24KAq6HGIwA7tXFa9FmzVls6tHbfu+u4HzhLsMyK4m2ikncmosaWnHpi4L0b4tW3m1lL8s01CZs1v6H3hnMiSEZWwki697cY88AAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:100i_Sunset.jpg"
+        }
+      },
+      {
+        "id": "gallery-03",
+        "alt": "135c",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-03-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-03-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-03-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-03-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoYAAoAPu1mqk2ppaQiMAgBMB2JZwAAOPS2CQqKFTKc9CAA/u6g0d9+QcWo61ueq1CqPnH5ITepzS/zlFmUO5f/vZDgelb1u21cqelwJfn6/axomeo8Odh7XZ5EVT7owd+ADH0wygAAAA==",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_Interior.jpg"
+        }
+      },
+      {
+        "id": "gallery-04",
+        "alt": "100i",
+        "width": 1920,
+        "height": 377,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-04-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-04-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-04-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-04-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoYAAUAPu1iqU2ppaQiMAgBMB2JZwCsACPq2vFpPPbAAAD+woOYiU2ZgHA63uY2XIdKlgHkkwhk420Xrg9ijZkAAAA=",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:100i_StarterPackBanner.jpg"
+        }
+      },
+      {
+        "id": "gallery-05",
+        "alt": "135c with 100i and 125a flying away from Port Tressler",
+        "width": 1920,
+        "height": 772,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-05-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-05-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-05-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-05-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoYAAoAPu1qrU8ppiQiMAgBMB2JZQCdAYvW4SLCBlYmX493UhAAAP7w3CdWue/k47S7uvjZP8yPgI/FK8V7IRhILowAAImfWhPz0ygPWdVy6e0fwARe04jL3xgrK8AHRgAw94AThgAAAA==",
+        "credit": {
+          "author": "Cloud Imperium",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:135c_with_100i_and_125a_flying_away_from_Port_Tressler.jpg"
+        }
+      },
+      {
+        "id": "gallery-06",
+        "alt": "100i",
+        "width": 1920,
+        "height": 823,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-06-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-06-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-06-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-06-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYAAoAPu1iqk2ppaQiMAgBMB2JYwCdACF4yNPhdCvCsk1uVAAA/rFXGYbI3G4VdZJSyDn43cXGVK5OTJvKaaLfNHjUQkA04c8yoeyNhh3yDVPFA6gUSsHX+QZ2Ked4UKut7h9PGYjWQAAA",
+        "credit": {
+          "author": "Cloud Imperium, Roberts Space Industries",
+          "license": "Cloud Imperium IP",
+          "sourceUrl": "https://starcitizen.tools/File:100i_Microtech.jpg"
+        }
+      },
+      {
+        "id": "gallery-07",
+        "alt": "In-game screenshot from Star Citizen Alpha 3.11: Taken as a PNG with ReShade at 7000x3937 Downsampled to 4k Source: https://www.hasgaha.com/gaming-screenshots/#bwg0/1269",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-07-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-07-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-07-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-07-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCsACG8nO5SiH+KsMQ0AAD+uaiojiE79UyLuCiXeJLPucBgl2NLk+2zU03i+AGFVHuWbPieOo5Aany4Bv5CuOyqKpHd9XZ4VilARHpQ07QT2FwCuv9J4RQAAA==",
+        "credit": {
+          "author": "Hasgaha",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:Origin_100i.png"
+        }
+      },
+      {
+        "id": "gallery-08",
+        "alt": "100i on display at the Intergalactic Aerospace Expo 2951",
+        "width": 1920,
+        "height": 1080,
+        "avif": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-08-960.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-08-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 960,
+            "src": "/ships/100i/gallery-08-960.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/ships/100i/gallery-08-1920.webp"
+          }
+        ],
+        "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUABWTwOzJ+K8UU9p38AA/s8iBsExJ5FkZa+blQZJ84JV/4oh1gAWpHHlozupHIAXqC7fwByAzj0M2mSS8VMWB82Fv/x1+ARcE4FPeH5vrr2qhzGCAirapaZWfeKrbD8oOLR/rwAA",
+        "credit": {
+          "author": "Jonrellim",
+          "license": "CC BY SA 4.0",
+          "sourceUrl": "https://starcitizen.tools/File:IAE2951-day6-origin-100i.jpg"
+        }
+      }
+    ]
+  },
+  "source": {
+    "apiUrl": "https://api.star-citizen.wiki/api/vehicles/6135a874-4cb1-4f49-9f29-5781e5991f2b",
+    "wikiPage": "100i",
+    "gameVersion": "4.10.2-LIVE.12881860",
+    "fetchedAt": "2026-11-11T16:56:32.909Z"
+  }
+}
