@@ -1,0 +1,74 @@
+/*
+ * Tokens de la DA « Le trait d'abord ».
+ *
+ * Thème : celui du système par défaut, forcé par `data-theme="light|dark"`
+ * sur n'importe quel élément (la page entière ou une seule section).
+ *
+ * Les couleurs de texte (ink, ink-muted, accent) respectent un contraste AA ≥ 4.5:1
+ * sur bg et surface : voir tests/contrast.test.ts, qui lit ce fichier.
+ * Les couleurs `line` et `accent-glow` sont décoratives : jamais pour du texte.
+ */
+
+/* ---------------------------------------------------------------- Clair : « Galerie » */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f2ec;
+  --surface: #fbf9f5;
+  --ink: #14171c;
+  --ink-muted: #5b6068;
+  --line: rgb(20 23 28 / 0.16);
+  --line-strong: rgb(20 23 28 / 0.32);
+  --accent: #7a6535;
+  --accent-glow: #b49a5e;
+  --focus: #7a6535;
+}
+
+/* ---------------------------------------------------------------- Sombre : « Nuit sur New Austin » */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0a0d12;
+  --surface: #11161e;
+  --ink: #ece7dd;
+  --ink-muted: #9aa0a8;
+  --line: rgb(236 231 221 / 0.18);
+  --line-strong: rgb(236 231 221 / 0.36);
+  --accent: #c9b37e;
+  --accent-glow: #e6d3a3;
+  --focus: #e6d3a3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0a0d12;
+    --surface: #11161e;
+    --ink: #ece7dd;
+    --ink-muted: #9aa0a8;
+    --line: rgb(236 231 221 / 0.18);
+    --line-strong: rgb(236 231 221 / 0.36);
+    --accent: #c9b37e;
+    --accent-glow: #e6d3a3;
+    --focus: #e6d3a3;
+  }
+}
+
+/* ---------------------------------------------------------------- Indépendants du thème */
+:root {
+  /* Mouvement : lent, amorti, jamais de rebond */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 240ms;
+  --duration-base: 600ms;
+  --duration-slow: 1200ms;
+
+  /* Traits */
+  --hairline: 1px;
+  /* Taille des coins coupés à 45° */
+  --chamfer: 12px;
+  --chamfer-sm: 6px;
+
+  /* Mise en page */
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --content-max: 90rem;
+}

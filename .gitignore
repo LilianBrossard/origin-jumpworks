@@ -43,3 +43,6 @@ next-env.d.ts
 # cache du script de collecte
 /.cache
 
+
+# préférences locales de Claude Code
+/.claude/settings.local.json

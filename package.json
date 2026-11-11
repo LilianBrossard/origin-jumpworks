@@ -10,8 +10,9 @@
     "typecheck": "next typegen && tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm lint && pnpm typecheck && pnpm format:check",
-    "harvest": "tsx scripts/harvest/index.ts"
+    "check": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test",
+    "harvest": "tsx scripts/harvest/index.ts",
+    "test": "vitest run"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -33,7 +34,8 @@
     "sharp": "^0.35.5",
     "tailwindcss": "4.3.3",
     "tsx": "^4.23.15",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^5.1.0"
   },
   "packageManager": "pnpm@10.33.2",
   "engines": {

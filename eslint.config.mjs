@@ -6,6 +6,15 @@ import prettier from "eslint-config-prettier/flat";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  {
+    rules: {
+      // Autorise `const { a, ...rest } = props` pour retirer des props avant de les transmettre.
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { ignoreRestSiblings: true, argsIgnorePattern: "^_" },
+      ],
+    },
+  },
   // Désactive les règles de style qui entreraient en conflit avec Prettier.
   prettier,
   globalIgnores([".next/**", "out/**", "build/**", ".cache/**", "next-env.d.ts"]),

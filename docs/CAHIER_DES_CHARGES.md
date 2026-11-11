@@ -165,17 +165,17 @@ L'écriture d'Origin repose sur des **lignes très fines, sobres, élégantes**.
 
 ### 5.2 Thèmes
 
-| Token                        | Sombre — « Nuit sur New Austin » | Clair — « Galerie »                                |
-| ---------------------------- | -------------------------------- | -------------------------------------------------- |
-| `--bg`                       | `#0A0D12` bleu nuit presque noir | `#F5F2EC` ivoire                                   |
-| `--surface`                  | `#11161E`                        | `#FBF9F5`                                          |
-| `--ink` (texte)              | `#ECE7DD` blanc cassé            | `#14171C` encre                                    |
-| `--ink-muted`                | `#9AA0A8`                        | `#5B6068`                                          |
-| `--line` (traits décoratifs) | `rgba(236,231,221,.18)`          | `rgba(20,23,28,.16)`                               |
-| `--accent` (champagne / or)  | `#C9B37E`                        | `#8A7340` (plus foncé pour garder le contraste AA) |
-| `--accent-glow`              | `#E6D3A3`                        | `#B49A5E`                                          |
+| Token                        | Sombre — « Nuit sur New Austin » | Clair — « Galerie »                                        |
+| ---------------------------- | -------------------------------- | ---------------------------------------------------------- |
+| `--bg`                       | `#0A0D12` bleu nuit presque noir | `#F5F2EC` ivoire                                           |
+| `--surface`                  | `#11161E`                        | `#FBF9F5`                                                  |
+| `--ink` (texte)              | `#ECE7DD` blanc cassé            | `#14171C` encre                                            |
+| `--ink-muted`                | `#9AA0A8`                        | `#5B6068`                                                  |
+| `--line` (traits décoratifs) | `rgba(236,231,221,.18)`          | `rgba(20,23,28,.16)`                                       |
+| `--accent` (champagne / or)  | `#C9B37E`                        | `#7A6535` (plus foncé pour garder le contraste AA : 5.0:1) |
+| `--accent-glow`              | `#E6D3A3`                        | `#B49A5E`                                                  |
 
-Les valeurs sont indicatives et seront ajustées lors des maquettes. **Tout texte doit atteindre un contraste ≥ 4.5:1.**
+Valeurs de référence : [`styles/tokens.css`](../styles/tokens.css). **Tout texte doit atteindre un contraste ≥ 4.5:1** ; c'est vérifié par `tests/contrast.test.ts`. `--accent-glow` et `--line` sont réservés au décor.
 
 - **Thème par défaut** : celui du système (`prefers-color-scheme`), sombre en repli. Le choix de l'utilisateur est mémorisé.
 
@@ -360,7 +360,7 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 
 ## 12. Points ouverts (à trancher pendant les étapes concernées)
 
-- Choix final de la police de titre (étape 3, sur maquette).
+- Choix final de la police de titre : Jost par défaut. Comparaison avec Outfit et Inter Tight sur la page `/design`.
 - Vaisseau mis en avant dans l'ouverture : 890 Jump ou rotation aléatoire (étape 5).
 - Génération des cartes de profondeur : automatique ou à la main pour les images clés (étape 7).
 - Nom de domaine éventuel (étape 10).

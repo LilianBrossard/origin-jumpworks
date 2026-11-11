@@ -1,25 +1,165 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
-/* Couleurs provisoires, remplacées par les tokens de la DA à l'étape 3. */
-:root {
-  --bg: #f5f2ec;
-  --ink: #14171c;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0a0d12;
-    --ink: #ece7dd;
+/* Variante `dark:` pilotée par les tokens (système ou data-theme), pas par une classe. */
+@custom-variant dark {
+  [data-theme="dark"] & {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) & {
+      @slot;
+    }
   }
 }
 
 @theme inline {
   --color-bg: var(--bg);
+  --color-surface: var(--surface);
   --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-glow: var(--accent-glow);
+
+  --font-display: var(--ff-display), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--ff-body), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--ff-mono), ui-monospace, monospace;
+
+  --ease-out-soft: var(--ease-out);
 }
 
-body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: system-ui, sans-serif;
+@theme {
+  /* Échelle typographique fluide (min → max entre 360 et 1440 px de large) */
+  --text-display-xl: clamp(3rem, 1.6rem + 6.2vw, 7.5rem);
+  --text-display-xl--line-height: 1;
+  --text-display-xl--letter-spacing: 0.08em;
+  --text-display-lg: clamp(2.25rem, 1.5rem + 3.4vw, 4.5rem);
+  --text-display-lg--line-height: 1.05;
+  --text-display-lg--letter-spacing: 0.06em;
+  --text-display-md: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --text-display-md--line-height: 1.15;
+  --text-display-md--letter-spacing: 0.04em;
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.24em;
+
+  --tracking-wide-2: 0.12em;
+  --tracking-wide-3: 0.2em;
+}
+
+/* ---------------------------------------------------------------- Base */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem; /* 17 px */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition:
+      background-color var(--duration-base) var(--ease-out),
+      color var(--duration-base) var(--ease-out);
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  /* Focus visible : anneau champagne de 2 px, jamais supprimé */
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  hr {
+    border: 0;
+    border-top: var(--hairline) solid var(--line);
+  }
+}
+
+/* ---------------------------------------------------------------- Utilitaires de la DA */
+
+/* Coins coupés à 45° (haut-gauche et bas-droit) */
+@utility chamfer {
+  clip-path: polygon(
+    var(--chamfer) 0,
+    100% 0,
+    100% calc(100% - var(--chamfer)),
+    calc(100% - var(--chamfer)) 100%,
+    0 100%,
+    0 var(--chamfer)
+  );
+}
+@utility chamfer-sm {
+  --chamfer: var(--chamfer-sm);
+  clip-path: polygon(
+    var(--chamfer) 0,
+    100% 0,
+    100% calc(100% - var(--chamfer)),
+    calc(100% - var(--chamfer)) 100%,
+    0 100%,
+    0 var(--chamfer)
+  );
+}
+
+/* Lien : filet fixe + trait d'accent qui se dessine au survol ou au focus */
+@utility link-line {
+  padding-bottom: 2px;
+  background-image:
+    linear-gradient(var(--accent), var(--accent)),
+    linear-gradient(var(--line-strong), var(--line-strong));
+  background-size:
+    0% 1px,
+    100% 1px;
+  background-position:
+    left bottom,
+    left bottom;
+  background-repeat: no-repeat;
+  transition:
+    background-size var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out);
+  &:hover,
+  &:focus-visible {
+    background-size:
+      100% 1px,
+      100% 1px;
+  }
+}
+
+/* Conteneur éditorial centré */
+@utility container-page {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---------------------------------------------------------------- Animations réduites */
+/* Réglage système, ou option du site (`data-motion="reduced"` sur <html>, étape 4). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+[data-motion="reduced"] *,
+[data-motion="reduced"] *::before,
+[data-motion="reduced"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
 }

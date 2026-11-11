@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   check:
-    name: Lint, types, format, build
+    name: Lint, types, format, tests, build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +33,9 @@ jobs:
 
       - name: Format
         run: pnpm format:check
+
+      - name: Tests
+        run: pnpm test
 
       - name: Build (export statique)
         run: pnpm build
