@@ -339,19 +339,28 @@ origin-jumpworks/
 
 Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 
-| #      | Étape                    | Livrables                                                                                          | Critère de fin                                                                    |
-| ------ | ------------------------ | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **0**  | Cadrage                  | Ce document, dépôt git initialisé                                                                  | Cahier des charges validé                                                         |
-| **1**  | Socle du projet          | Next.js, TypeScript, Tailwind v4, ESLint, Prettier, pnpm, CI GitHub Actions                        | `pnpm build` passe en CI                                                          |
-| **2**  | Collecte des données     | `scripts/harvest/`, schémas Zod, `data/*.json`, images optimisées, `meta.json`                     | Tous les vaisseaux jouables d'Origin collectés et validés                         |
-| **3**  | Fondations de la DA      | Tokens clair et sombre, polices, grille, composants de base, thème système par défaut              | Page de démonstration des composants dans les deux thèmes, contrastes AA vérifiés |
-| **4**  | Langues et navigation    | next-intl, en-tête, pied de page avec crédits, lien d'évitement, option « Réduire les animations » | Bascule FR/EN et thème fonctionnelles, accessibles au clavier                     |
-| **5**  | Accueil sans 3D          | Les 8 sections, contenu réel, apparitions simples                                                  | Page complète et lisible sans JavaScript lourd                                    |
-| **6**  | Couche 3D                | Canvas partagé, fond étoilé, **M1 le fil d'or**, **M2 les nuées**                                  | 60 fps sur une machine moyenne, replis vérifiés                                   |
-| **7**  | Pages flotte             | `/fleet`, `/fleet/[slug]`, `/compare`, galerie, **M4 profondeur**, **M6 lampe**                    | Toutes les fiches générées, visionneuse accessible                                |
-| **8**  | Transitions et finitions | **M3 saut quantique**, **M5 lever de soleil**, page 404, bonus cachés                              | Transitions fluides, repli sans View Transitions                                  |
-| **9**  | Qualité                  | Tests Vitest, Playwright et axe, audit Lighthouse, test au lecteur d'écran                         | Budgets de la section 9 atteints                                                  |
-| **10** | Mise en ligne            | Déploiement, domaine éventuel, README de portfolio (captures, choix techniques)                    | Site public, lien ajouté au portfolio                                             |
+| #      | Étape                    | Livrables                                                                                           | Critère de fin                                                                    |
+| ------ | ------------------------ | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **0**  | Cadrage                  | Ce document, dépôt git initialisé                                                                   | Cahier des charges validé                                                         |
+| **1**  | Socle du projet          | Next.js, TypeScript, Tailwind v4, ESLint, Prettier, pnpm, CI GitHub Actions                         | `pnpm build` passe en CI                                                          |
+| **2**  | Collecte des données     | `scripts/harvest/`, schémas Zod, `data/*.json`, images optimisées, `meta.json`                      | Tous les vaisseaux jouables d'Origin collectés et validés                         |
+| **3**  | Fondations de la DA      | Tokens clair et sombre, polices, grille, composants de base, thème système par défaut               | Page de démonstration des composants dans les deux thèmes, contrastes AA vérifiés |
+| **4**  | Langues et navigation    | next-intl, en-tête, pied de page avec crédits, lien d'évitement, option « Réduire les animations »  | Bascule FR/EN et thème fonctionnelles, accessibles au clavier                     |
+| **5**  | Accueil sans 3D          | Les 8 sections, contenu réel, apparitions simples                                                   | Page complète et lisible sans JavaScript lourd                                    |
+| **6**  | Couche 3D                | Canvas partagé, fond étoilé, **M1 le fil d'or**, **M2 les nuées**                                   | 60 fps sur une machine moyenne, replis vérifiés                                   |
+| **7**  | Pages flotte             | `/fleet`, `/fleet/[slug]`, `/compare`, galerie, **M4 profondeur**, **M6 lampe**                     | Toutes les fiches générées, visionneuse accessible                                |
+| **8**  | Transitions et finitions | **M3 saut quantique**, **M5 lever de soleil**, page 404, bonus cachés                               | Transitions fluides, repli sans View Transitions                                  |
+| **9**  | Qualité                  | Tests Vitest, Playwright et axe, audit Lighthouse, test au lecteur d'écran                          | Budgets de la section 9 atteints                                                  |
+| **10** | Mise en ligne            | Déploiement, domaine éventuel, README de portfolio (captures, choix techniques), URL déclarée à CIG | Site public, lien ajouté au portfolio                                             |
+
+### Évolutions futures (optionnelles)
+
+À étudier **tout à la fin**, une fois l'étape 10 terminée (tests, vérifications et mise en ligne compris). Elles ne bloquent rien et peuvent être abandonnées.
+
+| #      | Évolution                  | Idée                                                                                                                                                                                                       | Points à vérifier                                                                                                                                                                             |
+| ------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **E1** | Modèle 3D du 600i Explorer | Exploiter la maquette officielle du fan kit (`02_HOLOVIEWERS/Origin 600i Explorer.ctm`) : vaisseau orientable en 3D sur sa fiche, ou en fil de fer dans la couche 3D (cohérent avec la DA en traits fins). | Format OpenCTM à convertir (glTF) ; poids et performances ; un seul vaisseau concerné ; règles du kit (pas de modification de l'élément fourni) ; repli sans WebGL et en animations réduites. |
+| **E2** | Ambiance musicale          | Boucle officielle du fan kit (`01_AUDIO/Cuts/SC_ORIG_600iTrailer_Intro_Loop.mp3`) en fond sonore discret.                                                                                                  | **Coupée par défaut**, lancée uniquement par le visiteur ; bouton visible, accessible et mémorisé ; volume bas, fondu d'entrée ; poids du fichier ; crédit dans `/credits`.                   |
 
 ### Actualiser les données plus tard
 

@@ -14,6 +14,26 @@ export type ThemePreference = "system" | "light" | "dark";
 export type MotionPreference = "system" | "reduced";
 
 /**
+ * Applique les préférences enregistrées sur <html>. Même logique que le script
+ * ci-dessous, mais appelable depuis React (voir `PreferencesSync`).
+ */
+export function applyStoredPreferences() {
+  const root = document.documentElement;
+  try {
+    const theme = localStorage.getItem(STORAGE_KEYS.theme);
+    if (theme === "light" || theme === "dark") root.setAttribute("data-theme", theme);
+    else root.removeAttribute("data-theme");
+    if (localStorage.getItem(STORAGE_KEYS.motion) === "reduced") {
+      root.setAttribute("data-motion", "reduced");
+    } else {
+      root.removeAttribute("data-motion");
+    }
+  } catch {
+    // stockage indisponible : on garde le réglage du système
+  }
+}
+
+/**
  * Script exécuté dans <head> avant l'affichage. Sans préférence enregistrée,
  * aucun attribut n'est posé : le CSS suit alors le réglage du système.
  */
