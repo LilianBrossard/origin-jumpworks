@@ -4,8 +4,8 @@
 > Projet de portfolio : montrer ce qu'un site moderne peut offrir en matière d'expérience, de mouvement et de finition.
 
 - **Dépôt** : https://github.com/LilianBrossard/origin-jumpworks
-- **Version du document** : 1.1 — 2026-11-11 (sources de données précisées à l'étape 2)
-- **Statut** : validé, en attente du démarrage du code
+- **Version du document** : 1.2 — 2026-11-12 (mesures de l'étape 9)
+- **Statut** : étapes 0 à 9 réalisées ; reste l'étape 10 (mise en ligne)
 
 ---
 
