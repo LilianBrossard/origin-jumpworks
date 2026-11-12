@@ -8,6 +8,7 @@
  *   pnpm harvest --cached        réutiliser les réponses en cache (développement)
  *   pnpm harvest --dry-run       ne rien écrire
  */
+import { existsSync, readFileSync } from "node:fs";
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseArgs } from "node:util";
@@ -22,7 +23,7 @@ import {
 } from "../../lib/data/schema";
 import { EXCLUDED_API_SLUGS, HARVEST_VERSION, SHIPS, WIKI_BASE } from "./config";
 import { getBuffer, setRefresh } from "./http";
-import { extractSilhouette } from "./silhouette";
+import { extractDepthMap, extractSilhouette } from "./silhouette";
 import {
   galleryCandidates,
   pickViews,
@@ -41,6 +42,10 @@ import {
 
 const DATA_DIR = path.resolve("data");
 const SHIPS_DIR = path.join(DATA_DIR, "ships");
+const frPath = path.join(DATA_DIR, "i18n", "descriptions.fr.json");
+const frDescriptions: Record<string, string> = existsSync(frPath)
+  ? JSON.parse(readFileSync(frPath, "utf8"))
+  : {};
 
 const { values: args } = parseArgs({
   options: {
@@ -177,7 +182,18 @@ async function harvestShip(apiSlug: string, allNames: string[]): Promise<Ship> {
       }
     }
 
-    images = { hero, side, silhouette, gallery };
+    // Carte de profondeur de la vue principale (effet de relief M4)
+    const depth = { src: `/ships/${cfg.slug}/depth-hero.png`, width: 480 };
+    if (!dryRun) {
+      const map = await extractDepthMap(
+        await getBuffer(heroInfo.url),
+        depth.width,
+        cfg.silhouetteThreshold,
+      );
+      await writeFile(path.resolve("public/ships", cfg.slug, "depth-hero.png"), map);
+    }
+
+    images = { hero, side, silhouette, depth, gallery };
     if (!dryRun) {
       const removed = await pruneShipImages(cfg.slug, [hero, ...(side ? [side] : []), ...gallery]);
       if (removed.length) log(`  ${removed.length} image(s) obsolète(s) supprimée(s)`);
@@ -188,7 +204,7 @@ async function harvestShip(apiSlug: string, allNames: string[]): Promise<Ship> {
   const cd = v.curated_data ?? {};
   const ship: Ship = {
     slug: cfg.slug,
-    name: v.name,
+    name: cfg.displayName ?? v.name,
     range: cfg.range,
     order: cfg.order,
     role: v.role ?? "—",
@@ -212,7 +228,8 @@ async function harvestShip(apiSlug: string, allNames: string[]): Promise<Ship> {
     hullHp: v.health ?? undefined,
     description: {
       en: v.description?.en_EN || v.game_description?.en_EN || "",
-      fr: existing?.description.fr, // traduction manuelle conservée
+      // Traduction rédigée à la main (data/i18n), sinon celle déjà présente
+      fr: frDescriptions[cfg.slug] ?? existing?.description.fr,
     },
     pledge: {
       msrpUSD: v.msrp ?? undefined,

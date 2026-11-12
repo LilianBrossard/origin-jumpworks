@@ -29,7 +29,8 @@
   "shieldHp": 4320,
   "hullHp": 8700,
   "description": {
-    "en": "If you're going to travel the stars... why not do it in style? The 300i is Origin Jumpworks' premiere luxury spacecraft. It is a sleek, silver killer that sends as much of a message with its silhouette as it does with its weaponry."
+    "en": "If you're going to travel the stars... why not do it in style? The 300i is Origin Jumpworks' premiere luxury spacecraft. It is a sleek, silver killer that sends as much of a message with its silhouette as it does with its weaponry.",
+    "fr": "Quitte à parcourir les étoiles, pourquoi ne pas le faire avec style ? Le 300i est le vaisseau de luxe phare d'Origin Jumpworks : un chasseur argenté et racé, dont la silhouette en dit autant que l'armement."
   },
   "pledge": {
     "msrpUSD": 60,
@@ -138,6 +139,10 @@
       "src": "/ships/300i/silhouette.png",
       "width": 3312,
       "height": 826
+    },
+    "depth": {
+      "src": "/ships/300i/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -402,6 +407,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/ce937681-caa2-4cfa-ab80-f5bf2a5b9a6c",
     "wikiPage": "300i",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:39.728Z"
+    "fetchedAt": "2026-11-12T05:02:21.915Z"
   }
 }

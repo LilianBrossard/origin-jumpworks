@@ -29,7 +29,8 @@
   "shieldHp": 6336,
   "hullHp": 9300,
   "description": {
-    "en": "Just because it's a rough galaxy doesn't mean you need to sacrifice your comfort: the 325a can come out on top in any dogfight. The 325a features an advanced weapon payload as well as a custom targeting system designed especially for the 325a by WillsOp."
+    "en": "Just because it's a rough galaxy doesn't mean you need to sacrifice your comfort: the 325a can come out on top in any dogfight. The 325a features an advanced weapon payload as well as a custom targeting system designed especially for the 325a by WillsOp.",
+    "fr": "Ce n'est pas parce que la galaxie est rude qu'il faut renoncer au confort : le 325a sort vainqueur de n'importe quel combat tournoyant. Il embarque un armement avancé et un système de visée conçu spécialement pour lui par WillsOp."
   },
   "pledge": {
     "msrpUSD": 70,
@@ -137,6 +138,10 @@
       "src": "/ships/325a/silhouette.png",
       "width": 3515,
       "height": 797
+    },
+    "depth": {
+      "src": "/ships/325a/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -401,6 +406,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/039a2768-1aff-4969-b2a4-ed8aeb21dae1",
     "wikiPage": "325a",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:43.125Z"
+    "fetchedAt": "2026-11-12T05:02:26.396Z"
   }
 }

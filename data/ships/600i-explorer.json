@@ -1,6 +1,6 @@
 {
   "slug": "600i-explorer",
-  "name": "600i",
+  "name": "600i Explorer",
   "range": "touring",
   "order": 41,
   "role": "Expedition",
@@ -29,7 +29,8 @@
   "shieldHp": 144000,
   "hullHp": 197250,
   "description": {
-    "en": "This multi-role luxury vessel from Origin Jumpworks features an exquisitely detailed hull design that balances performance and versatility in a sleek and timeless form. The 600i is designed with a cutting-edge modular technology, allowing you to customize your ship for your needs. Looking to stamp your name in history with the discovery of a new star system? The 600i's Explorer module swaps the lounge for a robust scanning station as well as additional utility hardpoints to increase the ship's effectiveness even more."
+    "en": "This multi-role luxury vessel from Origin Jumpworks features an exquisitely detailed hull design that balances performance and versatility in a sleek and timeless form. The 600i is designed with a cutting-edge modular technology, allowing you to customize your ship for your needs. Looking to stamp your name in history with the discovery of a new star system? The 600i's Explorer module swaps the lounge for a robust scanning station as well as additional utility hardpoints to increase the ship's effectiveness even more.",
+    "fr": "Ce vaisseau de luxe polyvalent signé Origin Jumpworks se distingue par une coque au dessin d'une rare finesse, qui allie performance et polyvalence dans une forme élancée et intemporelle. Le 600i repose sur une technologie modulaire de pointe qui permet d'adapter le vaisseau à chaque besoin. Envie d'inscrire votre nom dans l'histoire en découvrant un nouveau système ? Le module Explorer remplace le salon par une station de balayage complète et des points d'emport supplémentaires, pour une efficacité accrue."
   },
   "pledge": {
     "msrpUSD": 475,
@@ -146,6 +147,10 @@
       "src": "/ships/600i-explorer/silhouette.png",
       "width": 3601,
       "height": 784
+    },
+    "depth": {
+      "src": "/ships/600i-explorer/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -410,6 +415,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/f8ac4c26-8f4d-4cb3-9be2-7d867a95a877",
     "wikiPage": "600i Explorer",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:47.797Z"
+    "fetchedAt": "2026-11-12T05:02:32.813Z"
   }
 }

@@ -29,7 +29,8 @@
   "shieldHp": 1920,
   "hullHp": 2281,
   "description": {
-    "en": "If you want to get from point A to point B as quickly as possible and with as much style as possible then ORIGIN's M50 is for you. Featuring supercharged engines that counter a tiny weapons loadout, the M50 goes extremely fast and looks incredibly good doing it. As Origin’s premier racing chassis, you shouldn’t expect anything less."
+    "en": "If you want to get from point A to point B as quickly as possible and with as much style as possible then ORIGIN's M50 is for you. Featuring supercharged engines that counter a tiny weapons loadout, the M50 goes extremely fast and looks incredibly good doing it. As Origin’s premier racing chassis, you shouldn’t expect anything less.",
+    "fr": "Si vous voulez aller d'un point A à un point B le plus vite possible et avec le plus de style possible, le M50 d'ORIGIN est fait pour vous. Ses moteurs suralimentés compensent un armement minimal : le M50 va extrêmement vite, et il est superbe en le faisant. Pour le châssis de course phare d'Origin, vous n'en attendiez pas moins."
   },
   "pledge": {
     "msrpUSD": 100,
@@ -146,6 +147,10 @@
       "src": "/ships/m50/silhouette.png",
       "width": 3524,
       "height": 763
+    },
+    "depth": {
+      "src": "/ships/m50/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -410,6 +415,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/1b57cdac-693b-410b-8343-68fa194c94ae",
     "wikiPage": "M50",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:52.142Z"
+    "fetchedAt": "2026-11-12T05:02:39.587Z"
   }
 }

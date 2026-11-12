@@ -1,22 +1,35 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { use } from "react";
-import { Placeholder } from "@/components/layout/Placeholder";
+import { Suspense } from "react";
+import { ComparePanel } from "@/components/fleet/ComparePanel";
+import { PageHeader } from "@/components/layout/PageHeader";
 import type { Locale } from "@/i18n/routing";
+import { getShips } from "@/lib/data";
+import { toSummary } from "@/lib/data/summary";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/compare">): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale: locale as Locale, namespace: "nav" });
-  return { title: t("compare") };
+  const t = await getTranslations({ locale: locale as Locale, namespace: "compare" });
+  return { title: t("title"), description: t("lead") };
 }
 
-// Provisoire : le comparateur arrive à l'étape 7.
-export default function ComparePage({ params }: PageProps<"/[locale]/compare">) {
-  const { locale } = use(params);
+export default async function ComparePage({ params }: PageProps<"/[locale]/compare">) {
+  const { locale } = await params;
   setRequestLocale(locale as Locale);
-  const t = useTranslations("nav");
-  return <Placeholder title={t("compare")} />;
+  const t = await getTranslations("compare");
+  const ships = getShips().map(toSummary);
+
+  return (
+    <div className="pb-24">
+      <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("lead")} />
+      <div className="container-page">
+        {/* Le choix vient de l'URL : rendu côté navigateur, après le premier affichage */}
+        <Suspense fallback={<p className="text-ink-muted">{t("empty")}</p>}>
+          <ComparePanel ships={ships} />
+        </Suspense>
+      </div>
+    </div>
+  );
 }

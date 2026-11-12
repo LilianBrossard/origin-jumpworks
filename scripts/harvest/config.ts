@@ -26,6 +26,8 @@ export const EXCLUDED_API_SLUGS = new Set(["orig-600i-bis2951", "orig-600i-execu
 type ShipConfig = {
   /** Slug utilisé sur le site */
   slug: string;
+  /** Nom affiché, quand celui de l'API ne suffit pas (« 600i » → « 600i Explorer ») */
+  displayName?: string;
   range: Range;
   order: number;
   /** Titre de la page starcitizen.tools, quand l'API ne le fournit pas */
@@ -48,7 +50,12 @@ export const SHIPS: Record<string, ShipConfig> = {
   "orig-m50": { slug: "m50", range: "racing", order: 31 },
   "orig-m80": { slug: "m80", range: "racing", order: 32 },
   "orig-400i": { slug: "400i", range: "touring", order: 40 },
-  "orig-600i": { slug: "600i-explorer", range: "touring", order: 41 },
+  "orig-600i": {
+    slug: "600i-explorer",
+    displayName: "600i Explorer",
+    range: "touring",
+    order: 41,
+  },
   "orig-600i-touring": {
     slug: "600i-touring",
     range: "touring",

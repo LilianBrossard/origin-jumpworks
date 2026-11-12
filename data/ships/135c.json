@@ -29,7 +29,8 @@
   "shieldHp": 2160,
   "hullHp": 4550,
   "description": {
-    "en": "With a deceptive amount of storage space in its sleek, stylish frame, and Origin's patented AIR fuel system, the 135c model is the obvious choice for musicians, couriers, and anyone trying to get the party started. Get it there fast, and look good while you're doing it."
+    "en": "With a deceptive amount of storage space in its sleek, stylish frame, and Origin's patented AIR fuel system, the 135c model is the obvious choice for musicians, couriers, and anyone trying to get the party started. Get it there fast, and look good while you're doing it.",
+    "fr": "Avec une capacité de chargement étonnante dans une silhouette fine et élégante, et le système de carburant AIR breveté par Origin, le 135c s'impose naturellement aux musiciens, aux coursiers et à tous ceux qui veulent lancer la fête. Livrez vite, et avec élégance."
   },
   "pledge": {
     "msrpUSD": 65,
@@ -129,6 +130,10 @@
       "src": "/ships/135c/silhouette.png",
       "width": 3598,
       "height": 640
+    },
+    "depth": {
+      "src": "/ships/135c/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -385,6 +390,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/2f231daa-95e5-4cb2-a32e-4db8f29a30d6",
     "wikiPage": "135c",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:38.624Z"
+    "fetchedAt": "2026-11-12T05:02:20.352Z"
   }
 }

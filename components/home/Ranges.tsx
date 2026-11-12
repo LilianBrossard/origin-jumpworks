@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { ArrowRight, Button } from "@/components/ui/Button";
 import { Frame } from "@/components/ui/Frame";
 import { Reveal } from "@/components/ui/Reveal";
+import { Link } from "@/i18n/navigation";
 import { ShipPicture } from "@/components/ui/ShipPicture";
 import { Annotation } from "@/components/ui/Typography";
 import { cn } from "@/lib/cn";
@@ -71,7 +72,12 @@ export function Ranges({ ships }: { ships: Ship[] }) {
                       key={ship.slug}
                       className="flex items-baseline justify-between gap-6 border-b border-line py-3"
                     >
-                      <span className="font-display text-lg font-light text-ink">{ship.name}</span>
+                      <Link
+                        href={`/fleet/${ship.slug}`}
+                        className="link-line font-display text-lg font-light text-ink hover:text-accent"
+                      >
+                        {ship.name}
+                      </Link>
                       <span className="text-right text-xs text-ink-muted">{ship.role}</span>
                     </li>
                   ))}

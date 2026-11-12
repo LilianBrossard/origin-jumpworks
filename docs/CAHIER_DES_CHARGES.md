@@ -106,7 +106,7 @@ public/ships/<slug>/
   side-{960,1920}.{avif,webp}        # vue de profil
   silhouette.png                     # silhouette de profil (masque), pour le comparateur d'échelle
   gallery-NN-{960,1920}.{avif,webp}
-  depth-hero.png                     # carte de profondeur (étape 7)
+  depth-hero.png                     # carte de profondeur (480 px, générée par la collecte)
 ```
 
 ### 3.4 Modèle d'un vaisseau
@@ -382,5 +382,5 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 
 - ~~Choix final de la police de titre~~ : **Outfit** retenue à l'étape 3 (comparaison avec Jost et Inter Tight sur la page `/design`).
 - ~~Vaisseau mis en avant dans l'ouverture~~ : **890 Jump**, retenu à l'étape 5.
-- Génération des cartes de profondeur : automatique ou à la main pour les images clés (étape 7).
+- ~~Génération des cartes de profondeur~~ : **automatique**, à l'étape 7. Sans modèle d'IA : le masque du vaisseau, isolé de son fond étoilé et adouci, sert de carte (vaisseau proche, fond lointain). Effet discret et fiable sur les vues studio.
 - Nom de domaine éventuel (étape 10).

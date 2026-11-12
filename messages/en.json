@@ -154,11 +154,6 @@
       "compare": "Compare"
     }
   },
-  "placeholder": {
-    "eyebrow": "Coming soon",
-    "lead": "This page arrives in step 7 of the project.",
-    "back": "Back to home"
-  },
   "credits": {
     "title": "Credits",
     "lead": "This site exists thanks to the community's work. Here is where its texts, data and images come from.",
@@ -256,5 +251,86 @@
       "bounce": "Bounce",
       "never": "never"
     }
+  },
+  "fleet": {
+    "eyebrow": "Origin Jumpworks",
+    "title": "The fleet",
+    "lead": "The house's {count} flyable ships, from the X1 gravlev to the 890 Jump yacht.",
+    "filterLabel": "Filter by range",
+    "all": "All",
+    "sortLabel": "Sort by",
+    "sort": {
+      "order": "Range",
+      "length": "Length",
+      "cargo": "Cargo",
+      "price": "In-game price"
+    },
+    "results": "{count, plural, =0 {No ship} one {# ship} other {# ships}}",
+    "view": "View the {name} page",
+    "notSold": "Not sold in game",
+    "from": "from {price}"
+  },
+  "ship": {
+    "back": "The fleet",
+    "heroAlt": "{name}, isometric studio view",
+    "depthHint": "Move the cursor over the image",
+    "overviewTitle": "Overview",
+    "originalEnglish": "Original text in English.",
+    "specsTitle": "Specifications",
+    "specs": {
+      "length": "Length",
+      "beam": "Beam",
+      "height": "Height",
+      "mass": "Mass",
+      "crew": "Crew",
+      "cargo": "Cargo",
+      "size": "Size",
+      "scm": "Cruise speed",
+      "max": "Max speed",
+      "quantum": "Quantum speed",
+      "range": "Quantum range",
+      "shield": "Shields",
+      "hull": "Hull"
+    },
+    "acquireTitle": "Acquisition",
+    "inGame": "In game",
+    "buy": "Purchase",
+    "rent": "Rental",
+    "noOffer": "No dealership currently sells it.",
+    "pricesNote": "Prices reported by the community (UEX) as of {date}, patch {version}.",
+    "pledge": "Pledge",
+    "pledgePrice": "Store price",
+    "originalPrice": "Original price: {price}",
+    "pledgeLink": "View on the RSI store",
+    "galleryTitle": "Gallery",
+    "galleryOpen": "Enlarge image {n} of {total}",
+    "paintsTitle": "Paints",
+    "linksTitle": "Further reading",
+    "wiki": "starcitizen.tools page",
+    "brochure": "Official brochure (PDF)",
+    "trailer": "Trailer",
+    "compare": "Compare this ship",
+    "prev": "Previous ship",
+    "next": "Next ship",
+    "credits": "Images: {authors}. Details on the Credits page.",
+    "lightbox": {
+      "label": "Image viewer",
+      "close": "Close",
+      "prev": "Previous image",
+      "next": "Next image",
+      "counter": "{n} / {total}"
+    }
+  },
+  "compare": {
+    "eyebrow": "Origin Jumpworks",
+    "title": "Compare",
+    "lead": "Up to three ships side by side, silhouettes overlaid at the same scale.",
+    "slot": "Ship {n}",
+    "none": "—",
+    "scaleTitle": "Silhouettes to scale",
+    "specsTitle": "Specifications",
+    "best": "best value",
+    "empty": "Choose at least two ships.",
+    "viewShip": "View page"
   }
 }

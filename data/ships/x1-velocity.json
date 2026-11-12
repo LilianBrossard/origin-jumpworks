@@ -24,7 +24,8 @@
   },
   "hullHp": 2820,
   "description": {
-    "en": "Subtract weight, add speed. The X1 Velocity offers a lighter chassis to improve overall performance, making it a dangerous new addition to the open-canopy racer lineup."
+    "en": "Subtract weight, add speed. The X1 Velocity offers a lighter chassis to improve overall performance, making it a dangerous new addition to the open-canopy racer lineup.",
+    "fr": "Moins de poids, plus de vitesse. Le X1 Velocity adopte un châssis allégé qui améliore ses performances générales : un nouveau venu redoutable dans la gamme des racers à cockpit ouvert."
   },
   "pledge": {
     "msrpUSD": 50,
@@ -125,6 +126,10 @@
       "src": "/ships/x1-velocity/silhouette.png",
       "width": 3577,
       "height": 1098
+    },
+    "depth": {
+      "src": "/ships/x1-velocity/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -381,6 +386,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/58e25524-8bd3-450f-8442-7b58fdfc8a50",
     "wikiPage": "X1 Velocity",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:57.105Z"
+    "fetchedAt": "2026-11-12T05:02:48.188Z"
   }
 }

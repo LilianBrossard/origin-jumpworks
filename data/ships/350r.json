@@ -29,7 +29,8 @@
   "shieldHp": 3840,
   "hullHp": 2400,
   "description": {
-    "en": "Origin Jumpwork’s 300 Series is the ultimate fusion of elegance and power. Every component, every part is individually calibrated, so no matter which model and options you choose, your ship will stay in perfect harmony as the ultimate in astroengineering.  By far the fastest member of the family, the 350r refocus all of the 300’s power and translates it into pure speed.\n"
+    "en": "Origin Jumpwork’s 300 Series is the ultimate fusion of elegance and power. Every component, every part is individually calibrated, so no matter which model and options you choose, your ship will stay in perfect harmony as the ultimate in astroengineering.  By far the fastest member of the family, the 350r refocus all of the 300’s power and translates it into pure speed.\n",
+    "fr": "La série 300 d'Origin Jumpworks est l'union ultime de l'élégance et de la puissance. Chaque composant est calibré individuellement : quel que soit le modèle choisi, le vaisseau reste en parfaite harmonie, le sommet de l'ingénierie spatiale. Membre de loin le plus rapide de la famille, le 350r concentre toute la puissance du 300 et la transforme en vitesse pure."
   },
   "pledge": {
     "msrpUSD": 125,
@@ -128,6 +129,10 @@
       "src": "/ships/350r/silhouette.png",
       "width": 3411,
       "height": 841
+    },
+    "depth": {
+      "src": "/ships/350r/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -376,6 +381,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/316c6601-b405-4a3a-abac-394c655718f8",
     "wikiPage": "350r",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:44.824Z"
+    "fetchedAt": "2026-11-12T05:02:28.638Z"
   }
 }

@@ -29,7 +29,8 @@
   "shieldHp": 4488,
   "hullHp": 9100,
   "description": {
-    "en": "Exploration is man's highest calling. Prepare to chart distant horizons with man's most sophisticated piece of technology, the ORIGIN 315p. Featuring a more robust power plant and a custom scanning package, exclusively designed by Chimera Communications."
+    "en": "Exploration is man's highest calling. Prepare to chart distant horizons with man's most sophisticated piece of technology, the ORIGIN 315p. Featuring a more robust power plant and a custom scanning package, exclusively designed by Chimera Communications.",
+    "fr": "Explorer est la plus haute vocation de l'humanité. Préparez-vous à cartographier des horizons lointains à bord de l'une de ses technologies les plus abouties, l'ORIGIN 315p : une centrale d'énergie plus robuste et une suite de scanners sur mesure, conçue en exclusivité par Chimera Communications."
   },
   "pledge": {
     "msrpUSD": 65,
@@ -129,6 +130,10 @@
       "src": "/ships/315p/silhouette.png",
       "width": 3480,
       "height": 862
+    },
+    "depth": {
+      "src": "/ships/315p/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -385,6 +390,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/dc537d66-2abb-43aa-9d37-4e963fc6e9e2",
     "wikiPage": "315p",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:41.335Z"
+    "fetchedAt": "2026-11-12T05:02:24.067Z"
   }
 }

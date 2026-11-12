@@ -29,7 +29,8 @@
   "shieldHp": 3168,
   "hullHp": 4550,
   "description": {
-    "en": "Risks were meant to be taken, but why risk running out of fuel in the heat of battle? With the AIR fuel system, a souped-up weapons package, and all the luxury and refinement you've come to expect from Origin Jumpworks, the 125a has been designed for the discerning maverick."
+    "en": "Risks were meant to be taken, but why risk running out of fuel in the heat of battle? With the AIR fuel system, a souped-up weapons package, and all the luxury and refinement you've come to expect from Origin Jumpworks, the 125a has been designed for the discerning maverick.",
+    "fr": "Les risques sont faits pour être pris, mais pourquoi risquer la panne sèche en plein combat ? Avec le système de carburant AIR, un armement renforcé et tout le raffinement que l'on attend d'Origin Jumpworks, le 125a a été pensé pour les francs-tireurs exigeants."
   },
   "pledge": {
     "msrpUSD": 60,
@@ -129,6 +130,10 @@
       "src": "/ships/125a/silhouette.png",
       "width": 3472,
       "height": 597
+    },
+    "depth": {
+      "src": "/ships/125a/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -393,6 +398,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/e7eeba8d-b108-48a1-a332-d9edbab2b9c1",
     "wikiPage": "125a",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:37.289Z"
+    "fetchedAt": "2026-11-12T05:02:18.227Z"
   }
 }

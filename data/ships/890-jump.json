@@ -29,7 +29,8 @@
   "shieldHp": 720000,
   "hullHp": 153200,
   "description": {
-    "en": "With an elegant, sleek exterior that belies its spacious interior, the 890 Jump is a true engineering marvel; crafted to impress from every angle by combining a unique, innovative design with the finest materials and the most advanced technology. The result is a vessel that is in a class all of its own, a masterpiece worthy of the name ORIGIN."
+    "en": "With an elegant, sleek exterior that belies its spacious interior, the 890 Jump is a true engineering marvel; crafted to impress from every angle by combining a unique, innovative design with the finest materials and the most advanced technology. The result is a vessel that is in a class all of its own, a masterpiece worthy of the name ORIGIN.",
+    "fr": "Derrière une silhouette élégante et effilée qui dissimule un intérieur spacieux, le 890 Jump est une véritable prouesse d'ingénierie, conçu pour impressionner sous tous les angles en alliant un dessin unique et novateur aux plus beaux matériaux et à la technologie la plus avancée. Le résultat : un vaisseau dans une catégorie à part, un chef-d'œuvre digne du nom ORIGIN."
   },
   "pledge": {
     "msrpUSD": 950,
@@ -137,6 +138,10 @@
       "src": "/ships/890-jump/silhouette.png",
       "width": 3613,
       "height": 675
+    },
+    "depth": {
+      "src": "/ships/890-jump/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -401,6 +406,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/50ddaf5e-a8e3-42fe-a1d3-7267f39b39b0",
     "wikiPage": "890 Jump",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:51.231Z"
+    "fetchedAt": "2026-11-12T05:02:37.877Z"
   }
 }

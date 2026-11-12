@@ -54,7 +54,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <main
             id="contenu"
             tabIndex={-1}
-            className="relative z-[1] flex flex-1 flex-col outline-none"
+            className="relative z-[1] flex flex-1 flex-col outline-none *:min-w-0"
           >
             {children}
           </main>

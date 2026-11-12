@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { DragScroll } from "@/components/ui/DragScroll";
 import { Reveal } from "@/components/ui/Reveal";
+import { Link } from "@/i18n/navigation";
 import type { Ship } from "@/lib/data/schema";
 import { formatNumber } from "@/lib/format";
 import { SectionHeading } from "./SectionHeading";
@@ -63,9 +64,13 @@ export function ScaleLineup({ ships }: { ships: Ship[] }) {
                       }}
                     />
                   </div>
-                  <p className="mt-3 font-display text-sm font-light whitespace-nowrap text-ink">
+                  <Link
+                    href={`/fleet/${ship.slug}`}
+                    draggable={false}
+                    className="mt-3 w-fit font-display text-sm font-light whitespace-nowrap text-ink hover:text-accent"
+                  >
                     {ship.name}
-                  </p>
+                  </Link>
                   <p className="font-mono text-xs text-ink-muted">
                     {t("meters", { value: formatNumber(locale, ship.dimensions.length) })}
                   </p>

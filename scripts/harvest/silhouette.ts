@@ -14,7 +14,8 @@ import sharp from "sharp";
  * Renvoie un PNG blanc à transparence (opaque = vaisseau), à utiliser comme masque CSS
  * (`mask-image`) pour le teinter avec la couleur du thème.
  */
-export async function extractSilhouette(input: Buffer, threshold = 40, medianSize = 3) {
+/** Étapes 1 à 4 : masque plein du vaisseau (1 = extérieur) sur l'image entière. */
+async function computeMask(input: Buffer, threshold: number, medianSize: number) {
   const { data, info } = await sharp(input)
     .greyscale()
     .median(medianSize)
@@ -90,6 +91,13 @@ export async function extractSilhouette(input: Buffer, threshold = 40, medianSiz
     if (y < h - 1) seed(q + w);
   }
 
+  return { outside, w, h, bestSize };
+}
+
+export async function extractSilhouette(input: Buffer, threshold = 40, medianSize = 3) {
+  const { outside, w, h, bestSize } = await computeMask(input, threshold, medianSize);
+  const n = w * h;
+
   // 5. Masque final et recadrage
   // Image à 2 canaux (gris + alpha) : blanc, opaque sur le vaisseau, transparent ailleurs.
   const alpha = Buffer.alloc(n * 2);
@@ -130,4 +138,24 @@ export async function extractSilhouette(input: Buffer, threshold = 40, medianSiz
     .png({ compressionLevel: 9 })
     .toBuffer();
   return { png, width, height, coverage: bestSize / n };
+}
+
+/**
+ * Carte de profondeur approximative pour l'effet de relief (M4), sans modèle d'IA :
+ * le vaisseau (masque adouci) est « proche », le fond spatial « loin ».
+ * Renvoie un PNG en niveaux de gris à la largeur demandée (blanc = proche).
+ */
+export async function extractDepthMap(input: Buffer, width: number, threshold = 40) {
+  const { outside, w, h } = await computeMask(input, threshold, 3);
+  const n = w * h;
+  const grey = Buffer.alloc(n);
+  for (let p = 0; p < n; p++) grey[p] = outside[p] ? 30 : 255;
+  return (
+    sharp(grey, { raw: { width: w, height: h, channels: 1 } })
+      .resize({ width })
+      // Transition douce entre le vaisseau et le fond : pas de déchirure lors du décalage
+      .blur(Math.max(4, width / 70))
+      .png({ compressionLevel: 9 })
+      .toBuffer()
+  );
 }

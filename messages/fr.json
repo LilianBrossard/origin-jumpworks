@@ -154,11 +154,6 @@
       "compare": "Comparer"
     }
   },
-  "placeholder": {
-    "eyebrow": "En préparation",
-    "lead": "Cette page arrive à l'étape 7 du projet.",
-    "back": "Retour à l'accueil"
-  },
   "credits": {
     "title": "Crédits",
     "lead": "Ce site existe grâce au travail de la communauté. Voici d'où viennent ses textes, ses données et ses images.",
@@ -256,5 +251,86 @@
       "bounce": "Rebond",
       "never": "jamais"
     }
+  },
+  "fleet": {
+    "eyebrow": "Origin Jumpworks",
+    "title": "La flotte",
+    "lead": "Les {count} vaisseaux jouables de la maison, du glisseur X1 au yacht 890 Jump.",
+    "filterLabel": "Filtrer par gamme",
+    "all": "Toutes",
+    "sortLabel": "Trier par",
+    "sort": {
+      "order": "Gamme",
+      "length": "Longueur",
+      "cargo": "Cargo",
+      "price": "Prix en jeu"
+    },
+    "results": "{count, plural, =0 {Aucun vaisseau} one {# vaisseau} other {# vaisseaux}}",
+    "view": "Voir la fiche du {name}",
+    "notSold": "Non vendu en jeu",
+    "from": "dès {price}"
+  },
+  "ship": {
+    "back": "La flotte",
+    "heroAlt": "{name}, vue isométrique en studio",
+    "depthHint": "Déplacez le curseur sur l'image",
+    "overviewTitle": "Présentation",
+    "originalEnglish": "Texte original en anglais.",
+    "specsTitle": "Caractéristiques",
+    "specs": {
+      "length": "Longueur",
+      "beam": "Largeur",
+      "height": "Hauteur",
+      "mass": "Masse",
+      "crew": "Équipage",
+      "cargo": "Cargo",
+      "size": "Taille",
+      "scm": "Vitesse de croisière",
+      "max": "Vitesse max.",
+      "quantum": "Vitesse quantique",
+      "range": "Autonomie quantique",
+      "shield": "Boucliers",
+      "hull": "Coque"
+    },
+    "acquireTitle": "Acquisition",
+    "inGame": "En jeu",
+    "buy": "Achat",
+    "rent": "Location",
+    "noOffer": "Aucune concession ne le vend actuellement.",
+    "pricesNote": "Prix relevés par la communauté (UEX) au {date}, patch {version}.",
+    "pledge": "Précommande",
+    "pledgePrice": "Prix catalogue",
+    "originalPrice": "Prix d'origine : {price}",
+    "pledgeLink": "Voir sur la boutique RSI",
+    "galleryTitle": "Galerie",
+    "galleryOpen": "Agrandir l'image {n} sur {total}",
+    "paintsTitle": "Coloris",
+    "linksTitle": "Pour aller plus loin",
+    "wiki": "Fiche starcitizen.tools",
+    "brochure": "Brochure officielle (PDF)",
+    "trailer": "Bande-annonce",
+    "compare": "Comparer ce vaisseau",
+    "prev": "Vaisseau précédent",
+    "next": "Vaisseau suivant",
+    "credits": "Images : {authors}. Détail sur la page Crédits.",
+    "lightbox": {
+      "label": "Visionneuse d'images",
+      "close": "Fermer",
+      "prev": "Image précédente",
+      "next": "Image suivante",
+      "counter": "{n} / {total}"
+    }
+  },
+  "compare": {
+    "eyebrow": "Origin Jumpworks",
+    "title": "Comparer",
+    "lead": "Jusqu'à trois vaisseaux côte à côte, silhouettes superposées à la même échelle.",
+    "slot": "Vaisseau {n}",
+    "none": "—",
+    "scaleTitle": "Silhouettes à l'échelle",
+    "specsTitle": "Caractéristiques",
+    "best": "meilleure valeur",
+    "empty": "Choisissez au moins deux vaisseaux.",
+    "viewShip": "Voir la fiche"
   }
 }

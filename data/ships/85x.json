@@ -29,7 +29,8 @@
   "shieldHp": 1920,
   "hullHp": 2100,
   "description": {
-    "en": "Elegantly styled and meticulously constructed, the 85X is a versatile and comprehensive away-vessel that features precision control in and out of atmosphere. Utilizing much of the same thruster technology as the 300 series, it has the power of a racer with the reliability of a touring ship. Whether descending down to the planet surface or taking in the sights of your system, this runabout continues Origin’s proud tradition of turning heads.\n"
+    "en": "Elegantly styled and meticulously constructed, the 85X is a versatile and comprehensive away-vessel that features precision control in and out of atmosphere. Utilizing much of the same thruster technology as the 300 series, it has the power of a racer with the reliability of a touring ship. Whether descending down to the planet surface or taking in the sights of your system, this runabout continues Origin’s proud tradition of turning heads.\n",
+    "fr": "D'une élégance soignée et d'une construction minutieuse, le 85X est une navette polyvalente et complète, d'une grande précision de pilotage dans l'atmosphère comme hors de l'atmosphère. Reprenant une grande partie des propulseurs de la série 300, il a la puissance d'un racer et la fiabilité d'un vaisseau de tourisme. Qu'il s'agisse de descendre à la surface d'une planète ou de flâner dans votre système, cette annexe perpétue la fière tradition d'Origin : faire tourner les têtes."
   },
   "pledge": {
     "msrpUSD": 50,
@@ -127,6 +128,10 @@
       "src": "/ships/85x/silhouette.png",
       "width": 3517,
       "height": 637
+    },
+    "depth": {
+      "src": "/ships/85x/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -391,6 +396,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/9dc9c257-c413-416a-ab9b-06fbadf18d1e",
     "wikiPage": "85X",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:49.697Z"
+    "fetchedAt": "2026-11-12T05:02:35.724Z"
   }
 }

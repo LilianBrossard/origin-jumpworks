@@ -24,7 +24,8 @@
   },
   "hullHp": 2820,
   "description": {
-    "en": "Designed to further hone the cutting-edge of high-performance luxury vehicles, the X1 is class-defying transportation built for anyone who’s ever asked, “Can I go faster?”"
+    "en": "Designed to further hone the cutting-edge of high-performance luxury vehicles, the X1 is class-defying transportation built for anyone who’s ever asked, “Can I go faster?”",
+    "fr": "Conçu pour repousser encore les limites des véhicules de luxe haute performance, le X1 est un moyen de transport hors catégorie, pensé pour tous ceux qui se sont un jour demandé : « Est-ce que je peux aller plus vite ? »"
   },
   "pledge": {
     "msrpUSD": 45,
@@ -117,6 +118,10 @@
       "src": "/ships/x1/silhouette.png",
       "width": 3604,
       "height": 1019
+    },
+    "depth": {
+      "src": "/ships/x1/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -365,6 +370,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/829d0525-e67e-4e57-9f52-b4e572a4f73d",
     "wikiPage": "X1",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:55.091Z"
+    "fetchedAt": "2026-11-12T05:02:44.517Z"
   }
 }

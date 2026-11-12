@@ -29,7 +29,8 @@
   "shieldHp": 2160,
   "hullHp": 4550,
   "description": {
-    "en": "Tour the universe with the perfect coupling of luxury and performance. The 100i features Origin Jumpworks' patented AIR fuel system, making it the most efficient and eco-friendly ship on the market. Capable of long distance flights that most ships of its size aren't equipped for, the 100i is perfect for solo pilots looking to turn heads without sacrificing functionality or reliability."
+    "en": "Tour the universe with the perfect coupling of luxury and performance. The 100i features Origin Jumpworks' patented AIR fuel system, making it the most efficient and eco-friendly ship on the market. Capable of long distance flights that most ships of its size aren't equipped for, the 100i is perfect for solo pilots looking to turn heads without sacrificing functionality or reliability.",
+    "fr": "Parcourez l'univers avec l'alliance parfaite du luxe et de la performance. Le 100i embarque AIR, le système de carburant breveté d'Origin Jumpworks, qui en fait le vaisseau le plus efficient et le plus respectueux de l'environnement du marché. Capable de vols au long cours dont peu de vaisseaux de sa taille sont capables, le 100i est idéal pour le pilote solitaire qui veut faire tourner les têtes sans renoncer ni à l'utilité ni à la fiabilité."
   },
   "pledge": {
     "msrpUSD": 50,
@@ -159,6 +160,10 @@
       "src": "/ships/100i/silhouette.png",
       "width": 3530,
       "height": 630
+    },
+    "depth": {
+      "src": "/ships/100i/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -423,6 +428,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/6135a874-4cb1-4f49-9f29-5781e5991f2b",
     "wikiPage": "100i",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:36.192Z"
+    "fetchedAt": "2026-11-12T05:02:16.361Z"
   }
 }

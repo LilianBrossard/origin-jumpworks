@@ -29,7 +29,8 @@
   "shieldHp": 72000,
   "hullHp": 81500,
   "description": {
-    "en": "To explore the stars is a most noble endeavor, and Origin Jumpworks has risen to the occasion in crafting the 400i, the ultimate high-performance pathfinder. Representing a harmonious concourse of style, quality, and sophistication, the 400i exhibits class-leading range, substantial defensive capabilities, and a factory-equipped scanning array, while maintaining the comfort and elegance Origin is known for. Take on the harshest corners of the galaxy without compromise."
+    "en": "To explore the stars is a most noble endeavor, and Origin Jumpworks has risen to the occasion in crafting the 400i, the ultimate high-performance pathfinder. Representing a harmonious concourse of style, quality, and sophistication, the 400i exhibits class-leading range, substantial defensive capabilities, and a factory-equipped scanning array, while maintaining the comfort and elegance Origin is known for. Take on the harshest corners of the galaxy without compromise.",
+    "fr": "Explorer les étoiles est la plus noble des entreprises, et Origin Jumpworks s'est montré à la hauteur avec le 400i, l'éclaireur haute performance par excellence. Accord harmonieux du style, de la qualité et du raffinement, le 400i offre une autonomie de premier plan, de solides capacités défensives et une batterie de scanners montée d'usine, tout en conservant le confort et l'élégance qui font la réputation d'Origin. Affrontez les recoins les plus hostiles de la galaxie sans compromis."
   },
   "pledge": {
     "msrpUSD": 250,
@@ -149,6 +150,10 @@
       "src": "/ships/400i/silhouette.png",
       "width": 3655,
       "height": 684
+    },
+    "depth": {
+      "src": "/ships/400i/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -413,6 +418,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/718f4435-628b-4436-bb80-bf9cfef9a945",
     "wikiPage": "400i",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:46.482Z"
+    "fetchedAt": "2026-11-12T05:02:30.977Z"
   }
 }

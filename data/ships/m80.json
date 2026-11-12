@@ -29,7 +29,8 @@
   "shieldHp": 20000,
   "hullHp": 17000,
   "description": {
-    "en": "Origin’s first ever Heavy Fighter continues a legacy of beauty and elegance combined with high performance. Retractable weapons, missiles, and high durability furnish the M80 to dominate in sustained combat - a culmination of style and overwhelming force."
+    "en": "Origin’s first ever Heavy Fighter continues a legacy of beauty and elegance combined with high performance. Retractable weapons, missiles, and high durability furnish the M80 to dominate in sustained combat - a culmination of style and overwhelming force.",
+    "fr": "Premier chasseur lourd de l'histoire d'Origin, le M80 prolonge un héritage de beauté et d'élégance au service de la haute performance. Armes escamotables, missiles et grande robustesse lui permettent de dominer les combats prolongés : l'aboutissement du style et de la force écrasante."
   },
   "pledge": {
     "msrpUSD": 300,
@@ -119,6 +120,10 @@
       "src": "/ships/m80/silhouette.png",
       "width": 3725,
       "height": 581
+    },
+    "depth": {
+      "src": "/ships/m80/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -375,6 +380,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/01c24704-ae47-4b31-931c-d35655edaa05",
     "wikiPage": "M80",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:54.126Z"
+    "fetchedAt": "2026-11-12T05:02:42.655Z"
   }
 }

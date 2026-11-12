@@ -25,7 +25,8 @@
   "shieldHp": 720,
   "hullHp": 2820,
   "description": {
-    "en": "Travel in confidence with the X1 Force. Featuring additional defensive capabilities, this open-canopy vehicle from Origin Jumpworks is equally suited to ground-based exploration, reconnaissance expeditions, and security operations."
+    "en": "Travel in confidence with the X1 Force. Featuring additional defensive capabilities, this open-canopy vehicle from Origin Jumpworks is equally suited to ground-based exploration, reconnaissance expeditions, and security operations.",
+    "fr": "Voyagez en toute confiance avec le X1 Force. Doté de capacités défensives supplémentaires, ce véhicule à cockpit ouvert d'Origin Jumpworks se prête aussi bien à l'exploration au sol qu'aux missions de reconnaissance et aux opérations de sécurité."
   },
   "pledge": {
     "msrpUSD": 55,
@@ -126,6 +127,10 @@
       "src": "/ships/x1-force/silhouette.png",
       "width": 3339,
       "height": 958
+    },
+    "depth": {
+      "src": "/ships/x1-force/depth-hero.png",
+      "width": 480
     },
     "gallery": [
       {
@@ -382,6 +387,6 @@
     "apiUrl": "https://api.star-citizen.wiki/api/vehicles/b416dbbf-53f2-489e-a9dc-456286aa6c70",
     "wikiPage": "X1 Force",
     "gameVersion": "4.10.2-LIVE.12881860",
-    "fetchedAt": "2026-11-11T17:59:56.092Z"
+    "fetchedAt": "2026-11-12T05:02:46.346Z"
   }
 }

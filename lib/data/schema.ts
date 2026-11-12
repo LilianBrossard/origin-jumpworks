@@ -105,6 +105,10 @@ export const ShipSchema = z.object({
         height: z.number().int().positive(),
       })
       .optional(),
+    /** Carte de profondeur de la vue principale (blanc = proche), pour l'effet de relief */
+    depth: z
+      .object({ src: z.string().startsWith("/"), width: z.number().int().positive() })
+      .optional(),
     gallery: z.array(ImageAssetSchema),
   }),
   source: z.object({
