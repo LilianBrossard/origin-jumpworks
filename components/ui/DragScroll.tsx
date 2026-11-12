@@ -44,24 +44,35 @@ export function DragScroll({ className, children, ...rest }: ComponentPropsWitho
       frame = requestAnimationFrame(step);
     };
 
+    // Le glisser ne « capture » la souris qu'après un vrai déplacement (> 5 px) :
+    // un simple clic atteint donc normalement les liens de la bande.
+    let pressed = false;
+    let pointerId = -1;
+
     const onDown = (e: PointerEvent) => {
       if (e.pointerType !== "mouse" || e.button !== 0) return;
       stopInertia();
-      dragging = true;
+      pressed = true;
+      dragging = false;
       moved = 0;
+      pointerId = e.pointerId;
       lastX = e.clientX;
       lastT = performance.now();
       velocity = 0;
-      el.setPointerCapture(e.pointerId);
-      el.dataset.dragging = "";
     };
 
     const onMove = (e: PointerEvent) => {
-      if (!dragging) return;
+      if (!pressed) return;
       const now = performance.now();
       const dx = e.clientX - lastX;
-      el.scrollLeft -= dx;
       moved += Math.abs(dx);
+      if (!dragging) {
+        if (moved <= 5) return;
+        dragging = true;
+        el.setPointerCapture(pointerId);
+        el.dataset.dragging = "";
+      }
+      el.scrollLeft -= dx;
       const dt = Math.max(1, now - lastT);
       velocity = 0.8 * (dx / dt) + 0.2 * velocity;
       lastX = e.clientX;
@@ -69,6 +80,8 @@ export function DragScroll({ className, children, ...rest }: ComponentPropsWitho
     };
 
     const onUp = (e: PointerEvent) => {
+      if (!pressed) return;
+      pressed = false;
       if (!dragging) return;
       dragging = false;
       delete el.dataset.dragging;

@@ -47,33 +47,36 @@ export function ScaleLineup({ ships }: { ships: Ship[] }) {
               const height = (width * sil.height) / sil.width;
               const mask = `url(${sil.src})`;
               return (
-                <li key={ship.slug} className="flex shrink-0 flex-col">
-                  <div className="flex min-w-20 items-end border-b border-line-strong pb-px">
-                    <span
-                      aria-hidden
-                      className="block bg-ink transition-colors duration-(--duration-base) hover:bg-accent"
-                      style={{
-                        width,
-                        height,
-                        maskImage: mask,
-                        WebkitMaskImage: mask,
-                        maskSize: "100% 100%",
-                        WebkitMaskSize: "100% 100%",
-                        maskRepeat: "no-repeat",
-                        WebkitMaskRepeat: "no-repeat",
-                      }}
-                    />
-                  </div>
+                <li key={ship.slug} className="shrink-0">
+                  {/* Toute la silhouette est cliquable, pas seulement le nom */}
                   <Link
                     href={`/fleet/${ship.slug}`}
                     draggable={false}
-                    className="mt-3 w-fit font-display text-sm font-light whitespace-nowrap text-ink hover:text-accent"
+                    className="group flex flex-col"
                   >
-                    {ship.name}
+                    <span className="flex min-w-20 items-end border-b border-line-strong pb-px">
+                      <span
+                        aria-hidden
+                        className="block bg-ink transition-colors duration-(--duration-base) group-hover:bg-accent"
+                        style={{
+                          width,
+                          height,
+                          maskImage: mask,
+                          WebkitMaskImage: mask,
+                          maskSize: "100% 100%",
+                          WebkitMaskSize: "100% 100%",
+                          maskRepeat: "no-repeat",
+                          WebkitMaskRepeat: "no-repeat",
+                        }}
+                      />
+                    </span>
+                    <span className="mt-3 font-display text-sm font-light whitespace-nowrap text-ink transition-colors group-hover:text-accent">
+                      {ship.name}
+                    </span>
+                    <span className="font-mono text-xs text-ink-muted">
+                      {t("meters", { value: formatNumber(locale, ship.dimensions.length) })}
+                    </span>
                   </Link>
-                  <p className="font-mono text-xs text-ink-muted">
-                    {t("meters", { value: formatNumber(locale, ship.dimensions.length) })}
-                  </p>
                 </li>
               );
             })}

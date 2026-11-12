@@ -39,7 +39,7 @@ export default function NotFound() {
                 WebkitMaskRepeat: "no-repeat",
               }}
             />
-            <p className="absolute right-0 bottom-0 font-mono text-[0.6875rem] tracking-[0.12em] text-ink-muted">
+            <p className="absolute inset-x-0 bottom-0 text-center font-mono text-[0.6875rem] tracking-[0.12em] text-ink-muted">
               <span>Coordonnées inconnues</span>
               <span className="mx-2">·</span>
               <span lang="en">Unknown coordinates</span>
