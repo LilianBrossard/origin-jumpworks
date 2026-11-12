@@ -4,8 +4,8 @@
 > Projet de portfolio : montrer ce qu'un site moderne peut offrir en matière d'expérience, de mouvement et de finition.
 
 - **Dépôt** : https://github.com/LilianBrossard/origin-jumpworks
-- **Version du document** : 1.2 — 2026-11-12 (mesures de l'étape 9)
-- **Statut** : étapes 0 à 9 réalisées ; reste l'étape 10 (mise en ligne)
+- **Version du document** : 1.3 — 2026-11-12 (mise en ligne)
+- **Statut** : en ligne sur https://origin-jumpworks.vercel.app/ (étapes 0 à 10 réalisées) ; restent les actions manuelles listées en fin de section 11 et les évolutions optionnelles
 
 ---
 
@@ -384,6 +384,13 @@ Chaque étape se termine par une revue ensemble avant de passer à la suivante.
 | **8**  | Transitions et finitions | **M3 saut quantique**, **M5 lever de soleil**, page 404, bonus cachés                               | Transitions fluides, repli sans View Transitions                                  |
 | **9**  | Qualité                  | Tests Vitest, Playwright et axe, audit Lighthouse, test au lecteur d'écran                          | Budgets de la section 9 atteints                                                  |
 | **10** | Mise en ligne            | Déploiement, domaine éventuel, README de portfolio (captures, choix techniques), URL déclarée à CIG | Site public, lien ajouté au portfolio                                             |
+
+### Mise en ligne (étape 10)
+
+- **Adresse** : https://origin-jumpworks.vercel.app/ (Vercel, déploiement à chaque push sur `main`).
+- **Vérifié en ligne** : toutes les pages en 200, vraie 404, fichiers de préchargement présents, plan du site (44 adresses) et liens canoniques sur le domaine de production, images de partage, aucune erreur dans la console.
+- **Lighthouse en ligne** : ordinateur 99–100 / 100 / 100 / 100 ; mobile 74–79 / 100 / 100 / 100 (LCP 3,2 s).
+- **Actions manuelles restantes** : lien depuis le portfolio ; déclaration de l'URL à CIG (legal_notices@cloudimperiumgames.com, accord du fan kit art. 2k) ; test au lecteur d'écran (NVDA).
 
 ### Évolutions futures (optionnelles)
 

@@ -2,6 +2,8 @@
 
 Site vitrine **non officiel** consacré à Origin Jumpworks, le constructeur de vaisseaux de luxe de _Star Citizen_ : une longue descente au fil d'or, la flotte jouable, son histoire, et où l'acquérir en jeu.
 
+**En ligne : [origin-jumpworks.vercel.app](https://origin-jumpworks.vercel.app/)**
+
 Projet de portfolio réalisé par [Lilian Brossard](https://lilian-brossard.vercel.app/).
 
 ![Accueil, thème sombre](docs/screenshots/accueil-sombre.webp)
@@ -53,7 +55,7 @@ Quelques solutions maison dont je suis content :
 
 ## Qualité
 
-- **Lighthouse (ordinateur)** : 97–99 en performance, 100 en accessibilité, bonnes pratiques et SEO.
+- **Lighthouse, site en ligne** : ordinateur 99–100 en performance ; mobile 74–79 (LCP 3,2 s, limité par l'hydratation de React) ; 100 en accessibilité, bonnes pratiques et SEO partout.
 - **axe** : aucune violation WCAG 2.2 A/AA sur 8 pages, thèmes clair et sombre.
 - **40 tests unitaires et 32 tests de bout en bout**, lancés par la CI à chaque push.
 
