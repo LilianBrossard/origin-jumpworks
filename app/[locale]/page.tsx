@@ -10,6 +10,7 @@ import { Ranges } from "@/components/home/Ranges";
 import { ScaleLineup } from "@/components/home/ScaleLineup";
 import type { Locale } from "@/i18n/routing";
 import { getLocations, getMeta, getShip, getShips } from "@/lib/data";
+import { PageTransition } from "@/components/layout/PageTransition";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
@@ -30,7 +31,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   if (!flagship) throw new Error("890 Jump introuvable dans les données");
 
   return (
-    <>
+    <PageTransition>
       <Hero ship={flagship} />
       <Manifesto />
       <History />
@@ -39,6 +40,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <ScaleLineup ships={ships} />
       <Acquire ships={ships} locations={getLocations()} meta={getMeta()} />
       <Outro />
-    </>
+    </PageTransition>
   );
 }

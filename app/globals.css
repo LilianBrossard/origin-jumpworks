@@ -161,6 +161,24 @@
   }
 }
 
+/* Page 404 : un vaisseau égaré traverse lentement le vide en tournoyant à peine */
+@keyframes drift {
+  from {
+    transform: translate(-30%, -50%) rotate(-8deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    transform: translate(720%, -80%) rotate(14deg);
+    opacity: 0;
+  }
+}
+
 /* ---------------------------------------------------------------- Apparitions au défilement */
 /* Masqué seulement si JavaScript tourne : sans JS, tout reste lisible. */
 [data-reveal] {
@@ -212,4 +230,74 @@ html.lenis body {
 /* Quand la scène 3D est active, le fil d'or dessine lui-même le monogramme de fin. */
 [data-scene] [data-thread="end"] > svg {
   opacity: 0;
+}
+
+/* ---------------------------------------------------------------- M3 · Saut quantique (changement de page) */
+::view-transition-old(.quantum-out) {
+  animation: quantum-out 420ms var(--ease-in-out) both;
+}
+::view-transition-new(.quantum-in) {
+  animation: quantum-in 700ms var(--ease-out) 120ms both;
+}
+@keyframes quantum-out {
+  to {
+    opacity: 0;
+    transform: scale(1.08);
+    filter: blur(8px) brightness(1.35);
+  }
+}
+@keyframes quantum-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+    filter: blur(6px) brightness(1.5);
+  }
+}
+
+/* ---------------------------------------------------------------- M5 · Lever / coucher de soleil (changement de thème) */
+/* Le nouveau thème se révèle depuis l'horizon (bas de l'écran) au lever, depuis le ciel au coucher. */
+:root[data-theme-transition]::view-transition-old(root),
+:root[data-theme-transition]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+/* Pendant la révélation, pas de fondu de couleur du body : le nouveau thème est déjà net */
+:root[data-theme-transition] body {
+  transition: none;
+}
+:root[data-theme-transition="sunrise"]::view-transition-new(root) {
+  animation: sunrise 1100ms var(--ease-in-out) both;
+}
+:root[data-theme-transition="sunset"]::view-transition-new(root) {
+  animation: sunset 1100ms var(--ease-in-out) both;
+}
+@keyframes sunrise {
+  from {
+    clip-path: circle(0% at 50% 100%);
+  }
+  to {
+    clip-path: circle(150% at 50% 100%);
+  }
+}
+@keyframes sunset {
+  from {
+    clip-path: circle(0% at 50% 0%);
+  }
+  to {
+    clip-path: circle(150% at 50% 0%);
+  }
+}
+
+/* Animations réduites : aucune transition de vue */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+:root[data-motion="reduced"]::view-transition-group(*),
+:root[data-motion="reduced"]::view-transition-old(*),
+:root[data-motion="reduced"]::view-transition-new(*) {
+  animation: none !important;
 }

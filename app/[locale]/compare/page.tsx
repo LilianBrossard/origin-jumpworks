@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import type { Locale } from "@/i18n/routing";
 import { getShips } from "@/lib/data";
 import { toSummary } from "@/lib/data/summary";
+import { PageTransition } from "@/components/layout/PageTransition";
 
 export async function generateMetadata({
   params,
@@ -22,14 +23,16 @@ export default async function ComparePage({ params }: PageProps<"/[locale]/compa
   const ships = getShips().map(toSummary);
 
   return (
-    <div className="pb-24">
-      <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("lead")} />
-      <div className="container-page">
-        {/* Le choix vient de l'URL : rendu côté navigateur, après le premier affichage */}
-        <Suspense fallback={<p className="text-ink-muted">{t("empty")}</p>}>
-          <ComparePanel ships={ships} />
-        </Suspense>
+    <PageTransition>
+      <div className="pb-24">
+        <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("lead")} />
+        <div className="container-page">
+          {/* Le choix vient de l'URL : rendu côté navigateur, après le premier affichage */}
+          <Suspense fallback={<p className="text-ink-muted">{t("empty")}</p>}>
+            <ComparePanel ships={ships} />
+          </Suspense>
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 }

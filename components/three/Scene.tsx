@@ -1,7 +1,8 @@
 "use client";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
+import { useRouter } from "@/i18n/navigation";
 import type { PerspectiveCamera } from "three";
 import { cameraDistance, FOV } from "./camera";
 import { Flock } from "./Flock";
@@ -37,6 +38,9 @@ function CameraRig() {
 
 export default function Scene({ pathname }: { pathname: string }) {
   const colors = useThemeColors();
+  // Le routeur est lu hors du Canvas (le contexte React n'y est pas transmis)
+  const router = useRouter();
+  const openShip = useCallback((slug: string) => router.push(`/fleet/${slug}`), [router]);
 
   return (
     <Canvas
@@ -47,8 +51,8 @@ export default function Scene({ pathname }: { pathname: string }) {
       style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none" }}
     >
       <CameraRig />
-      <Starfield colors={colors} />
-      <Flock colors={colors} />
+      <Starfield colors={colors} pathname={pathname} />
+      <Flock colors={colors} onSelect={openShip} />
       {pathname === "/" && <GoldenThread colors={colors} />}
     </Canvas>
   );

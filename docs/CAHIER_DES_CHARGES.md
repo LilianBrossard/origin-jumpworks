@@ -227,6 +227,13 @@ Valeurs de référence : [`styles/tokens.css`](../styles/tokens.css). **Tout tex
 - **Nuées** : formations en V de 5 à 8 silhouettes, ou un M50 seul et rapide, toutes les 20 à 40 s ; elles suivent la caméra (elles appartiennent au ciel, pas à la page). Le **bonus cliquable** est reporté à l'étape 8.
 - **Défilement fluide** : Lenis, désactivé en animations réduites.
 
+### Notes de réalisation (étape 8)
+
+- **M3 saut quantique** : composant React `<ViewTransition>` (intégré à Next 16) placé dans chaque page ; l'ancienne page s'éloigne et se brouille, la nouvelle arrive du fond, et les étoiles filent vers le haut (élan de 1,6 écran en 0,9 s). Sans prise en charge du navigateur : navigation normale, sans animation.
+- **M5 lever / coucher de soleil** : `document.startViewTransition` ; le nouveau thème se révèle depuis l'horizon (bas de l'écran) en passant au clair, depuis le ciel en passant au sombre. Seulement si le thème affiché change réellement ; filet de sécurité si la transition ne démarre pas.
+- **404** : page bilingue, un M50 égaré dérive autour d'une orbite en pointillés.
+- **Bonus caché** : un clic sur un vaisseau d'une nuée ouvre sa fiche (le curseur devient une main au survol ; liens et boutons gardent la priorité).
+
 ### Règles communes
 
 - Un seul **canvas WebGL**, partagé et fixé en arrière-plan, au lieu d'un canvas par section.

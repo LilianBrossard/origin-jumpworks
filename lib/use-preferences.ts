@@ -48,12 +48,52 @@ export function useThemePreference() {
   const theme = useSyncExternalStore(subscribe, getTheme, () => "system" as const);
   const setTheme = (next: ThemePreference) => {
     const root = document.documentElement;
-    if (next === "system") root.removeAttribute("data-theme");
-    else root.setAttribute("data-theme", next);
-    write(STORAGE_KEYS.theme, next === "system" ? null : next);
+    const apply = () => {
+      if (next === "system") root.removeAttribute("data-theme");
+      else root.setAttribute("data-theme", next);
+      write(STORAGE_KEYS.theme, next === "system" ? null : next);
+    };
+
+    // M5 · Lever / coucher de soleil, seulement si le thème affiché change vraiment
+    const before = effectiveTheme();
+    const after = next === "system" ? systemTheme() : next;
+    if (
+      before === after ||
+      getReduced() ||
+      document.visibilityState !== "visible" ||
+      typeof document.startViewTransition !== "function"
+    ) {
+      apply();
+      return;
+    }
+    root.dataset.themeTransition = after === "light" ? "sunrise" : "sunset";
+    let applied = false;
+    const once = () => {
+      if (applied) return;
+      applied = true;
+      apply();
+    };
+    const transition = document.startViewTransition(once);
+    // Filet de sécurité : si la transition ne démarre pas, le thème s'applique quand même.
+    const fallback = window.setTimeout(() => {
+      transition.skipTransition();
+      once();
+      delete root.dataset.themeTransition;
+    }, 300);
+    transition.updateCallbackDone.finally(() => window.clearTimeout(fallback));
+    transition.finished.finally(() => delete root.dataset.themeTransition);
   };
   return [theme, setTheme] as const;
 }
+
+const systemTheme = (): "light" | "dark" =>
+  window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+
+/** Thème réellement affiché : préférence enregistrée, sinon celui du système. */
+const effectiveTheme = (): "light" | "dark" => {
+  const t = getTheme();
+  return t === "system" ? systemTheme() : t;
+};
 
 /* ---------------------------------------------------------------- Animations */
 

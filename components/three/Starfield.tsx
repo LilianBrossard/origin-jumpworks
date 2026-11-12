@@ -1,7 +1,7 @@
 "use client";
 
 import { useFrame, useThree } from "@react-three/fiber";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import {
   AdditiveBlending,
   BufferAttribute,
@@ -21,6 +21,7 @@ const vertex = /* glsl */ `
   uniform float uTime;
   uniform float uPixelRatio;
   uniform float uLight;   // 1 = thème clair
+  uniform float uWarp;    // élan du saut quantique (px), voir PageTransition
   varying float vAlpha;
   varying float vAccent;
   varying float vSize;
@@ -31,7 +32,8 @@ const vertex = /* glsl */ `
     // toutes nettement plus lentement que la page. Le champ se répète verticalement.
     float speed = mix(0.03, 0.22, aBase.z);
     float h = uRes.y * 1.25;
-    float y = mod(aBase.y * h - uScroll * speed, h) - uRes.y * 0.125;
+    // Saut quantique : toutes les étoiles filent vers le haut, les proches plus vite.
+    float y = mod(aBase.y * h - uScroll * speed - uWarp * mix(0.35, 1.0, aBase.z), h) - uRes.y * 0.125;
     float x = aBase.x * uRes.x;
     gl_Position = vec4(x / uRes.x * 2.0 - 1.0, 1.0 - y / uRes.y * 2.0, 0.0, 1.0);
 
@@ -106,7 +108,7 @@ const fragment = /* glsl */ `
  * défilement : une majorité de points fins et quelques étincelles à quatre branches
  * effilées (plus quatre courtes en diagonale), de tailles variées, qui respirent lentement.
  */
-export function Starfield({ colors }: { colors: ThemeColors }) {
+export function Starfield({ colors, pathname }: { colors: ThemeColors; pathname: string }) {
   const size = useThree((s) => s.size);
   const dpr = useThree((s) => s.viewport.dpr);
 
@@ -148,6 +150,7 @@ export function Starfield({ colors }: { colors: ThemeColors }) {
           uAccent: { value: new Color() },
           uOpacity: { value: 1 },
           uLight: { value: 0 },
+          uWarp: { value: 0 },
         },
         transparent: true,
         depthWrite: false,
@@ -157,8 +160,29 @@ export function Starfield({ colors }: { colors: ThemeColors }) {
   );
   useEffect(() => () => material.dispose(), [material]);
 
+  // Saut quantique : à chaque changement de page, élan de 1,6 écran en 0,9 s (accélération puis freinage).
+  const warp = useRef({ base: 0, start: -1, first: true });
+  useEffect(() => {
+    if (warp.current.first) {
+      warp.current.first = false; // pas d'élan au premier affichage
+      return;
+    }
+    warp.current.start = performance.now();
+  }, [pathname]);
+
   useFrame(({ clock }) => {
     const u = material.uniforms;
+    const w = warp.current;
+    if (w.start >= 0) {
+      const t = Math.min(1, (performance.now() - w.start) / 900);
+      const ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      const jump = size.height * 1.6;
+      u.uWarp!.value = w.base + jump * ease;
+      if (t >= 1) {
+        w.base += jump;
+        w.start = -1;
+      }
+    }
     u.uScroll!.value = window.scrollY;
     (u.uRes!.value as Vector2).set(size.width, size.height);
     u.uTime!.value = clock.elapsedTime;

@@ -34,7 +34,16 @@ const SOLO = { slug: "m50", width: 26 };
 /** Profondeur des nuées derrière le plan de la page (px) */
 const DEPTH = 600;
 
-type Bird = { mesh: Mesh; offset: [number, number]; x: number; y: number };
+type Bird = {
+  mesh: Mesh;
+  slug: string;
+  offset: [number, number];
+  x: number;
+  y: number;
+  /** Taille à l'écran (px), pour savoir si un clic touche ce vaisseau */
+  w: number;
+  h: number;
+};
 type Flight = {
   birds: Bird[];
   leaderX: number;
@@ -51,7 +60,14 @@ const rand = (a: number, b: number) => a + Math.random() * (b - a);
  * vaisseaux traverse le ciel au loin, comme des oiseaux. Parfois, un M50 passe seul, vite.
  * Les silhouettes suivent la caméra : elles appartiennent au ciel, pas à la page.
  */
-export function Flock({ colors }: { colors: ThemeColors }) {
+export function Flock({
+  colors,
+  onSelect,
+}: {
+  colors: ThemeColors;
+  /** Bonus caché : un clic sur un vaisseau de la nuée ouvre sa fiche */
+  onSelect?: (slug: string) => void;
+}) {
   const camera = useThree((s) => s.camera) as PerspectiveCamera;
   const size = useThree((s) => s.size);
   const group = useRef<Group>(null);
@@ -100,6 +116,56 @@ export function Flock({ colors }: { colors: ThemeColors }) {
     [plane, material, textures],
   );
 
+  // Bonus caché : survol et clic sur les vaisseaux de la nuée. Le canvas laisse passer
+  // les événements ; on teste donc nous-mêmes la position du pointeur à l'écran.
+  // Les liens, boutons et champs gardent toujours la priorité.
+  useEffect(() => {
+    if (!onSelect) return;
+    const INTERACTIVE = "a, button, input, select, textarea, label, summary, dialog, [role=button]";
+    let hovered: Bird | null = null;
+
+    const hit = (e: PointerEvent | MouseEvent) => {
+      const f = flight.current;
+      if (!f) return null;
+      if ((e.target as Element | null)?.closest?.(INTERACTIVE)) return null;
+      const k = (cameraDistance(size.height) + DEPTH) / cameraDistance(size.height);
+      for (const b of f.birds) {
+        const sx = size.width / 2 + b.x / k;
+        const sy = size.height / 2 - b.y / k;
+        if (Math.abs(e.clientX - sx) < b.w / 2 + 8 && Math.abs(e.clientY - sy) < b.h / 2 + 10) {
+          return b;
+        }
+      }
+      return null;
+    };
+
+    const setHover = (b: Bird | null) => {
+      if (hovered === b) return;
+      if (hovered) (hovered.mesh.material as MeshBasicMaterial).opacity = material.opacity;
+      hovered = b;
+      if (b) (b.mesh.material as MeshBasicMaterial).opacity = Math.min(1, material.opacity + 0.35);
+      document.documentElement.style.cursor = b ? "pointer" : "";
+    };
+
+    const onMove = (e: PointerEvent) => {
+      if (e.pointerType === "mouse") setHover(hit(e));
+    };
+    const onClick = (e: MouseEvent) => {
+      const b = hit(e);
+      if (!b) return;
+      setHover(null);
+      onSelect(b.slug);
+    };
+
+    window.addEventListener("pointermove", onMove, { passive: true });
+    window.addEventListener("click", onClick);
+    return () => {
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("click", onClick);
+      setHover(null);
+    };
+  }, [onSelect, size, material]);
+
   /** Demi-largeur et demi-hauteur visibles à la profondeur des nuées */
   const halfView = () => {
     const d = cameraDistance(size.height) + DEPTH;
@@ -124,7 +190,7 @@ export function Flock({ colors }: { colors: ThemeColors }) {
       const w = width * scale;
       mesh.scale.set(w, w / entry.aspect, 1);
       g.add(mesh);
-      birds.push({ mesh, offset, x: 0, y: 0 });
+      birds.push({ mesh, slug, offset, x: 0, y: 0, w: width, h: width / entry.aspect });
     };
 
     if (solo) {
