@@ -325,6 +325,23 @@ Les nuées (M2) peuvent apparaître sur toute la page, sauf pendant l'ouverture.
 | JavaScript initial (hors 3D)                                          | < 150 Ko compressé         |
 | Scores Lighthouse (Performance, Accessibilité, Bonnes pratiques, SEO) | ≥ 90 / 100 / 100 / 100     |
 
+### Mesures (étape 9, Lighthouse 12, site exporté servi en local)
+
+| Page           | Ordinateur (Perf. / Access. / Bonnes pratiques / SEO) | Mobile simulé (Perf.) | LCP mobile réel* |
+| -------------- | ----------------------------------------------------- | --------------------- | ---------------- |
+| Accueil        | 99 / 100 / 100 / 100 — LCP 0,9 s                      | 67                    | 2,8 s            |
+| Flotte         | 97 / 100 / 100 / 100 — LCP 1,2 s                      | ~70                   | —                |
+| Fiche 890 Jump | 99 / 100 / 100 / 100 — LCP 0,9 s                      | 74                    | —                |
+| Comparateur    | 99 / 100 / 100 / 100 — LCP 0,8 s, CLS 0,04            | —                     | —                |
+
+\* Ralentissement réel (4G lente, processeur ×4), plus fiable que l'estimation simulée (4,5 s).
+
+- **CLS** : 0 partout (0,04 sur le comparateur, sous le budget de 0,05).
+- **Accessibilité** : 100 partout ; aucune violation axe (WCAG 2.2 A/AA) sur 8 pages, dans les deux thèmes.
+- **JavaScript initial** : ~205 Ko compressés, dont **~180 Ko pour le cadre** (React 19, routeur et environnement d'exécution de Next 16) ; le code du site pèse ~25 Ko, next-intl et Lenis ~20 Ko. Le budget initial de 150 Ko n'est pas atteignable avec cette pile. **Budget révisé proposé : 220 Ko, dont ≤ 45 Ko de code propre au site.**
+- **Mobile** : la note est limitée par le temps d'hydratation de React sur un processeur ralenti (TBT ~0,5 à 0,7 s simulé). Mesures prises : scène 3D chargée après la page (repos ou première interaction), apparitions au défilement sans composant client, réglages du menu mobile créés à l'ouverture, police secondaire non préchargée, traductions envoyées au navigateur limitées au nécessaire.
+- **Reste à faire à la main** : test au lecteur d'écran (NVDA) sur les parcours clés.
+
 - 3D chargée de façon différée, images responsives en AVIF ou WebP avec aperçu flou, polices limitées aux caractères utiles.
 - SEO : métadonnées par page et par langue, images Open Graph générées, `sitemap.xml`, `robots.txt`, données structurées (`Product` sans prix réel, `BreadcrumbList`).
 

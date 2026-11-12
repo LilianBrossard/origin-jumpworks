@@ -154,11 +154,14 @@ export function Header() {
             ))}
           </ul>
         </nav>
-        <div className="container-page flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line py-6">
-          <LanguageSwitch variant="full" />
-          <ThemeSwitch />
-          <MotionToggle variant="full" />
-        </div>
+        {/* Créés seulement à l'ouverture : moins de travail au chargement de la page */}
+        {open && (
+          <div className="container-page flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-line py-6">
+            <LanguageSwitch variant="full" />
+            <ThemeSwitch />
+            <MotionToggle variant="full" />
+          </div>
+        )}
       </div>
     </header>
   );

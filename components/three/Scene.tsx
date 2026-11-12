@@ -48,6 +48,8 @@ export default function Scene({ pathname }: { pathname: string }) {
       dpr={[1, 1.5]}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
       camera={{ fov: FOV, position: [0, 0, 1000] }}
+      // Arrivée en fondu : le décor se dépose doucement derrière le contenu
+      className="animate-[scene-in_1.6s_var(--ease-out)_both]"
       style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none" }}
     >
       <CameraRig />

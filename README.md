@@ -23,17 +23,18 @@ pnpm dev          # serveur de développement sur http://localhost:3000
 
 ## Scripts
 
-| Commande                       | Rôle                                        |
-| ------------------------------ | ------------------------------------------- |
-| `pnpm dev`                     | Serveur de développement                    |
-| `pnpm build`                   | Génère le site statique dans `out/` (\*)    |
-| `pnpm preview`                 | Sert le dossier `out/` en local             |
-| `pnpm lint`                    | ESLint                                      |
-| `pnpm typecheck`               | Vérification TypeScript                     |
-| `pnpm format` / `format:check` | Prettier                                    |
-| `pnpm check`                   | Lint, types et format en une seule commande |
-| `pnpm harvest`                 | Collecte les données de la flotte (manuel)  |
-| `pnpm test`                    | Tests (contrastes, traductions)             |
+| Commande                       | Rôle                                                             |
+| ------------------------------ | ---------------------------------------------------------------- |
+| `pnpm dev`                     | Serveur de développement                                         |
+| `pnpm build`                   | Génère le site statique dans `out/` (\*)                         |
+| `pnpm preview`                 | Sert le dossier `out/` en local                                  |
+| `pnpm lint`                    | ESLint                                                           |
+| `pnpm typecheck`               | Vérification TypeScript                                          |
+| `pnpm format` / `format:check` | Prettier                                                         |
+| `pnpm check`                   | Lint, types et format en une seule commande                      |
+| `pnpm harvest`                 | Collecte les données de la flotte (manuel)                       |
+| `pnpm test`                    | Tests unitaires (données, contrastes, traductions, formats)      |
+| `pnpm test:e2e`                | Parcours et accessibilité (Playwright + axe), après `pnpm build` |
 
 (\*) Le build est suivi de [`scripts/fix-export.mjs`](scripts/fix-export.mjs), qui corrige le nommage des fichiers de préchargement de Next 16.4 en export statique.
 

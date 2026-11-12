@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PreferencesSync } from "@/components/layout/PreferencesSync";
+import { RevealObserver } from "@/components/layout/RevealObserver";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { SceneLoader } from "@/components/three/SceneLoader";
 import { routing } from "@/i18n/routing";
@@ -33,6 +34,19 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   setRequestLocale(locale);
   const t = await getTranslations("a11y");
 
+  // Seules les traductions utilisées par des composants client partent au navigateur
+  // (les composants serveur sont déjà traduits dans le HTML).
+  const all = await getMessages();
+  const clientMessages = {
+    a11y: all.a11y,
+    nav: all.nav,
+    prefs: all.prefs,
+    fleet: all.fleet,
+    compare: all.compare,
+    ship: all.ship,
+    home: { acquire: all.home.acquire, ranges: all.home.ranges },
+  };
+
   return (
     // `suppressHydrationWarning` : data-theme / data-motion sont posés avant React par le script.
     <html lang={locale} className={`${fontVariables} h-full`} suppressHydrationWarning>
@@ -40,8 +54,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         <script dangerouslySetInnerHTML={{ __html: PREFERENCES_SCRIPT }} />
       </head>
       <body className="flex min-h-full flex-col">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={clientMessages}>
           <PreferencesSync />
+          <RevealObserver />
           <SmoothScroll />
           <SceneLoader />
           <a

@@ -13,7 +13,8 @@
     "check": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test",
     "harvest": "tsx scripts/harvest/index.ts",
     "test": "vitest run",
-    "postbuild": "node scripts/fix-export.mjs"
+    "postbuild": "node scripts/fix-export.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",
@@ -27,6 +28,8 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/turbopack": "4.3.3",
     "@types/node": "^22.20.5",
     "@types/react": "^19",

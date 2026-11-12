@@ -22,6 +22,8 @@ export const fontMono = JetBrains_Mono({
   weight: ["300", "400"],
   variable: "--ff-mono",
   display: "swap",
+  // Codes techniques secondaires : pas de préchargement, l'image principale passe avant
+  preload: false,
 });
 
 export const fontVariables = `${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable}`;

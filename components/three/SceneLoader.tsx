@@ -29,17 +29,39 @@ export function SceneLoader() {
   const [webgl, setWebgl] = useState(true);
 
   useEffect(() => {
-    // Attend que le navigateur soit au repos : le contenu passe avant le décor.
+    // Le contenu passe avant le décor : la scène se charge une fois la page entièrement
+    // chargée ET le navigateur au repos (au plus tard 4 s après), ou dès la première
+    // interaction du visiteur. Elle n'entre ainsi pas en concurrence avec l'affichage.
+    let done = false;
+    let idle = 0;
+    let timer = 0;
     const start = () => {
+      if (done) return;
+      done = true;
+      cleanup();
       setWebgl(supportsWebGL());
       setReady(true);
     };
-    if (typeof window.requestIdleCallback === "function") {
-      const id = window.requestIdleCallback(start, { timeout: 1500 });
-      return () => window.cancelIdleCallback(id);
-    }
-    const id = window.setTimeout(start, 300);
-    return () => window.clearTimeout(id);
+    const whenIdle = () => {
+      if (typeof window.requestIdleCallback === "function") {
+        idle = window.requestIdleCallback(start, { timeout: 2500 });
+      } else {
+        timer = window.setTimeout(start, 1200);
+      }
+    };
+    const INTERACTIONS = ["pointerdown", "keydown", "wheel", "touchstart"] as const;
+    const cleanup = () => {
+      window.removeEventListener("load", whenIdle);
+      for (const ev of INTERACTIONS) window.removeEventListener(ev, start);
+      if (idle) window.cancelIdleCallback?.(idle);
+      window.clearTimeout(timer);
+    };
+
+    for (const ev of INTERACTIONS)
+      window.addEventListener(ev, start, { once: true, passive: true });
+    if (document.readyState === "complete") whenIdle();
+    else window.addEventListener("load", whenIdle, { once: true });
+    return cleanup;
   }, []);
 
   const enabled = ready && webgl && !reduced;
