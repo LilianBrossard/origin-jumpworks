@@ -7,13 +7,18 @@ import type { Locale } from "@/i18n/routing";
 import { getShips } from "@/lib/data";
 import { toSummary } from "@/lib/data/summary";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/fleet">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "fleet" });
-  return { title: t("title"), description: t("lead", { count: getShips().length }) };
+  return {
+    alternates: localeAlternates(locale as Locale, "/fleet"),
+    title: t("title"),
+    description: t("lead", { count: getShips().length }),
+  };
 }
 
 export default async function FleetPage({ params }: PageProps<"/[locale]/fleet">) {

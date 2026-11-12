@@ -11,11 +11,15 @@ import { ScaleLineup } from "@/components/home/ScaleLineup";
 import type { Locale } from "@/i18n/routing";
 import { getLocations, getMeta, getShip, getShips } from "@/lib/data";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "home" });
-  return { title: { absolute: t("metaTitle") } };
+  return {
+    alternates: localeAlternates(locale as Locale, ""),
+    title: { absolute: t("metaTitle") },
+  };
 }
 
 /**

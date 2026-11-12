@@ -7,13 +7,18 @@ import type { Locale } from "@/i18n/routing";
 import { getShips } from "@/lib/data";
 import { toSummary } from "@/lib/data/summary";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/compare">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "compare" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    alternates: localeAlternates(locale as Locale, "/compare"),
+    title: t("title"),
+    description: t("lead"),
+  };
 }
 
 export default async function ComparePage({ params }: PageProps<"/[locale]/compare">) {

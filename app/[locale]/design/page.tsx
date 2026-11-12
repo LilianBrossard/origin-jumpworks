@@ -24,13 +24,18 @@ import {
 } from "@/lib/design/tokens";
 import { fontDisplay } from "@/lib/fonts";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/design">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "design" });
-  return { title: t("metaTitle"), description: t("metaDescription") };
+  return {
+    alternates: localeAlternates(locale as Locale, "/design"),
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
 }
 
 // Polices comparées pour les titres, chargées uniquement sur cette page.

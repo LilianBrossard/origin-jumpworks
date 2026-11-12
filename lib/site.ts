@@ -1,5 +1,13 @@
-/** URL publique du site, à définir au déploiement (étape 10). */
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+/**
+ * URL publique du site.
+ * Ordre : variable explicite, sinon le domaine de production fourni par Vercel au build,
+ * sinon le serveur local.
+ */
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
 
 export const REPO_URL = "https://github.com/LilianBrossard/origin-jumpworks";
 export const AUTHOR = {

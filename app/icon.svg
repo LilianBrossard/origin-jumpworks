@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <style>
+    .ink { stroke: #14171c; }
+    .accent { stroke: #7a6535; }
+    @media (prefers-color-scheme: dark) {
+      .ink { stroke: #ece7dd; }
+      .accent { stroke: #c9b37e; }
+    }
+  </style>
+  <g fill="none" stroke-width="2.4" stroke-linecap="round">
+    <circle class="ink" cx="24" cy="24" r="15.5" />
+    <line class="ink" x1="3" y1="24" x2="45" y2="24" />
+    <line class="accent" x1="24" y1="5.5" x2="24" y2="10" />
+  </g>
+</svg>

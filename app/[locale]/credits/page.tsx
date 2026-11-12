@@ -11,13 +11,18 @@ import { getMeta, getShips } from "@/lib/data";
 import type { ImageAsset } from "@/lib/data/schema";
 import { AUTHOR, CIG_LEGAL_NOTICE, REPO_URL } from "@/lib/site";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/credits">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "credits" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    alternates: localeAlternates(locale as Locale, "/credits"),
+    title: t("title"),
+    description: t("lead"),
+  };
 }
 
 const SOFTWARE = [

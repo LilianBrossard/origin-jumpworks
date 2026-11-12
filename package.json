@@ -14,7 +14,9 @@
     "harvest": "tsx scripts/harvest/index.ts",
     "test": "vitest run",
     "postbuild": "node scripts/fix-export.mjs",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "og": "tsx scripts/og.mts",
+    "screenshots": "tsx scripts/screenshots.mts"
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",

@@ -24,6 +24,7 @@ import {
   shortVersion,
 } from "@/lib/format";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { localeAlternates } from "@/lib/seo";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -38,9 +39,14 @@ export async function generateMetadata({
   if (!ship) return {};
   const description = (locale === "fr" && ship.description.fr) || ship.description.en;
   return {
+    alternates: localeAlternates(locale as Locale, `/fleet/${slug}`),
     title: ship.name,
     description: description.slice(0, 160),
-    openGraph: { images: [ship.images.hero.webp.at(-1)?.src ?? ""] },
+    openGraph: {
+      title: ship.name,
+      description: description.slice(0, 160),
+      images: [{ url: `/og/${ship.slug}.jpg`, width: 1200, height: 630, alt: ship.name }],
+    },
   };
 }
 
@@ -105,7 +111,10 @@ export default async function ShipPage({ params }: PageProps<"/[locale]/fleet/[s
           </Link>
           <div className="space-y-5">
             <Eyebrow>
-              {tr(`${ship.range}.name`)} · {ship.role}
+              {tr(`${ship.range}.name`)}
+              {/* Pas de doublon quand le rôle porte le nom de la gamme (« Racing · Racing ») */}
+              {ship.role.toLowerCase() !== tr(`${ship.range}.name`).toLowerCase() &&
+                ` · ${ship.role}`}
             </Eyebrow>
             {/* Casse d'origine : « 600i », pas « 600I » */}
             <Heading as="h1" size="xl" className="normal-case!">

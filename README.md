@@ -1,16 +1,63 @@
 # Origin Jumpworks
 
-Site vitrine **non officiel**, réalisé par un fan, consacré au constructeur Origin Jumpworks de l'univers _Star Citizen_. Projet de portfolio.
+Site vitrine **non officiel** consacré à Origin Jumpworks, le constructeur de vaisseaux de luxe de _Star Citizen_ : une longue descente au fil d'or, la flotte jouable, son histoire, et où l'acquérir en jeu.
+
+Projet de portfolio réalisé par [Lilian Brossard](https://lilian-brossard.vercel.app/).
+
+![Accueil, thème sombre](docs/screenshots/accueil-sombre.webp)
 
 > This site is not endorsed by or affiliated with the Cloud Imperium or Roberts Space Industries group of companies. All game content and materials are copyright Cloud Imperium Rights LLC and Cloud Imperium Rights Ltd.. Star Citizen®, Squadron 42®, Roberts Space Industries®, and Cloud Imperium® are registered trademarks of Cloud Imperium Rights LLC. All rights reserved.
 
-Le cahier des charges complet est dans [docs/CAHIER_DES_CHARGES.md](docs/CAHIER_DES_CHARGES.md).
+## En bref
 
-Réalisé par [Lilian Brossard](https://lilian-brossard.vercel.app/).
+- **Une DA « le trait d'abord »** : lignes d'un pixel, coins coupés à 45°, beaucoup de vide, mouvement lent et amorti. Thèmes clair (« Galerie ») et sombre (« Nuit sur New Austin »), contrastes AA vérifiés par un test.
+- **Une couche 3D discrète** (React Three Fiber), dans un seul canvas derrière la page :
+  - un **fil d'or** qui se dessine au défilement, passe par les filets numérotés de chaque section et redessine le monogramme en bas de page ;
+  - un **ciel** de points fins et d'étincelles à quatre branches, en légère parallaxe ;
+  - des **nuées de vaisseaux** qui traversent le ciel de temps en temps (cliquables : bonus caché).
+- **17 vaisseaux jouables**, chacun avec sa fiche : image en relief (carte de profondeur WebGL), caractéristiques, prix en jeu par concession, galerie avec « lampe de showroom » et visionneuse accessible.
+- **Un comparateur** à l'échelle, des transitions de page en « saut quantique », un changement de thème en lever de soleil.
+- **Accessible et bilingue** : FR / EN, navigation au clavier, lecteurs d'écran, « Réduire les animations » (tout le mouvement a un repli statique).
 
-## Stack
+|                                                                              |                                                                |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| ![Le fil d'or traverse le manifeste](docs/screenshots/manifeste-fil-or.webp) | ![Toute la flotte à l'échelle](docs/screenshots/echelle.webp)  |
+| ![Fiche du 890 Jump](docs/screenshots/fiche-890-jump.webp)                   | ![Comparateur, thème clair](docs/screenshots/comparateur.webp) |
+| ![Où acquérir la flotte, thème clair](docs/screenshots/acquerir.webp)        | ![La flotte](docs/screenshots/flotte.webp)                     |
 
-Next.js (App Router, export statique) · TypeScript strict · Tailwind CSS v4 · pnpm
+<p align="center">
+  <img src="docs/screenshots/mobile-accueil.webp" width="260" alt="Accueil sur mobile, thème sombre" />
+  <img src="docs/screenshots/mobile-fiche.webp" width="260" alt="Fiche du M50 sur mobile, thème clair" />
+</p>
+
+## Choix techniques
+
+| Domaine           | Choix                                            | Pourquoi                                                                                      |
+| ----------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| Cadre             | **Next.js 16** (App Router), **export statique** | Aucun serveur : 44 pages HTML (22 par langue) générées au build, hébergeables partout         |
+| Langage           | TypeScript strict                                |                                                                                               |
+| Styles            | **Tailwind CSS v4**, tokens CSS                  | Les mêmes tokens alimentent le CSS, la 3D et le test de contraste                             |
+| 3D                | **three.js + React Three Fiber**, shaders GLSL   | Chargée après la page, dans un fichier à part ; caméra calée sur le document (1 unité = 1 px) |
+| Relief des photos | WebGL brut (sans three.js)                       | Un simple décalage par carte de profondeur, sans alourdir les fiches                          |
+| Défilement        | **Lenis**                                        | Désactivé en animations réduites                                                              |
+| Transitions       | React `<ViewTransition>` + View Transitions API  | Repli : navigation normale                                                                    |
+| Langues           | **next-intl**                                    | Sans middleware (export statique) : la langue est choisie dans le navigateur                  |
+| Données           | **Zod** + script de collecte                     | Données figées dans le dépôt, validées au build et par les tests                              |
+| Tests             | **Vitest**, **Playwright**, **axe-core**         | Données, parcours clés, accessibilité WCAG 2.2 AA dans les deux thèmes                        |
+
+Quelques solutions maison dont je suis content :
+
+- **Silhouettes et cartes de profondeur sans IA** : le script de collecte isole le vaisseau de son fond étoilé (seuil, plus grande forme, bouchage des trous, lissage). Il en tire la silhouette du comparateur d'échelle et la carte de profondeur du relief.
+- **Le fil d'or relié au DOM** : la caméra suit le défilement à l'échelle du pixel, ce qui permet au fil de passer exactement par des repères posés dans la page (`data-thread`).
+- **Correctif d'export** : Next 16.4 nomme mal certains fichiers de préchargement en export statique avec un segment dynamique ([`scripts/fix-export.mjs`](scripts/fix-export.mjs)).
+
+## Qualité
+
+- **Lighthouse (ordinateur)** : 97–99 en performance, 100 en accessibilité, bonnes pratiques et SEO.
+- **axe** : aucune violation WCAG 2.2 A/AA sur 8 pages, thèmes clair et sombre.
+- **40 tests unitaires et 32 tests de bout en bout**, lancés par la CI à chaque push.
+
+Le détail (mesures mobile, budget JavaScript) est dans le [cahier des charges](docs/CAHIER_DES_CHARGES.md#9-performance-et-seo).
 
 ## Démarrer
 
@@ -21,48 +68,41 @@ pnpm install
 pnpm dev          # serveur de développement sur http://localhost:3000
 ```
 
-## Scripts
-
-| Commande                       | Rôle                                                             |
-| ------------------------------ | ---------------------------------------------------------------- |
-| `pnpm dev`                     | Serveur de développement                                         |
-| `pnpm build`                   | Génère le site statique dans `out/` (\*)                         |
-| `pnpm preview`                 | Sert le dossier `out/` en local                                  |
-| `pnpm lint`                    | ESLint                                                           |
-| `pnpm typecheck`               | Vérification TypeScript                                          |
-| `pnpm format` / `format:check` | Prettier                                                         |
-| `pnpm check`                   | Lint, types et format en une seule commande                      |
-| `pnpm harvest`                 | Collecte les données de la flotte (manuel)                       |
-| `pnpm test`                    | Tests unitaires (données, contrastes, traductions, formats)      |
-| `pnpm test:e2e`                | Parcours et accessibilité (Playwright + axe), après `pnpm build` |
-
-(\*) Le build est suivi de [`scripts/fix-export.mjs`](scripts/fix-export.mjs), qui corrige le nommage des fichiers de préchargement de Next 16.4 en export statique.
-
-## Langues et préférences
-
-- Pages sous `/fr/` et `/en/` ; la page `/` choisit la langue dans le navigateur (préférence mémorisée, sinon langue du navigateur).
-- Traductions : [messages/fr.json](messages/fr.json) et [messages/en.json](messages/en.json). Un test vérifie que les deux fichiers ont les mêmes clés.
-- Thème (système, clair, sombre) et « Réduire les animations » : mémorisés dans `localStorage` et appliqués avant l'affichage, sans flash.
+| Commande                      | Rôle                                                          |
+| ----------------------------- | ------------------------------------------------------------- |
+| `pnpm dev`                    | Serveur de développement                                      |
+| `pnpm build`                  | Site statique dans `out/`                                     |
+| `pnpm preview`                | Sert `out/` en local (port 3000)                              |
+| `pnpm check`                  | Lint, types, format et tests unitaires                        |
+| `pnpm test` / `pnpm test:e2e` | Tests unitaires / de bout en bout (après `pnpm build`)        |
+| `pnpm harvest`                | Collecte des données de la flotte (manuel)                    |
+| `pnpm og`                     | Images de partage (1200 × 630) à partir des images collectées |
+| `pnpm screenshots`            | Captures du README (site servi par `pnpm preview`)            |
 
 ## Données
 
-Les données sont collectées **une fois**, à la main, puis commitées : le site en ligne ne fait aucun appel externe.
+Collectées **une fois**, à la main, puis commitées : le site en ligne ne fait aucun appel externe.
 
-- `data/ships/*.json` : une fiche par vaisseau jouable (caractéristiques, prix, crédits des images)
-- `data/locations.json` : lieux d'achat et de location en jeu
-- `data/meta.json` : date du relevé, patch du jeu, sources
-- `public/ships/<slug>/` : images optimisées (AVIF et WebP, 960 et 1920 px)
-
-Sources : [API du Star Citizen Wiki](https://api.star-citizen.wiki) (caractéristiques et prix [UEX](https://uexcorp.space)), [starcitizen.tools](https://starcitizen.tools) (images et crédits). Aucun jeton n'est nécessaire.
-
-### Actualiser
+- Sources : [API du Star Citizen Wiki](https://api.star-citizen.wiki) (caractéristiques, prix [UEX](https://uexcorp.space)) et [starcitizen.tools](https://starcitizen.tools) (images, auteurs, licences). Aucun jeton nécessaire.
+- `data/ships/*.json`, `data/locations.json`, `data/meta.json` ; descriptions françaises dans `data/i18n/descriptions.fr.json`.
+- Images optimisées (AVIF/WebP, 960 et 1920 px), silhouettes et cartes de profondeur dans `public/ships/<slug>/`.
 
 ```bash
 pnpm harvest                  # tout (les images déjà présentes ne sont pas réencodées)
 pnpm harvest --skip-images    # caractéristiques et prix seulement
 pnpm harvest --ship=890-jump  # un seul vaisseau
+pnpm og                       # puis régénérer les images de partage
 ```
 
-Autres options : `--force-images` (réencoder), `--cached` (réutiliser le cache HTTP de `.cache/`), `--dry-run`.
+Réglages par vaisseau (gamme, ordre, nom affiché, seuil de silhouette, exclusions d'images) : [scripts/harvest/config.ts](scripts/harvest/config.ts).
 
-Ensuite : relire le diff de `data/`, puis commiter. Les réglages par vaisseau (gamme, ordre, exclusions d'images) sont dans [scripts/harvest/config.ts](scripts/harvest/config.ts). Un vaisseau devenu jouable est signalé par le script et doit y être ajouté.
+## Déploiement
+
+Site 100 % statique. Sur **Vercel** : importer le dépôt, aucun réglage nécessaire (Next.js est détecté, le dossier `out/` est servi). L'URL de production est reprise automatiquement pour les liens canoniques, le plan du site et les images de partage ; `NEXT_PUBLIC_SITE_URL` permet de la forcer (domaine personnalisé).
+
+## Crédits et licences
+
+- Code : licence [MIT](LICENSE).
+- Textes repris de starcitizen.tools : CC BY-SA 4.0. Images : auteur et licence de chacune sur la page `/credits` du site.
+- Logo « Made by the Community » : [fan kit officiel de Star Citizen](https://robertsspaceindustries.com/fankit), usage non commercial.
+- Polices : Outfit, Inter, JetBrains Mono (SIL OFL).

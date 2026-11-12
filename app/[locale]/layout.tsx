@@ -24,7 +24,13 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
   return {
     title: { default: t("siteName"), template: `%s · ${t("siteName")}` },
     description: t("description"),
-    openGraph: { siteName: t("siteName"), locale },
+    openGraph: {
+      siteName: t("siteName"),
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      type: "website",
+      images: [{ url: "/og/default.jpg", width: 1200, height: 630 }],
+    },
+    twitter: { card: "summary_large_image" },
   };
 }
 
